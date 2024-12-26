@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -1177,3 +1176,171 @@ button[onclick*="DyslexAITimeline"]:hover {
   color: #333; /* Slightly lighter black on hover */
   text-decoration: underline; /* Optional: Add underline on hover */
 }
+
+/* galary image styling */
+/* General styling for the gallery */
+/* General styling for the gallery */
+#gallery {
+  background-color: #9fb8b7; /* Dark background for the gallery */
+  color: white; /* Light text for better visibility */
+  border: 1px solid #333; /* Subtle border */
+  padding: 20px; /* Add some padding inside the gallery */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 90%; /* Limit the gallery width */
+  margin: 20px auto; /* Center the gallery horizontally */
+  text-align: center; /* Center-align content */
+}
+
+/* Styling for gallery images */
+#gallery img {
+  width: 80%; /* Make images responsive */
+  max-width: 600px; /* Set a max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Add space between images */
+  border: 2px solid #555; /* Add a border around images */
+  border-radius: 5px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+  cursor: pointer; /* Show pointer cursor to indicate clickable */
+}
+
+/* Add some hover effect to the images */
+#gallery img:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Modal styling for the enlarged image */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
+  z-index: 9999; /* Ensure it appears above other elements */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Shadow around the enlarged image */
+}
+
+/* Close button styling */
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style for gallery image headings */
+#gallery h3 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 10px; /* Spacing below the heading */
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Reset margins and paddings */
+
+/*** This is the styling for the content to be in the middle of the page ***/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Include padding and border in dimensions */
+  background-color: #121212; /* Background color */
+}
+
+/* Center the main content while keeping the navbar fixed */
+body {
+  display: flex; /* Use Flexbox for alignment */
+  flex-direction: column; /* Keep the navbar at the top */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Navbar */
+header {
+  width: 100%; /* Full width for the navbar */
+  background-color: #1e1e1e; /* Dark background */
+  padding: 10px 20px; /* Add padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to navbar */
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #00bcd4; /* Light blue on hover */
+}
+
+/* Center content */
+main {
+  margin-top: 80px; /* Avoid overlap with fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  width: 90%; /* Constrain content width */
+  max-width: 1200px; /* Limit max width */
+  background-color: #1e1e1e; /* Slightly lighter background for content */
+  padding: 20px; /* Add padding inside the content area */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow to main content */
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+
+
