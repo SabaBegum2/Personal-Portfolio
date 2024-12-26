@@ -173,3 +173,34 @@ modal.addEventListener("click", (e) => {
     }
 });
 
+
+///////////////////////////////////////  Education //////////////////////////////////////////////
+// Function to open the Education popup
+// Function to open the Education popup// Function to open the Education popup
+function openEducationPopup() {
+    const popup = document.getElementById('educationPopup');
+    if (popup) {
+        popup.style.display = 'flex'; // Show the popup
+    }
+}
+
+// Function to close the Education popup
+function closeEducationPopup() {
+    const popup = document.getElementById('educationPopup');
+    if (popup) {
+        popup.style.display = 'none'; // Hide the popup
+    }
+}
+
+// Function to toggle sections in the Education popup
+function toggleEducationSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block'; // Show the section
+    } else {
+        section.style.display = 'none'; // Hide the section
+    }
+}
+
+
+

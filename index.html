@@ -366,10 +366,92 @@
                 </div>
             </div>
             
+            <!-- Education Section -->
+            <!-- Education Section -->
             <div>
                 <h1>Education</h1>
-                <img src="Images/images.png">
-            </div>    
+                <img src="Images/images.png" alt="Wayne State University">
+                <h1>Wayne State University</h1>
+                <h2>Bachelor of Science in Computer Science • Cumulative GPA: 3.41 • Major GPA: 3.8</h2>
+                <p>
+                    Wayne State University is a public research university in 
+                    Detroit, Michigan. It is Michigan's third-largest university.
+                    Founded in 1868, Wayne State consists of 13 schools and colleges
+                    offering approximately 350 programs to nearly 24,000 graduate and 
+                    undergraduate students.
+                </p>
+                <!-- Button to open popup -->
+                <button onclick="openEducationPopup()">View Details</button>
+            </div>
+
+            <!-- Education Popup -->
+            <div class="popup education-popup" id="educationPopup">
+                <div class="popup-content">
+                    <button class="close-btn" onclick="closeEducationPopup()">X</button>
+                    <h1>Wayne State University</h1>
+                    <h3>Bachelor of Science in Computer Science • Cumulative GPA: 3.41 • Major GPA: 3.8</h3>
+                    <p>
+                        <a href="https://wayne.edu" target="_blank">Wayne State University</a> is a public research university in Detroit, Michigan. It is Michigan's third-largest university. Founded in 1868, Wayne State consists of 13 schools and colleges offering approximately 350 programs to nearly 24,000 graduate and undergraduate students.
+                    </p>
+                    <div class="education-sections">
+                        <ul>
+                            <li>
+                                <button onclick="toggleEducationSection('educationCoursework')">📚 Coursework ▼</button>
+                                <div id="educationCoursework" class="section-content" style="display: none;">
+                                    <ul>
+                                        <li>Data Structures and Algorithms</li>
+                                        <li>Operating Systems</li>
+                                        <li>Database Management</li>
+                                        <li>Artificial Intelligence</li>
+                                        <li>Software Engineering</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button onclick="toggleEducationSection('educationTimeline')">🕒 Timeline ▼</button>
+                                <div id="educationTimeline" class="section-content" style="display: none;">
+                                    <ul>
+                                        <li><strong>2021:</strong> Started Bachelor’s Program</li>
+                                        <li><strong>2024:</strong> Graduated with a Bachelor’s Degree</li>
+                                        <li><strong>2024:</strong> Started Master’s Program</li>
+                                        <li><strong>2026:</strong> Expected Graduation</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button onclick="toggleEducationSection('educationAwards')">🏆 Awards ▼</button>
+                                <div id="educationAwards" class="section-content" style="display: none;">
+                                    <ul>
+                                        <li>Dean’s List (Every Semester)</li>
+                                        <li>Undergraduate Research Grant Recipient</li>
+                                        <li>Wayne State AI Hackathon Winner</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button onclick="toggleEducationSection('educationGpa')">⭐ GPA ▼</button>
+                                <div id="educationGpa" class="section-content" style="display: none;">
+                                    <p>Bachelor’s GPA: 3.41</p>
+                                    <p>Major GPA: 3.8</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education-tags">
+                        <span>#Wayne State University</span>
+                        <span>#WSU</span>
+                        <span>#University</span>
+                        <span>#Education</span>
+                        <span>#Computer Science</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            
+            
+                
 
         <div class="footer" id="contact">
                 Email Me: <a href="mailto:example@example.com">hg7548@wayne.edu</a>
