@@ -159,9 +159,9 @@ h2 {
 }
 
 .project-box {
-    width: 200px;
-    height: 150px;
-    background-color: #89CFF0; /* Baby blue background color */
+    width: 700px;
+    height: 700px;
+    background-color: #89b0c3; /* Baby blue background color */
     color: black; /* Text color changed to black */
     margin-bottom: 20px;
     padding: 10px;
@@ -212,6 +212,80 @@ h2 {
     left: 50%;
     margin-left: -3px;
   }
+
+  /* Timeline Section */
+/* Timeline Section */
+/* Move the Timeline Section Down */
+
+
+.timeline {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000; /* Set all text to black */
+}
+
+/* Main Heading */
+/* Styling for the Experiences Heading */
+.timeline h2 {
+  font-size: 2.5rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: hsl(0, 10%, 88%); /* Set the text color to black */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+  margin-top: 10px; /* Add space above the heading */
+  letter-spacing: 2px; /* Optional: Add spacing between letters */
+  text-transform: uppercase; /* Optional: Make the text all uppercase */
+}
+
+
+/* Subheadings for Each Experience */
+.timeline h3 {
+  font-size: 1.5rem; /* Adjust subheading size */
+  color: #000000; /* Black text */
+  margin-bottom: 10px;
+}
+
+/* Date Styling */
+.timeline .content h2 {
+  font-size: 1.2rem; /* Adjust date size */
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000000; /* Black text */
+}
+
+/* Paragraph Text */
+.timeline p {
+  font-size: 1rem; /* Adjust paragraph text size */
+  margin-bottom: 10px;
+  color: #000000; /* Black text */
+}
+
+/* List Items */
+.timeline ul {
+  list-style: disc; /* Use disc bullets */
+  padding-left: 20px; /* Add space to indent the list */
+}
+
+.timeline li {
+  font-size: 1rem; /* Adjust list item text size */
+  line-height: 1.5; /* Add spacing between lines */
+  margin-bottom: 5px;
+  color: #000000; /* Black text */
+}
+
+/* Nested List Items */
+.timeline ul ul {
+  list-style: circle; /* Use circle bullets for nested lists */
+  margin-top: 5px;
+}
+
+.timeline ul ul li {
+  font-size: 0.9rem; /* Slightly smaller for nested items */
+  margin-bottom: 3px;
+  color: #000000; /* Black text */
+}
+
+
   
   /* Container around content */
   .container {
@@ -451,22 +525,22 @@ body {
 }
 
 /* Unique colors for each tag */
-.Firebase { background-color: #FFA000; } /* Firebase Orange */
-.Docker { background-color: #2496ED; } /* Docker Blue */
-.Git { background-color: #F05032; } /* Git Red */
-.Vercel { background-color: #000; } /* Vercel Black */
-.MySQL { background-color: #00758F; } /* MySQL Teal */
-.SQLLite { background-color: #003B57; } /* SQLite Dark Blue */
-.Linux { background-color: #FCC624; } /* Linux Yellow */
-.Windows { background-color: #00A4EF; } /* Windows Blue */
-.React { background-color: #61DBFB; } /* React Cyan */
-.TailwindCSS { background-color: #06B6D4; } /* Tailwind Blue */
-.Postman { background-color: #EF5B25; } /* Postman Orange */
-.Figma { background-color: #A259FF; } /* Figma Purple */
-.GitHub { background-color: #24292E; } /* GitHub Dark Gray */
-.Node { background-color: #83CD29; } /* Node.js Green */
-.VisualStudio { background-color: #5C2D91; } /* Visual Studio Purple */
-.VisualStudioCode { background-color: #007ACC; } /* Visual Studio Code Blue */
+.tag.Firebase { background-color: #FFA000; } /* Firebase Orange */
+.tag.Docker { background-color: #2496ED; } /* Docker Blue */
+.tag.Git { background-color: #F05032; } /* Git Red */
+.tag.Vercel { background-color: #000; } /* Vercel Black */
+.tag.MySQL { background-color: #00758F; } /* MySQL Teal */
+.tag.SQLLite { background-color: #003B57; } /* SQLite Dark Blue */
+.tag.Linux { background-color: #FCC624; } /* Linux Yellow */
+.tag.Windows { background-color: #00A4EF; } /* Windows Blue */
+.tag.React { background-color: #61DBFB; } /* React Cyan */
+.tag.TailwindCSS { background-color: #06B6D4; } /* Tailwind Blue */
+.tag.Postman { background-color: #EF5B25; } /* Postman Orange */
+.tag.Figma { background-color: #A259FF; } /* Figma Purple */
+.tag.GitHub { background-color: #24292E; } /* GitHub Dark Gray */
+.tag.Node { background-color: #83CD29; } /* Node.js Green */
+.tag.VisualStudio { background-color: #5C2D91; } /* Visual Studio Purple */
+.tag.VisualStudioCode { background-color: #007ACC; } /* Visual Studio Code Blue */
 
 #frameworks div:hover, #tools div:hover {
   opacity: 0.9; /* Slight transparency */
@@ -491,11 +565,31 @@ body {
 }
 
 /* Navigation styling */
+/* Navigation Styling */
 .about-nav {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Center the links horizontally */
+  gap: 20px; /* Add spacing between the links */
+  margin: 20px 0; /* Add spacing above and below the nav */
 }
+
+.about-nav a {
+  text-decoration: none; /* Remove underlines */
+  font-size: 1rem; /* Set font size */
+  font-weight: bold; /* Make text bold */
+  color: #ffffff; /* Text color */
+  padding: 10px 20px; /* Add padding inside the links */
+  background-color: #333333; /* Dark gray background */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.about-nav a:hover {
+  background-color: #6246ea; /* Lighter purple on hover */
+  color: #ffffff; /* Ensure text stays white */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
 
 .tab {
   padding: 10px 20px;
@@ -540,5 +634,533 @@ body {
 }
 
 
+/* dyslexAI image styling */
+.secondSection .projects-grid .project-box img {
+  width: 100%; /* Makes the image responsive and fit within its container */
+  max-width: 500px; /* Sets a maximum width for the image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  margin-bottom: 15px; /* Adds spacing below the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+  display: block;
+  margin: 0 auto; 
+  
+}
 
+.secondSection .projects-grid .project-box img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhances the shadow on hover */
+}
+
+
+/* styling for project*/
+/* Main popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Sections */
+.popup-sections button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.section-content {
+  background-color: #333;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Main Popup Container */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust width for landscape orientation */
+  max-width: 1000px;
+  height: 80%; /* Restrict height */
+  max-height: 600px; /* Ensure it doesn't exceed the viewport */
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row; /* Horizontal layout for landscape */
+  overflow: hidden; /* Prevent scrollbars outside of content */
+  z-index: 1000;
+}
+
+/* Popup Content (Scrollable Section) */
+.popup-content {
+  flex: 3; /* Take up most of the space */
+  padding: 20px;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%; /* Use the full height of the pop-up */
+  box-sizing: border-box;
+}
+
+/* Sidebar for Navigation */
+.popup-sidebar {
+  flex: 1; /* Smaller section for the sidebar */
+  background-color: #333;
+  border-left: 2px solid #444;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* For Responsive Design */
+@media (max-width: 768px) {
+  .popup {
+      flex-direction: column; /* Stack content vertically on small screens */
+      height: 90%; /* Adjust height for small screens */
+      overflow: hidden; /* Prevent overflow */
+  }
+
+  .popup-sidebar {
+      border-left: none;
+      border-top: 2px solid #444;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+}
+
+/* Timeline Section for dyslex*/
+.Dyslextimeline {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid #555; /* Vertical line for timeline */
+}
+
+.Dyslextimeline li {
+  position: relative;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: #333; /* Background color for each timeline event */
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Dyslextimeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: #fff; /* Timeline dot color */
+  border-radius: 50%;
+  border: 2px solid #555; /* Match timeline line color */
+}
+
+
+/*Dyslex AI image styling*/
+
+.project-box img {
+  width: 100%; /* Make the image responsive to the container */
+  max-width: 500px; /* Set a maximum width for consistency */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  margin-bottom: 10px; /* Add space below the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.project-box img:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Intensify the shadow on hover */
+}
+
+.project-box img {
+  border-radius: 50%;
+}
+
+.project-box img {
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+/*Deliverables style */
+/* Styling only for Deliverables section */
+#deliverables {
+  background-color: #9fb8b7; /* Light background for contrast */
+  border: 1px solid #175961; /* Subtle border for structure */
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: none; /* Initially hidden */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 400px; /* Restrict max height */
+}
+
+/* Deliverables-specific Button Styling */
+button[onclick*="deliverables"] {
+  background-color: #3d7b90; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 10px;
+}
+
+button[onclick*="deliverables"]:hover {
+  background-color: #18636f; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Specific List Styling for Deliverables */
+#deliverables ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+#deliverables ul > li {
+  font-size: 18px; /* Slightly larger font for main items */
+  font-weight: bold; /* Bold font for emphasis */
+  margin-bottom: 15px; /* Space between top-level items */
+  color: #333; /* Darker text for visibility */
+  position: relative;
+  padding-left: 20px; /* Space for icon */
+}
+
+#deliverables ul > li::before {
+  content: "📂"; /* Folder icon for main items */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff; /* Blue icon */
+  font-size: 20px;
+}
+
+#deliverables ul > li > ul > li {
+  font-size: 16px; /* Slightly smaller font for sub-items */
+  margin-bottom: 8px; /* Space between sub-items */
+  margin-left: 20px; /* Indent for hierarchy */
+  color: #555; /* Lighter text for differentiation */
+  position: relative;
+  padding-left: 20px; /* Space for icon */
+}
+
+#deliverables ul > li > ul > li::before {
+  content: "📄"; /* Document icon for sub-items */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3498db; /* Light blue icon */
+  font-size: 16px;
+}
+
+/* Hover Effect Specific to Deliverables */
+#deliverables ul > li:hover,
+#deliverables ul > li > ul > li:hover {
+  color: #35748b; /* Red text on hover */
+  cursor: pointer;
+}
+
+/*styling for descriptio DYSLEXAI*/
+
+/* Styling for Description section */
+#description {
+  background-color: #9fb8b7; /* Light background for contrast */
+  border: 1px solid #ddd; /* Subtle border for structure */
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: none; /* Initially hidden */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 400px; /* Restrict max height */
+}
+
+/* Button Styling Specific to Description */
+button[onclick*="description"] {
+  background-color: #3d7b90; /* Green background for a different section */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 10px;
+}
+
+button[onclick*="description"]:hover {
+  background-color: #18636f; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Top-Level List Styling */
+#description ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+#description ul > li {
+  font-size: 18px; /* Slightly larger font for main items */
+  font-weight: bold; /* Bold font for emphasis */
+  margin-bottom: 15px; /* Space between top-level items */
+  color: #333; /* Darker text for visibility */
+  position: relative;
+  padding-left: 20px; /* Space for icon */
+}
+
+/* Sub-Level List Styling */
+#description ul > li > ul > li {
+  font-size: 16px; /* Slightly smaller font for sub-items */
+  margin-bottom: 8px; /* Space between sub-items */
+  margin-left: 20px; /* Indent for hierarchy */
+  color: #555; /* Lighter text for differentiation */
+  position: relative;
+  padding-left: 20px; /* Space for icon */
+}
+
+/* Custom Bullet Icon for Top-Level Items */
+#description ul > li::before {
+  content: "📘"; /* Blue book icon for main items */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #28a745; /* Green icon */
+  font-size: 20px;
+}
+
+/* Custom Bullet Icon for Sub-Level Items */
+#description ul > li > ul > li::before {
+  content: "📄"; /* Document icon for sub-items */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6c757d; /* Gray icon for sub-items */
+  font-size: 16px;
+}
+
+/* Hover Effect Specific to Description */
+#description ul > li:hover,
+#description ul > li > ul > li:hover {
+  color: #3d7b90; /* Red text on hover */
+  cursor: pointer;
+}
+
+/* Scrollbar Styling for Description */
+#description::-webkit-scrollbar {
+  width: 8px;
+}
+
+#description::-webkit-scrollbar-thumb {
+  background: #3d7b90; /* Green scrollbar thumb */
+  border-radius: 5px;
+}
+
+#description::-webkit-scrollbar-thumb:hover {
+  background: #218838; /* Darker green on hover */
+}
+
+/* Gallery Specific Styling */
+/* Gallery Specific Styling */
+#gallery {
+  background-color: #9fb8b7; /* Light pink background */
+  border: 1px solid #fbfbfb; /* Hot pink border */
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[onclick*="gallery"] {
+  background-color: #3d7b90; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Button size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  margin-bottom: 10px; /* Add spacing */
+}
+
+button[onclick*="gallery"]:hover {
+  background-color: #18636f; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+/* Code Specific Styling */
+#code {
+  background-color: #9fb8b7; /* Light gray background */
+  border: 1px solid #fdfbfb; /* Gray border */
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[onclick*="code"] {
+  background-color: #3d7b90; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Button size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  margin-bottom: 10px; /* Add spacing */
+}
+
+button[onclick*="code"]:hover {
+  background-color: #18636f; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+/* Links Specific Styling */
+#links {
+  background-color: #9fb8b7; /* Mint cream background */
+  border: 1px solid #fdfbfb; /* Lime green border */
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[onclick*="links"] {
+  background-color: #3d7b90; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Button size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  margin-bottom: 10px; /* Add spacing */
+}
+
+button[onclick*="links"]:hover {
+  background-color: #18636f; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* Timeline dyslex */
+#DyslexAITimeline {
+  background-color: #9fb8b7; /* Light blue background */
+  border: 1px solid #fdfbfb; /* Subtle light border */
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto; /* Scrollable if content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin-top: 10px; /* Spacing from the button */
+}
+
+button[onclick*="DyslexAITimeline"] {
+  background-color: #3d7b90; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Button size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  margin-bottom: 10px; /* Add spacing */
+}
+
+/* Hover Effect for Button */
+button[onclick*="DyslexAITimeline"]:hover {
+  background-color: #18636f; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Timeline List Styling */
+.Dyslextimeline {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.Dyslextimeline li {
+  margin-bottom: 10px; /* Spacing between items */
+  font-size: 14px; /* Text size */
+  color: #f7f1f1; /* Text color */
+}
+
+/* Bold the Date for Emphasis */
+.Dyslextimeline li strong {
+  color: #3d7b90; /* Match button color for consistency */
+}
 

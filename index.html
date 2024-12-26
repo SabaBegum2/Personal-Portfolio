@@ -7,11 +7,14 @@
     <title>Saba Begum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    
+
     <header>
         <nav>
             <div class="left">Saba's Portfolio</div>
@@ -26,15 +29,11 @@
     </header>
     <main>
         <section class="firstSection" id="home">
-            <div class="leftSection">
-                Hello, My name is <span class="purple"> Saba</span>
-                <div>I attend Wayne State University</div>
-                <div>I am currently a junior in computer science.</div>
-                <div>I am proficient in</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="pic.jpg" alt="Saba's Image">
+            <div class="landing" id="home">
+                <div class="content">
+                    <h1 class="gradient-text">Saba Begum</h1>
+                    <p>Software Engineer</p>
+                </div>
             </div>
         </section>
         <section class="about" id="about">
@@ -55,152 +54,317 @@
                 <a href="#tools" data-target="tools">Tools</a>
             </nav>
 
-            <div class="programming-languages" id="tab-content active">
-                <div class="tag">Next</div>
-                <div class="tag">Python</div>
-                <div class="tag">Java</div>
-                <div class="tag">Javascript</div>
-                <div class="tag">HTML</div>
-                <div class="tag">CSS</div>
-                <div class="tag">XML</div>
-                <div class="tag">PHP</div>
-                <div class="tag">Bash</div>
-                <div class="tag">Shell Scripting</div>
-                <div class="tag">Powershell</div>
+            <div class="programming-languages" id="programming-languages">
+                <div class="tag Next">Next</div>
+                <div class="tag Python">Python</div>
+                <div class="tag Java">Java</div>
+                <div class="tag Javascript">Javascript</div>
+                <div class="tag HTML">HTML</div>
+                <div class="tag CSS">CSS</div>
+                <div class="tag XML">XML</div>
+                <div class="tag PHP">PHP</div>
+                <div class="tag Bash">Bash</div>
+                <div class="tag shell-scripting">Shell Scripting</div>
+                <div class="tag Powershell">Powershell</div>
 
                 <canvas id="skillsChart" style="width:100%; max-width:600px;"></canvas> 
             </div>   
 
-            <div class="frameworks" id="tab-content">
-                <div class="tag">React</div>
-                <div class="tag">Next</div>
-                <div class="tag">Express.js</div>
-                <div class="tag">Docker</div>
-                <div class="tag">API</div>
-                <div class="tag">TailwindCSS</div>
+            <div class="frameworks" id="frameworks">
+                <h2>Frameworks & Libraries</h2>
+                <div class="tag React">React</div>
+                <div class="tag Next">Next</div>
+                <div class="tag ExpressJS">Express.js</div>
+                <div class="tag Docker">Docker</div>
+                <div class="tag API">API</div>
+                <div class="tag TailwindCSS">TailwindCSS</div>
             </div>
 
-            <div class="tools" id="tab-content">
-                <div class="tag"> Firebase</div>
-                <div class="tag">Docker</div>
-                <div class="tag">Git</div>
-                <div class="tag">Vercel</div>
-                <div class="tag">MySQL</div> 
-                <div class="tag">SQLLite</div>
-                <div class="tag">Linux</div>
-                <div class="tag">Windows</div>
-                <div class="tag">GitHub</div>
-                <div class="tag">Visual Studio</div>
-                <div class="tag">Node.js</div>
-                <div class="tag">Visual Studio Code</div>
-                <div class="tag">React</div>
-                <div class="tag">Microsoft Office</div>
-                <div class="tag">Postman</div>
-                <div class="tag">Figma</div>
-                <div class="tag">Intel Quartus Prime</div>
-                <div class="tag">Curl</div>
-                <div class="tag">Siemens NX</div>
-                <div class="tag">Oxygen XML Editor</div>
-                <div class="tag">phpMyAdmin</div>
-                <div class="tag">XAMPP</div>
-                <div class="tag">Snagit</div>
-                <div class="tag">Adobe Photoshop</div>
-                <div class="tag">Android Studio</div>
-                <div class="tag">Eclipse</div>
-                <div class="tag">Version Control</div>
+            <div class="tools" id="tools">
+                <h2>Tools</h2>
+                <div class="tag Firebase"> Firebase</div>
+                <div class="tag Docker">Docker</div>
+                <div class="tag Git">Git</div>
+                <div class="tag Vercel">Vercel</div>
+                <div class="tag MySQL">MySQL</div> 
+                <div class="tag SQLLite">SQLLite</div>
+                <div class="tag Linux">Linux</div>
+                <div class="tag Windows">Windows</div>
+                <div class="tag GitHub">GitHub</div>
+                <div class="tag Visual Studio">Visual Studio</div>
+                <div class="tag NodeJS">Node.js</div>
+                <div class="tag VisualStudioCode">Visual Studio Code</div>
+                <div class="tag React">React</div>
+                <div class="tag MicrosoftOffice">Microsoft Office</div>
+                <div class="tag Postman">Postman</div>
+                <div class="tag Figma">Figma</div>
+                <div class="tag IntelQuartusPrime">Intel Quartus Prime</div>
+                <div class="tag Curl">Curl</div>
+                <div class="tag SiemensNX">Siemens NX</div>
+                <div class="tag OxygenXMLEditor">Oxygen XML Editor</div>
+                <div class="tag phpMyAdmin">phpMyAdmin</div>
+                <div class="tag XAMPP">XAMPP</div>
+                <div class="tag Snagit">Snagit</div>
+                <div class="tag AdobePhotoshop">Adobe Photoshop</div>
+                <div class="tag AdroidStudio">Android Studio</div>
+                <div class="tag Eclipse">Eclipse</div>
+                <div class="tag VersionControl">Version Control</div>
             </div>
                 
             
+            <section class="timeline" id="timeline">
+                <h2>Experiences</h2>
+                <div class="container left">
+                    <div class="content">
+                        <h2>Nov 2024 - Present</h2>
+                        <h3>Technical Lead</h3>
+                        <p>ICODE</p>
+                        <ul>
+                            <li>
+                                Lead instructional programs in robotics and programming, teaching hands-on courses using:
+                                <ul>
+                                    <li>VEX Robotics</li>
+                                    <li>Scratch</li>
+                                    <li>Python</li>
+                                    <li>Arduino</li>
+                                </ul>
+                            </li>
+                            <li>Mentored students on how to program <strong>drones</strong> using <strong>Python</strong> and <strong>Tello SDK</strong>, enabling them to create autonomous flight paths and enhance their understanding of aerodynamics and programming logic.</li>
+                            <li>
+                                Guided students in advanced topics, including:
+                                <ul>
+                                    <li>Artificial Intelligence (AI)</li>
+                                    <li>Machine Learning</li>
+                                    <li>3D Modeling</li>
+                                    <li>Automation</li>
+                                </ul>
+                            </li>
+                            <li>Directed the completion of <strong>practical, real-world projects</strong> to develop technical expertise and problem-solving skills.</li>
+                            <li>
+                                Facilitated the design and development of:
+                                <ul>
+                                    <li>Smart home simulations</li>
+                                    <li>Advanced robotics systems</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Created and implemented structured lesson plans and project timelines, ensuring students gained proficiency in:
+                                <ul>
+                                    <li>Hardware programming</li>
+                                    <li>Sensor integration</li>
+                                    <li>Mechanical design</li>
+                                </ul>
+                            </li>
+                            <li>Championed a collaborative and creative learning environment, inspiring students to pursue careers in <strong>STEM fields</strong> and empowering them to develop innovative solutions to complex challenges.</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <div class="container right">
+                    <div class="content">
+                        <h2>May 2024 - August 2024</h2>
+                        <h3>User Assistance Developer Intern</h3>
+                        <p>Dassault system</p>
+                        <ul>
+                            <li>Diagnosed and resolved complex XML and DITA (Darwin Information Typing Architecture) code issues, ensuring a <strong>100% bug-free</strong> documentation environment for seamless user experiences.</li>
+                            <li>Partnered with development teams to streamline the integration of new robotics products by <strong>updating, modifying, and refining</strong> software release documentation in alignment with product launches.</li>
+                            <li>Enhanced documentation quality by consistently achieving an <strong>Acrolinx score of 80%+</strong>, surpassing industry benchmarks, and maintaining <strong>96%+ alignment</strong> with DELMIA 3DExperience updates across all robotics applications.</li>
+                            <li>Leveraged version control systems to effectively manage documentation updates, resolve <strong>merge conflicts</strong>, and maintain <strong>traceability</strong> across multiple software versions, ensuring consistency and accuracy.</li>
+                            <li>Contributed to the development of DELMIA's <strong>3DExperience robotics suite</strong> by ensuring technical accuracy, clarity, and accessibility for both internal teams and external stakeholders.</li>
+                        </ul>         
+                    </div>    
+                </div>
+            </section>   
+        
+            
         </section>
-        <hr>
-        <section class="secondSection" id="projects">
-            <h1>Projects</h1>
+
+            <h1>Portfolio</h1>
             <h2>What projects I have worked on so far...</h2>
-            <div class="projects-grid">
-                <div class="project-box">
-                    <h3>AVL & Splay Trees</h3>
-                    <p>Description of AVL and Splay Tree projects...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Bubble Sort</h3>
-                    <p>Implementation and analysis of the Bubble Sort algorithm...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Brute Force Algorithms</h3>
-                    <p>Exploration of Brute Force techniques in problem-solving...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Stacks, Queues, and Linked Lists</h3>
-                    <p>Implementation and application of stacks, queues, and linked lists...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Maximum Subsequence</h3>
-                    <p>Algorithm to find the maximum subsequence in a data set...</p>
-                </div>
-                <div class="project-box">
-                    <h3>Fan Modeling</h3>
-                    <p>3D modeling and simulation of a fan using CAD tools...</p>
-                </div>
-                <!-- ... [add more project-box divs if needed] ... -->
+            <div class="project-box" onclick="openPopup()">
+                <img src="images/file.png" alt="DyslexAI">
+                <h3>DyslexAI</h3>
+                <p>
+                    A web application designed with innovative features to enhance accessibility 
+                        and provide a highly personalized user experience. This application incorporate 
+                         advanced functionalities such as custom settings for text size, font type, and 
+                         background color, ensuring a comfortable and user-centric reading environment. 
+                         Its unique accessibility modes cater to diverse user needs, including audio 
+                         support for visually impaired users and image-based content augmentation for 
+                         those with hearing impairments. These features, combined with seamless integration 
+                         of AI-driven recommendations and secure authentication, make it a comprehensive 
+                         solution for modern e-book enthusiasts.
+                </p>
             </div>
-            <div class="footer" id="contact">
+            
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <button class="close-btn" onclick="closePopup()">X</button>
+                    <h1>DyslexAI</h1>
+                    <p>
+                        A web application designed with innovative features to enhance accessibility 
+                        and provide a highly personalized user experience. This application incorporates
+                         advanced functionalities such as custom settings for text size, font type, and 
+                         background color, ensuring a comfortable and user-centric reading environment. 
+                         Its unique accessibility modes cater to diverse user needs, including audio 
+                         support for visually impaired users and image-based content augmentation for 
+                         those with hearing impairments. These features, combined with seamless integration 
+                         of AI-driven recommendations and secure authentication, make it a comprehensive 
+                         solution for modern e-book enthusiasts.
+                    </p>
+                    <ul class="popup-sections">
+                        <li>
+                            <button onclick="toggleSection('deliverables')">Deliberables ▼</button>
+                            <div id="deliverables" class="section-content" style="display: none;">
+                                <ul>
+                                    <li>Development Plan
+                                        <ul>
+                                            <li>1.1 Project overview</li>
+                                            <li>1.2 Project purpose, scope, objectives</li>
+                                            <li>1.3 Team organization (roles and responsibilities)</li>
+                                            <li>1.4 Problem resolution policies</li>
+                                            <li>1.5 Project plan (iterations, project schedule)</li>
+                                            <li>1.6 Configuration management plan</li>
+                                            <li>1.7 Technologies</li>
+                                        </ul>
+                                    </li>
+                                    <li>Software Requirements Specification (SRS)
+                                        <ul>
+                                            <li>2.1 Problem description</li>
+                                            <li>2.2 Users/perspectives</li>
+                                            <li>2.3 Functional requirements (required/desired)</li>
+                                            <li>2.4 Non-functional requirements</li>
+                                            <li>2.5 Business constraints</li>
+                                            <li>2.6 Technical constraints</li>
+                                            <li>2.7 Requirements traceability matrix</li>
+                                        </ul>
+                                    </li>
+                                    <li>Software Design Specification (SDS)
+                                        <ul>
+                                            <li>3.1 Domain analysis (domain model, dictionary)</li>
+                                            <li>3.2 System context</li>
+                                            <li>3.3 Architecture design (components/modules)</li>
+                                            <li>3.4 System design (DB design, GUI design, diagrams, etc.)</li>
+                                            <li>3.5 Other issues (standards, technologies, etc.)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Software Test Plan
+                                        <ul>
+                                            <li>4.1 Approach for each type of testing (including pass/fail criteria)</li>
+                                            <li>4.2 Functional testing (features to be tested, features not to be tested)</li>
+                                            <li>4.3 Non-functional testing</li>
+                                            <li>4.4 Integration testing</li>
+                                            <li>4.5 System testing</li>
+                                            <li>4.6 User acceptance testing</li>
+                                            <li>4.7 Schedule</li>
+                                        </ul>
+                                    </li>
+                                    <li>Software Source Code</li>
+                                </ul>
+                            </div>
+                        </li>
+                
+                        <li>
+                            <button onclick="toggleSection('DyslexAITimeline')">Timeline ▼</button>
+                            <div id="DyslexAITimeline" class="section-content" style="display: none;">
+                                <h3>DyslexAITimeline</h3>
+                                <ul class="Dyslextimeline">
+                                    <li>
+                                        <strong>May 2024:</strong> Project Proposal.
+                                    </li>
+                                    <li>
+                                        <strong>May 2024:</strong> Development Plan.
+                                    </li>
+                                    <li>
+                                        <strong>May 2024:</strong> Software Requirement Specification (SRS).
+                                    </li>
+                                    <li>
+                                        <strong>June 2024:</strong> First Demo.
+                                    </li>
+                                    <li>
+                                        <strong>June 2024:</strong> Software Design Specification.
+                                    </li>
+    
+                                    <li>
+                                        <strong>July 2024:</strong> Test Plan.
+                                    </li>
+                                    <li>
+                                        <strong>July 2024:</strong> Final Demo.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <button onclick="toggleSection('description')">Description ▼</button>
+                            <div id="description" class="section-content" style="display: none;">
+                                <ul>
+                                    <li><strong>Developed an AI-powered e-book web application</strong>, celebrated for its innovative design and emphasis on accessibility, usability, and user engagement:</li>
+                                    <ul>
+                                        <li><strong>Accessibility Modes:</strong>
+                                            <ul>
+                                                <li><strong>Deaf Mode:</strong> Provides a unique feature that converts text into descriptive images using the DALL·E AI model. The application processes text sentence by sentence to generate visually rich and meaningful imagery. To optimize user experience, it leverages a caching mechanism that saves progress, allowing users to seamlessly continue from where they left off when revisiting a book.</li>
+                                                <li><strong>Blind Mode:</strong> Features a responsive API to deliver text-to-speech functionality for visually impaired users. Upon launching the application, the mode automatically begins reading the content aloud, with an option to toggle the voice functionality on or off. If enabled, the system also reads out hovered words dynamically, enhancing navigation. Users can further customize this mode through the settings page, allowing for complete control over their reading experience.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Customizable User Experience:</strong>
+                                            <ul>
+                                                <li>Incorporates a comprehensive settings page where users can tailor the application to their preferences. Options include changing the background color for optimal readability, adjusting text size for visual comfort, and selecting font types that best suit their reading style. This level of personalization ensures a unique experience for every user.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Secure Authentication:</strong>
+                                            <ul>
+                                                <li>Implements secure user authentication through Google Firebase. Users can sign up or log in with their email credentials, and their data is securely stored in the Firebase backend. This functionality also supports personalized e-book libraries, enabling users to manage their collections effortlessly.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Seamless Book Management:</strong>
+                                            <ul>
+                                                <li>Allows users to import and manage their e-books directly within the application. PDF files can be imported from Google or other sources, making it easy for users to consolidate their reading materials in one place. The intuitive interface ensures a smooth and hassle-free book management experience.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>AI-Powered Recommendations:</strong>
+                                            <ul>
+                                                <li>Incorporates an AI-driven recommendation system that analyzes users’ reading histories to suggest books tailored to their interests and preferences. This feature helps users discover new and relevant content, enhancing their overall engagement with the application.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Recognized Achievement:</strong>
+                                            <ul>
+                                                <li>Designed and developed an intuitive and visually appealing interface that was highlighted as a top innovation in a software engineering course. The application’s focus on accessibility and enhanced workflows has set it apart as an exemplary project for integrating technology with user-centric design principles.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <button onclick="toggleSection('gallery')">Gallery ▼</button>
+                            <div id="gallery" class="section-content" style="display: none;">
+                                <p>[Add gallery content]</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button onclick="toggleSection('code')">Code ▼</button>
+                            <div id="code" class="section-content" style="display: none;">
+                                <a href="https://github.com/SabaBegum2/DyslexAI-CSC.git">GitHub Repository</a>
+                            </div>
+                        </li>
+                        <li>
+                            <button onclick="toggleSection('links')">Links ▼</button>
+                            <div id="links" class="section-content" style="display: none;">
+                                <a href="https://dyslexaicsc.vercel.app">Live Demo</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        <div class="footer" id="contact">
                 Email Me: <a href="mailto:example@example.com">hg7548@wayne.edu</a>
             </div>
-        </section>
-
-        <section class="timeline" id="timeline">
-            <div class="container left">
-                <div class="content">
-                    <h2>2024</h2>
-                    <h3>Technical Lead</h3>
-                    <p>ICODE</p>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>2023</h2>
-                    <h3>User Assistance Developer Intern</h3>
-                    <p>Dassault system</p>
-                </div>    
-            </div>
-        </section>
-
-        <section class="tech-grid">
-            <div class="tag next">Next</div>
-            <div class="tag react">React</div>
-            <div class="tag react-native">React Native</div>
-            <div class="tag redux">Redux</div>
-            <div class="tag electron">Electron</div>
-            <div class="tag svelte">Svelte</div>
-            <div class="tag jest">Jest</div>
-            <div class="tag express">Express.js</div>
-            <div class="tag flask">Flask</div>
-            <div class="tag spring">Spring</div>
-            <div class="tag tailwind">TailwindCSS</div>
-            <div class="tag bootstrap">Bootstrap</div>
-            <div class="tag material">Material UI</div>
-            <div class="tag socket">Socket.io</div>
-            <div class="tag ansible">Ansible</div>
-            <div class="tag selenium">Selenium</div>
-            <div class="tag jquery">jQuery</div>
-            <div class="tag threejs">Three.js</div>
-            <div class="tag arduino">Arduino</div>
-            <div class="tag docker">Docker</div>
-            <div class="tag pug">Pug</div>
-            <div class="tag jwt">JWT</div>
-            <div class="tag patreon">Patreon</div>
-            <div class="tag api">API</div>
-            <div class="tag github">GitHub Actions</div>
-            <div class="tag discord">Discord.js</div>
-            <div class="tag tmi">TMI.js</div>
-            <div class="tag hugo">Hugo</div>
-            <div class="tag arcgis">ArcGIS</div>
-            <div class="tag actions">ActionsOnGoogle</div>
-            <div class="tag mongoose">MongooseJS</div>
-            <div class="tag data">Deta.sh</div>
-            <div class="tag pm2">PM2</div>
-            <div class="tag daemon">Daemon</div>
-        </section>
+        
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>

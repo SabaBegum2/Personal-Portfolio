@@ -7,7 +7,8 @@ const skillColors = [
     "#2b5797", // Java
     "#e8c3b9", // JavaScript
     "#1e7145", // HTML/CSS
-    "#ff9f40"  // CAD
+    "#4e73df", // XMl
+    "#808080"  // PHP 
 ];
 
 // Render the chart in the "skillsChart" canvas
@@ -47,3 +48,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+//projects box 
+// Open popup
+function openPopup() {
+    document.getElementById('popup').style.display = 'flex';
+}
+
+// Close popup
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+// Toggle sections
+function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section.style.display === 'none') {
+        section.style.display = 'block';
+    } else {
+        section.style.display = 'none';
+    }
+}
+
+//dyslex timeline 
+function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section.style.display === 'none') {
+        section.style.display = 'block';
+    } else {
+        section.style.display = 'none';
+    }
+}
