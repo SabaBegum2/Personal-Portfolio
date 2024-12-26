@@ -1404,6 +1404,49 @@ main {
   background-color: #e04050; /* Darker red */
 }
 
+/************************** Styling for education **************************************/
+.education {
+  position: relative; /* Allows layering of the overlay */
+  background-image: url('Images/52280842708-fd854c1066-k-4-631f43e11dfbe.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #ffffff; /* Makes the text white for contrast */
+  padding: 20px; /* Adds spacing inside the section */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  margin: 20px auto; /* Centers the section horizontally */
+  max-width: 800px; /* Limits the width of the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for a polished look */
+}
+
+.education img {
+  max-width: 80%; /* Adjust width to control size */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 40px auto; /* Add extra spacing to position it more centrally */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
+  display: block; /* Ensure it behaves as a block-level element */
+}
+
+/* Add a semi-transparent overlay */
+.education::before {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 50% transparency */
+  border-radius: 8px; /* Matches the parent element’s rounded corners */
+  z-index: 1; /* Ensures it stays behind the text but above the image */
+}
+
+/* Ensure the content stays above the overlay */
+.education * {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 
