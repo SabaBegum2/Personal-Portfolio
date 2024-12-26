@@ -1164,3 +1164,16 @@ button[onclick*="DyslexAITimeline"]:hover {
   color: #3d7b90; /* Match button color for consistency */
 }
 
+/*Links style general*/
+/* General Link Styling */
+.section-content a {
+  color: #000; /* Black text */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make it bold if desired */
+}
+
+/* Hover Effect */
+.section-content a:hover {
+  color: #333; /* Slightly lighter black on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
