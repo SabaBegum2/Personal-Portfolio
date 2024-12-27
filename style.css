@@ -150,24 +150,6 @@ h2 {
     color: gray;
 }
 
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.project-box {
-    width: 700px;
-    height: 700px;
-    background-color: #89b0c3; /* Baby blue background color */
-    color: black; /* Text color changed to black */
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    /* Add other styling as needed */
-}
-
 
 * {
     box-sizing: border-box;
@@ -804,29 +786,68 @@ body {
 
 /*Dyslex AI image styling*/
 
-.project-box img {
-  width: 100%; /* Make the image responsive to the container */
-  max-width: 500px; /* Set a maximum width for consistency */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
-  margin-bottom: 10px; /* Add space below the image */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+.project-box {
+  position: relative; /* Position the box to allow the pseudo-element to overlay */
+  background-color: rgb(0, 0, 0); /* Fallback background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: white; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px auto;
+  margin-left: 20px;
+  width: 100%;
+  max-width: none;
+  margin-right: 20px;
+  height: auto;
+  overflow: hidden; /* Ensure the pseudo-element stays inside the box */
 }
 
-.project-box img:hover {
-  transform: scale(1.05); /* Slight zoom-in on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Intensify the shadow on hover */
+.project-box::before {
+  content: ''; /* Required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/file.png'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px; /* Match the border radius of the parent */
+  filter: brightness(0.2); /* Apply filter to the background image */
+  z-index: 0; /* Place it behind the content */
 }
 
-.project-box img {
-  border-radius: 50%;
+/* Ensure the content is above the background */
+.project-box * {
+  position: relative;
+  z-index: 1;
 }
 
-.project-box img {
-  display: block; /* Makes the image a block-level element */
-  margin: 0 auto; /* Centers the image horizontally */
+
+/* Example: Styling specific text elements within .project-box */
+.project-box h2 {
+  color: #fbfaf7; /* Yellow color for headings */
 }
+
+.project-box p {
+  color: #ffffff; /* White color for paragraphs */
+  margin-top: 20px;
+}
+
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
 
 
 /*Deliverables style */
@@ -1700,7 +1721,7 @@ button:active {
 .footer-tabs {
   font-family: Arial, sans-serif;
   padding: 40px; /* Increase padding for more vertical space */
-  background-color: #061617; /* Dark background for the footer */
+  background-color: #082224; /* Dark background for the footer */
   border: 1px solid #ccc; /* Subtle border around the footer */
   border-radius: 10px; /* Rounded corners for the footer */
   text-align: center; /* Center the content */
