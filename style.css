@@ -848,6 +848,29 @@ body {
   justify-content: center;
 }
 
+.project-tags {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows tags to wrap to the next line if necessary */
+  gap: 10px; /* Space between tags */
+}
+
+.project-tags span {
+  background-color: #3d7b90; /* Tag background color */
+  color: white; /* Tag text color */
+  padding: 5px 10px; /* Space inside tags */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 14px; /* Text size */
+  font-weight: 500; /* Semi-bold text */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.project-tags span:hover {
+  background-color: #18636f; /* Darker background on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
 
 
 /*Deliverables style */
