@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //projects box 
 // Open popup
-function openPopup() {
-    document.getElementById('popup').style.display = 'flex';
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = 'flex';
 }
 
 // Close popup
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
 }
 
 // Ensure popup is hidden on page load
