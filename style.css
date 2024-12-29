@@ -1,66 +1,70 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(1, 1, 10);
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  background-color: rgb(1, 1, 10);
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    background-color: rgb(30, 30, 88);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(30, 30, 88);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-    list-style: none;
-    margin: 0 23px;
+  list-style: none;
+  margin: 0 23px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav ul li a:hover {
-    color: rgb(121, 121, 184);
-    font-size: 1.4rem;
+  color: rgb(121, 121, 184);
+  font-size: 1.4rem;
 }
 
 main hr {
-    border: 0;
-    background: #9c97f1;
-    height: 1.2px;
-    margin: 60px 84px;
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
 }
 
 .left {
-    font-size: 2rem;
+  font-size: 2rem;
 }
+
 /*this is the styling for the landing page */
 /* General reset */
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  min-height: 100%; /* Ensure it fills the screen */
-  overflow-y: auto; /* Allow vertical scrolling */
+  min-height: 100%;
+  /* Ensure it fills the screen */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
 }
 
 /* Section styling */
@@ -68,66 +72,93 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full screen height */
-  background: linear-gradient(135deg, #1f2937, #3d7b90); /* Gradient background */
-  color: #fff; /* White text */
+  height: 100vh;
+  /* Full screen height */
+  background: linear-gradient(135deg, #1f2937, #3d7b90);
+  /* Gradient background */
+  color: #fff;
+  /* White text */
   text-align: center;
-  padding: 20px; /* Add padding for better layout */
-  box-sizing: border-box; /* Include padding in height calculation */
+  padding: 20px;
+  /* Add padding for better layout */
+  box-sizing: border-box;
+  /* Include padding in height calculation */
 }
 
 /* Landing content */
 .landing .content {
-  max-width: 1400px; /* Increase max width for large screens */
-  padding: 20px; /* Add padding around the content */
+  max-width: 1400px;
+  /* Increase max width for large screens */
+  padding: 20px;
+  /* Add padding around the content */
   text-align: center;
 }
 
 /* Name styling */
 .gradient-text {
-  font-size: 10rem; /* Bigger font size */
+  font-size: 10rem;
+  /* Bigger font size */
   font-weight: bold;
-  background: linear-gradient(90deg, #3d7b90, #64b5f6, #e3f2fd); /* Gradient for text */
-  -webkit-background-clip: text; /* Clips the gradient to the text */
-  -webkit-text-fill-color: transparent; /* Makes the rest of the text transparent */
-  margin: 0; /* Remove default margin */
-  text-transform: uppercase; /* Make the text uppercase */
-  letter-spacing: 8px; /* Increase letter spacing for dramatic effect */
+  background: linear-gradient(90deg, #3d7b90, #64b5f6, #e3f2fd);
+  /* Gradient for text */
+  -webkit-background-clip: text;
+  /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent;
+  /* Makes the rest of the text transparent */
+  margin: 0;
+  /* Remove default margin */
+  text-transform: uppercase;
+  /* Make the text uppercase */
+  letter-spacing: 8px;
+  /* Increase letter spacing for dramatic effect */
 }
 
 /* Subtitle styling */
 .landing .content p {
-  font-size: 3rem; /* Larger font size for subtitle */
-  margin-top: 30px; /* Add more space below the name */
-  font-weight: 400; /* Slightly bolder subtitle */
-  color: #d6e2eb; /* Softer, more prominent gray color */
+  font-size: 3rem;
+  /* Larger font size for subtitle */
+  margin-top: 30px;
+  /* Add more space below the name */
+  font-weight: 400;
+  /* Slightly bolder subtitle */
+  color: #d6e2eb;
+  /* Softer, more prominent gray color */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .gradient-text {
-    font-size: 6rem; /* Scale down for smaller screens */
-    letter-spacing: 5px; /* Adjust spacing */
+    font-size: 6rem;
+    /* Scale down for smaller screens */
+    letter-spacing: 5px;
+    /* Adjust spacing */
   }
+
   .landing .content p {
-    font-size: 2rem; /* Adjust subtitle size */
+    font-size: 2rem;
+    /* Adjust subtitle size */
   }
 }
 
 @media (max-width: 480px) {
   .gradient-text {
-    font-size: 4rem; /* Further scale down for mobile */
-    letter-spacing: 3px; /* Adjust spacing */
+    font-size: 4rem;
+    /* Further scale down for mobile */
+    letter-spacing: 3px;
+    /* Adjust spacing */
   }
+
   .landing .content p {
-    font-size: 1.5rem; /* Adjust subtitle size */
+    font-size: 1.5rem;
+    /* Adjust subtitle size */
   }
 }
 
 
 /* about me section */
 /* General Reset */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -135,196 +166,235 @@ body, html {
 
 /* About Section Styling */
 .about {
-  padding: 50px 20px; /* Add padding for spacing */
-  background-color: #282323; /* Light gray background */
-  color: #fff5f5; /* Dark text color */
-  text-align: center; /* Center text by default */
+  padding: 50px 20px;
+  /* Add padding for spacing */
+  background-color: #282323;
+  /* Light gray background */
+  color: #fff5f5;
+  /* Dark text color */
+  text-align: center;
+  /* Center text by default */
 }
 
 .about h1 {
-  font-size: 3rem; /* Large heading */
+  font-size: 3rem;
+  /* Large heading */
   font-weight: bold;
-  color: #3d7b90; /* Custom color for heading */
-  margin-bottom: 30px; /* Space below the heading */
+  color: #3d7b90;
+  /* Custom color for heading */
+  margin-bottom: 30px;
+  /* Space below the heading */
 }
 
 .about-content {
   display: flex;
-  flex-direction: column; /* Stack elements vertically on small screens */
-  align-items: center; /* Center content */
-  justify-content: center; /* Center content vertically */
-  max-width: 900px; /* Limit width */
-  margin: 0 auto; /* Center section horizontally */
+  flex-direction: column;
+  /* Stack elements vertically on small screens */
+  align-items: center;
+  /* Center content */
+  justify-content: center;
+  /* Center content vertically */
+  max-width: 900px;
+  /* Limit width */
+  margin: 0 auto;
+  /* Center section horizontally */
 }
 
 .about-image {
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height */
-  border-radius: 50%; /* Make the image circular */
-  object-fit: cover; /* Ensure the image scales nicely */
-  margin-bottom: 20px; /* Space below the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-  border: 3px solid #3d7b90; /* Optional: Add a border matching the theme */
+  width: 300px;
+  /* Set a fixed width */
+  height: 300px;
+  /* Set a fixed height */
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image scales nicely */
+  margin-bottom: 20px;
+  /* Space below the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+  border: 3px solid #3d7b90;
+  /* Optional: Add a border matching the theme */
 }
 
 /* Responsive Design adjustments for .about img */
 @media (max-width: 768px) {
   .about-image {
-    width: 150px; /* Reduce size for smaller screens */
-    height: 150px; /* Reduce size for smaller screens */
+    width: 150px;
+    /* Reduce size for smaller screens */
+    height: 150px;
+    /* Reduce size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .about-img {
-    width: 100px; /* Further reduce size for very small screens */
-    height: 100px; /* Further reduce size for very small screens */
+    width: 100px;
+    /* Further reduce size for very small screens */
+    height: 100px;
+    /* Further reduce size for very small screens */
   }
 }
 
 .about-text {
-  text-align: left; /* Align text to the left */
-  padding: 20px; /* Add padding around the text */
+  text-align: left;
+  /* Align text to the left */
+  padding: 20px;
+  /* Add padding around the text */
 }
 
 .about p {
-  font-size: 1.2rem; /* Slightly larger font size */
-  line-height: 1.8; /* Add spacing between lines */
-  margin-bottom: 20px; /* Space between paragraphs */
+  font-size: 1.2rem;
+  /* Slightly larger font size */
+  line-height: 1.8;
+  /* Add spacing between lines */
+  margin-bottom: 20px;
+  /* Space between paragraphs */
 }
 
 .about strong {
-  color: #3d7b90; /* Highlighted text color */
+  color: #3d7b90;
+  /* Highlighted text color */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* Stack items vertically on small screens */
+    flex-direction: column;
+    /* Stack items vertically on small screens */
   }
 
   .about img {
-    width: 120px; /* Reduce image size */
-    height: 120px; /* Reduce image size */
+    width: 120px;
+    /* Reduce image size */
+    height: 120px;
+    /* Reduce image size */
   }
 
   .about p {
-    font-size: 1rem; /* Adjust text size for smaller screens */
+    font-size: 1rem;
+    /* Adjust text size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .about h1 {
-    font-size: 2rem; /* Adjust heading size for small screens */
+    font-size: 2rem;
+    /* Adjust heading size for small screens */
   }
 
   .about p {
-    font-size: 0.9rem; /* Further adjust text size for small screens */
+    font-size: 0.9rem;
+    /* Further adjust text size for small screens */
   }
 }
 
 
 .leftSection {
-    font-size: 2rem;
-    margin: 70px 0;
+  font-size: 2rem;
+  margin: 70px 0;
 }
 
 .rightSection img {
-    width: 100%; /* Adjust the width as per your design */
-    max-width: 500px; /* Maximum width of the image */
-    height: auto; /* To maintain the aspect ratio */
+  width: 100%;
+  /* Adjust the width as per your design */
+  max-width: 500px;
+  /* Maximum width of the image */
+  height: auto;
+  /* To maintain the aspect ratio */
 }
 
 .purple {
-    color: rgb(143, 121, 163);
+  color: rgb(143, 121, 163);
 }
 
 .text-gray {
-    color: gray;
+  color: gray;
 }
 
 #element {
-    color: rgb(143, 121, 163);
+  color: rgb(143, 121, 163);
 }
 
 .secondSection {
-    max-width: 80vw;
-    margin: auto;
-    height: 80vh;
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
 }
 
 .secondSection h1 {
-    font-size: 1.9rem;
+  font-size: 1.9rem;
 }
 
 .secondSection .box {
-    background: white;
-    width: 80vw;
-    height: 2px;
-    margin: 56px 0;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  background: white;
+  width: 80vw;
+  height: 2px;
+  margin: 56px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .secondSection .vertical {
-    height: 93px;
-    width: 1px;
-    background-color: white;
-    margin: 0 120px;
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 120px;
 }
 
 .image-top {
-    width: 23px;
-    position: relative;
-    top: -32px;
-    left: -9px;
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
 }
 
 .vertical-title {
-    position: relative;
-    top: 75px;
-    width: 150px;
+  position: relative;
+  top: 75px;
+  width: 150px;
 }
 
 .vertical-desc {
-    position: relative;
-    top: 86px;
-    color: gray;
-    font-size: 9px;
+  position: relative;
+  top: 86px;
+  color: gray;
+  font-size: 9px;
 }
 
 .projects {
-    margin: 50px auto;
-    max-width: 80vw;
-    text-align: center;
+  margin: 50px auto;
+  max-width: 80vw;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 1.4rem;
-    margin-bottom: 40px;
-    color: gray;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: gray;
 }
 
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Set a background color */
-  body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-  }
-  
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
 /*************************** an example header design *************************************/
 /* General Reset */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -333,332 +403,420 @@ body, html {
 
 /* Navbar */
 header {
-  width: 100%; /* Full width for the navbar */
-  background-color: #1e1e1e; /* Dark background */
-  padding: 10px 20px; /* Add padding for better spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to navbar */
-  position: fixed; /* Make the navbar fixed at the top */
+  width: 100%;
+  /* Full width for the navbar */
+  background-color: #1e1e1e;
+  /* Dark background */
+  padding: 10px 20px;
+  /* Add padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Add shadow to navbar */
+  position: fixed;
+  /* Make the navbar fixed at the top */
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
+  /* Ensure it stays on top */
 }
 
 header nav {
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space between logo and links */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between logo and links */
+  align-items: center;
+  /* Center items vertically */
 }
 
 header .logo {
-  font-size: 1.8rem; /* Larger font size for the logo */
-  font-weight: bold; /* Bold text */
-  color: #00bcd4; /* Highlighted color */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  text-transform: uppercase; /* Make the logo uppercase */
+  font-size: 1.8rem;
+  /* Larger font size for the logo */
+  font-weight: bold;
+  /* Bold text */
+  color: #00bcd4;
+  /* Highlighted color */
+  cursor: pointer;
+  /* Pointer cursor for interactivity */
+  text-transform: uppercase;
+  /* Make the logo uppercase */
 }
 
 header .hamburger {
-  display: none; /* Hide by default */
-  font-size: 2rem; /* Large size for the hamburger */
+  display: none;
+  /* Hide by default */
+  font-size: 2rem;
+  /* Large size for the hamburger */
   color: #ffffff;
   cursor: pointer;
 }
 
 /* Navbar Links */
 header .nav-links {
-  list-style: none; /* Remove default bullet points */
-  display: flex; /* Arrange links horizontally */
-  gap: 20px; /* Space between links */
+  list-style: none;
+  /* Remove default bullet points */
+  display: flex;
+  /* Arrange links horizontally */
+  gap: 20px;
+  /* Space between links */
   margin: 0;
   padding: 0;
 }
 
 header .nav-links li {
-  display: inline; /* Inline items */
+  display: inline;
+  /* Inline items */
 }
 
 header .nav-links li a {
-  text-decoration: none; /* Remove underline */
-  color: #ffffff; /* White text color */
-  font-weight: bold; /* Bold text */
-  padding: 10px 15px; /* Add padding around links */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  text-decoration: none;
+  /* Remove underline */
+  color: #ffffff;
+  /* White text color */
+  font-weight: bold;
+  /* Bold text */
+  padding: 10px 15px;
+  /* Add padding around links */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth hover effects */
 }
 
 header .nav-links li a:hover {
-  background-color: #00bcd4; /* Highlight background on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #00bcd4;
+  /* Highlight background on hover */
+  transform: scale(1.1);
+  /* Slight zoom effect */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   header .hamburger {
-    display: block; /* Show hamburger on small screens */
+    display: block;
+    /* Show hamburger on small screens */
   }
 
   header .nav-links {
-    flex-direction: column; /* Stack links vertically */
-    background-color: #1e1e1e; /* Match header background */
+    flex-direction: column;
+    /* Stack links vertically */
+    background-color: #1e1e1e;
+    /* Match header background */
     padding: 20px;
     position: absolute;
-    top: 60px; /* Position below the header */
-    right: 20px; /* Align to the right */
-    display: none; /* Hide by default */
+    top: 60px;
+    /* Position below the header */
+    right: 20px;
+    /* Align to the right */
+    display: none;
+    /* Hide by default */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
   }
 
   header .nav-links.active {
-    display: flex; /* Show when active */
+    display: flex;
+    /* Show when active */
   }
 }
 
-
+.logo img {
+  height: 200px; /* Reduced logo size */
+}
 
 
 
 /***************************** Skills Style ***********************************/
 .skills-intro {
-  text-align: center; /* Center-align content */
-  background-color: #282323; /* Background color */
-  color: #ffffff; /* Text color */
-  padding: 20px 10px; /* Add padding */
-  margin-bottom: 30px; /* Space below the section */
-  border-bottom: 3px solid #3d7b90; /* Optional border for visual separation */
-  border-radius: 10px; /* Rounded corners for style */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  text-align: center;
+  /* Center-align content */
+  background-color: #282323;
+  /* Background color */
+  color: #ffffff;
+  /* Text color */
+  padding: 20px 10px;
+  /* Add padding */
+  margin-bottom: 30px;
+  /* Space below the section */
+  border-bottom: 3px solid #3d7b90;
+  /* Optional border for visual separation */
+  border-radius: 10px;
+  /* Rounded corners for style */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for depth */
 }
 
 .skills-intro h1 {
-  font-size: 3rem; /* Large text size */
-  font-weight: bold; /* Bold text for emphasis */
-  margin-bottom: 10px; /* Space between title and description */
-  color: #3d7b90; /* Accent color */
-  text-transform: uppercase; /* Uppercase for title */
+  font-size: 3rem;
+  /* Large text size */
+  font-weight: bold;
+  /* Bold text for emphasis */
+  margin-bottom: 10px;
+  /* Space between title and description */
+  color: #3d7b90;
+  /* Accent color */
+  text-transform: uppercase;
+  /* Uppercase for title */
 }
 
 .skills-intro p {
-  font-size: 1.2rem; /* Slightly larger text */
-  color: #f0f0f0; /* Lighter text for readability */
-  line-height: 1.5; /* Improved readability */
-  max-width: 800px; /* Limit width */
-  margin: 0 auto; /* Center paragraph within the container */
+  font-size: 1.2rem;
+  /* Slightly larger text */
+  color: #f0f0f0;
+  /* Lighter text for readability */
+  line-height: 1.5;
+  /* Improved readability */
+  max-width: 800px;
+  /* Limit width */
+  margin: 0 auto;
+  /* Center paragraph within the container */
 }
 
 
 
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    margin-top:100px;
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-    /* The actual timeline (the vertical ruler) */
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 90px;/* this moves the experience up*/
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  margin-top: 100px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+/* The actual timeline (the vertical ruler) */
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 90px;
+  /* this moves the experience up*/
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
 
 /* Move the Timeline Section Down */
 
 .timeline {
-  margin-top:50px;
+  margin-top: 50px;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
-  color: #000000; /* Set all text to black */
+  color: #000000;
+  /* Set all text to black */
 }
 
 /* Main Heading */
 /* Styling for the Experiences Heading */
 .timeline h2 {
   margin-bottom: 50px;
-  font-size: 2.5rem; /* Adjust the font size */
-  font-weight: bold; /* Make the text bold */
-  color: hsl(0, 10%, 88%); /* Set the text color to black */
-  text-align: center; /* Center the heading */
-  margin-bottom: 50px; /* Add space below the heading */
-  letter-spacing: 2px; /* Optional: Add spacing between letters */
-  text-transform: uppercase; /* Optional: Make the text all uppercase */
-  z-index: 1; /* ensures it appears above the timeline ruler*/
+  font-size: 2.5rem;
+  /* Adjust the font size */
+  font-weight: bold;
+  /* Make the text bold */
+  color: hsl(0, 10%, 88%);
+  /* Set the text color to black */
+  text-align: center;
+  /* Center the heading */
+  margin-bottom: 50px;
+  /* Add space below the heading */
+  letter-spacing: 2px;
+  /* Optional: Add spacing between letters */
+  text-transform: uppercase;
+  /* Optional: Make the text all uppercase */
+  z-index: 1;
+  /* ensures it appears above the timeline ruler*/
 }
 
 /* Subheadings for Each Experience */
 .timeline h3 {
-  font-size: 1.5rem; /* Adjust subheading size */
-  color: #fffafa; /* Black text */
+  font-size: 1.5rem;
+  /* Adjust subheading size */
+  color: #fffafa;
+  /* Black text */
   margin-bottom: 10px;
 }
 
 /* Date Styling */
 .timeline .content h2 {
-  font-size: 1.2rem; /* Adjust date size */
+  font-size: 1.2rem;
+  /* Adjust date size */
   font-weight: 500;
   margin-bottom: 10px;
-  color: #fbfafa; /* Black text */
+  color: #fbfafa;
+  /* Black text */
 }
 
 /* Paragraph Text */
 .timeline p {
-  font-size: 1rem; /* Adjust paragraph text size */
+  font-size: 1rem;
+  /* Adjust paragraph text size */
   margin-bottom: 10px;
-  color: #faf6f6; /* Black text */
+  color: #faf6f6;
+  /* Black text */
 }
 
 /* List Items */
 .timeline ul {
-  list-style: disc; /* Use disc bullets */
-  padding-left: 20px; /* Add space to indent the list */
+  list-style: disc;
+  /* Use disc bullets */
+  padding-left: 20px;
+  /* Add space to indent the list */
 }
 
 .timeline li {
-  font-size: 1rem; /* Adjust list item text size */
-  line-height: 1.5; /* Add spacing between lines */
+  font-size: 1rem;
+  /* Adjust list item text size */
+  line-height: 1.5;
+  /* Add spacing between lines */
   margin-bottom: 5px;
-  color: #fff9f9; /* Black text */
+  color: #fff9f9;
+  /* Black text */
 }
 
 /* Nested List Items */
 .timeline ul ul {
-  list-style: circle; /* Use circle bullets for nested lists */
+  list-style: circle;
+  /* Use circle bullets for nested lists */
   margin-top: 5px;
 }
 
 .timeline ul ul li {
-  font-size: 0.9rem; /* Slightly smaller for nested items */
+  font-size: 0.9rem;
+  /* Slightly smaller for nested items */
   margin-bottom: 3px;
-  color: #fff6f6; /* Black text */
+  color: #fff6f6;
+  /* Black text */
 }
 
 
-  
-  /* Container around content */
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #3d7b90;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
   .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #3d7b90;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
+
   /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
+  .left::after,
+  .right::after {
+    left: 15px;
   }
 
-  /* Styling for the images in the experience container */
-  .image-container {
-    width: 100%; /* Adjust the container width as needed */
-    max-width: 600px; /* Optional: set a maximum width */
-    border: 1px solid #000000; /* Optional: add a border for visualization */
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* Styling for the images in the experience container */
+.image-container {
+  width: 100%;
+  /* Adjust the container width as needed */
+  max-width: 600px;
+  /* Optional: set a maximum width */
+  border: 1px solid #000000;
+  /* Optional: add a border for visualization */
 }
 
 .image-container img {
-    width: 100%; /* Make the image take up the full width of the container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove default inline spacing */
+  width: 100%;
+  /* Make the image take up the full width of the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  display: block;
+  /* Remove default inline spacing */
 }
 
 
@@ -666,161 +824,401 @@ header .nav-links li a:hover {
 */
 /* General reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0d1117;
-    color: hsl(0, 0%, 100%);
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
 }
 
 .tech-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Space between tags */
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* Space between tags */
+  justify-content: center;
 }
 
 .tag {
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 5px;
-    display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 /* Tag Background Colors */
-.next { background-color: #000; }
-.react { background-color: #00d8ff; }
-.react-native { background-color: #20232a; }
-.redux { background-color: #764abc; }
-.electron { background-color: #2e2e2e; }
-.svelte { background-color: #ff3e00; }
-.jest { background-color: #c21325; }
-.express { background-color: #000; }
-.flask { background-color: #000; }
-.spring { background-color: #6db33f; }
-.tailwind { background-color: #38bdf8; }
-.bootstrap { background-color: #7952b3; }
-.material { background-color: #007fff; }
-.socket { background-color: #000; }
-.ansible { background-color: #eee; color: #000; }
-.selenium { background-color: #43b02a; }
-.jquery { background-color: #0868ac; }
-.threejs { background-color: #000; }
-.arduino { background-color: #00979d; }
-.docker { background-color: #2496ed; }
-.pug { background-color: #e4c08d; color: #000; }
-.jwt { background-color: #000; }
-.patreon { background-color: #f96854; }
-.api { background-color: #5c3dc2; }
-.github { background-color: #0366d6; }
-.discord { background-color: #5865f2; }
-.tmi { background-color: #9146ff; }
-.hugo { background-color: #ff4088; }
-.arcgis { background-color: #2e8b57; }
-.actions { background-color: #a0a82f; color: #000; }
-.mongoose { background-color: #d62d30; }
-.data { background-color: #e82e85; }
-.pm2 { background-color: #666; }
-.daemon { background-color: #28a745; }
+.next {
+  background-color: #000;
+}
+
+.react {
+  background-color: #00d8ff;
+}
+
+.react-native {
+  background-color: #20232a;
+}
+
+.redux {
+  background-color: #764abc;
+}
+
+.electron {
+  background-color: #2e2e2e;
+}
+
+.svelte {
+  background-color: #ff3e00;
+}
+
+.jest {
+  background-color: #c21325;
+}
+
+.express {
+  background-color: #000;
+}
+
+.flask {
+  background-color: #000;
+}
+
+.spring {
+  background-color: #6db33f;
+}
+
+.tailwind {
+  background-color: #38bdf8;
+}
+
+.bootstrap {
+  background-color: #7952b3;
+}
+
+.material {
+  background-color: #007fff;
+}
+
+.socket {
+  background-color: #000;
+}
+
+.ansible {
+  background-color: #eee;
+  color: #000;
+}
+
+.selenium {
+  background-color: #43b02a;
+}
+
+.jquery {
+  background-color: #0868ac;
+}
+
+.threejs {
+  background-color: #000;
+}
+
+.arduino {
+  background-color: #00979d;
+}
+
+.docker {
+  background-color: #2496ed;
+}
+
+.pug {
+  background-color: #e4c08d;
+  color: #000;
+}
+
+.jwt {
+  background-color: #000;
+}
+
+.patreon {
+  background-color: #f96854;
+}
+
+.api {
+  background-color: #5c3dc2;
+}
+
+.github {
+  background-color: #0366d6;
+}
+
+.discord {
+  background-color: #5865f2;
+}
+
+.tmi {
+  background-color: #9146ff;
+}
+
+.hugo {
+  background-color: #ff4088;
+}
+
+.arcgis {
+  background-color: #2e8b57;
+}
+
+.actions {
+  background-color: #a0a82f;
+  color: #000;
+}
+
+.mongoose {
+  background-color: #d62d30;
+}
+
+.data {
+  background-color: #e82e85;
+}
+
+.pm2 {
+  background-color: #666;
+}
+
+.daemon {
+  background-color: #28a745;
+}
 
 
 /* Container for programming languages */
 .programming-languages {
-    display: flex;
-    flex-wrap: wrap; /* Wrap tags to the next line */
-    gap: 10px;       /* Space between tags */
-    justify-content: center; /* Center the tags */
-    margin: 20px auto;
-    max-width: 800px; /* Optional: limit the width */
+  display: flex;
+  flex-wrap: wrap;
+  /* Wrap tags to the next line */
+  gap: 10px;
+  /* Space between tags */
+  justify-content: center;
+  /* Center the tags */
+  margin: 20px auto;
+  max-width: 800px;
+  /* Optional: limit the width */
 }
 
 /* Individual tags */
 .tag {
-    background-color: #2f363d; /* Dark gray background */
-    color: #fff; /* Text color */
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px 12px; /* Padding inside the tags */
-    border-radius: 5px; /* Rounded corners */
-    text-transform: uppercase; /* Capitalize text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    display: inline-flex; /* Align text properly */
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #2f363d;
+  /* Dark gray background */
+  color: #fff;
+  /* Text color */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  /* Padding inside the tags */
+  border-radius: 5px;
+  /* Rounded corners */
+  text-transform: uppercase;
+  /* Capitalize text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  display: inline-flex;
+  /* Align text properly */
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
 .tag:hover {
-    background-color: #4ea5ff; /* Light blue on hover */
-    color: #000; /* Black text on hover */
+  background-color: #4ea5ff;
+  /* Light blue on hover */
+  color: #000;
+  /* Black text on hover */
 }
 
 /* Specific tag colors */
-.tag.Cpp { background-color: #00599C; } /* C++ blue */
-.tag.Python { background-color: #3572A5; } /* Python blue */
-.tag.Java { background-color: #E76F00; } /* Java orange */
-.tag.Javascript { background-color: #F0DB4F; color: #000; } /* JS yellow */
-.tag.HTML { background-color: #E34C26; } /* HTML red-orange */
-.tag.CSS { background-color: #264DE4; } /* CSS blue */
-.tag.XML { background-color: #990000; } /* XML red */
-.tag.PHP { background-color: #4F5D95; } /* PHP purple */
-.tag.bash { background-color: #3E474A; } /* Bash gray */
-.tag.shell-scripting { background-color: #000; } /* Shell black */
-.tag.Powershell { background-color: #5391FE; } /* Powershell blue */
+.tag.Cpp {
+  background-color: #00599C;
+}
+
+/* C++ blue */
+.tag.Python {
+  background-color: #3572A5;
+}
+
+/* Python blue */
+.tag.Java {
+  background-color: #E76F00;
+}
+
+/* Java orange */
+.tag.Javascript {
+  background-color: #F0DB4F;
+  color: #000;
+}
+
+/* JS yellow */
+.tag.HTML {
+  background-color: #E34C26;
+}
+
+/* HTML red-orange */
+.tag.CSS {
+  background-color: #264DE4;
+}
+
+/* CSS blue */
+.tag.XML {
+  background-color: #990000;
+}
+
+/* XML red */
+.tag.PHP {
+  background-color: #4F5D95;
+}
+
+/* PHP purple */
+.tag.bash {
+  background-color: #3E474A;
+}
+
+/* Bash gray */
+.tag.shell-scripting {
+  background-color: #000;
+}
+
+/* Shell black */
+.tag.Powershell {
+  background-color: #5391FE;
+}
+
+/* Powershell blue */
 
 
 
 /* General styling for all tags */
-#frameworks div, #tools div {
+#frameworks div,
+#tools div {
   display: inline-block;
-  padding: 8px 12px; /* Padding for inside the tag */
-  color: white; /* Default text color */
-  border-radius: 20px; /* Rounded edges for tag effect */
-  font-size: 14px; /* Adjust text size */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  margin: 5px; /* Space between tags */
+  padding: 8px 12px;
+  /* Padding for inside the tag */
+  color: white;
+  /* Default text color */
+  border-radius: 20px;
+  /* Rounded edges for tag effect */
+  font-size: 14px;
+  /* Adjust text size */
+  cursor: pointer;
+  /* Pointer cursor for interactivity */
+  transition: all 0.3s ease;
+  /* Smooth transition for hover effect */
+  margin: 5px;
+  /* Space between tags */
 }
 
 /* Unique colors for each tag */
-.tag.Firebase { background-color: #FFA000; } /* Firebase Orange */
-.tag.Docker { background-color: #2496ED; } /* Docker Blue */
-.tag.Git { background-color: #F05032; } /* Git Red */
-.tag.Vercel { background-color: #000; } /* Vercel Black */
-.tag.MySQL { background-color: #00758F; } /* MySQL Teal */
-.tag.SQLLite { background-color: #003B57; } /* SQLite Dark Blue */
-.tag.Linux { background-color: #FCC624; } /* Linux Yellow */
-.tag.Windows { background-color: #00A4EF; } /* Windows Blue */
-.tag.React { background-color: #61DBFB; } /* React Cyan */
-.tag.TailwindCSS { background-color: #06B6D4; } /* Tailwind Blue */
-.tag.Postman { background-color: #EF5B25; } /* Postman Orange */
-.tag.Figma { background-color: #A259FF; } /* Figma Purple */
-.tag.GitHub { background-color: #24292E; } /* GitHub Dark Gray */
-.tag.Node { background-color: #83CD29; } /* Node.js Green */
-.tag.VisualStudio { background-color: #5C2D91; } /* Visual Studio Purple */
-.tag.VisualStudioCode { background-color: #007ACC; } /* Visual Studio Code Blue */
+.tag.Firebase {
+  background-color: #FFA000;
+}
 
-#frameworks div:hover, #tools div:hover {
-  opacity: 0.9; /* Slight transparency */
-  transform: scale(1.05); /* Slightly increase size */
+/* Firebase Orange */
+.tag.Docker {
+  background-color: #2496ED;
+}
+
+/* Docker Blue */
+.tag.Git {
+  background-color: #F05032;
+}
+
+/* Git Red */
+.tag.Vercel {
+  background-color: #000;
+}
+
+/* Vercel Black */
+.tag.MySQL {
+  background-color: #00758F;
+}
+
+/* MySQL Teal */
+.tag.SQLLite {
+  background-color: #003B57;
+}
+
+/* SQLite Dark Blue */
+.tag.Linux {
+  background-color: #FCC624;
+}
+
+/* Linux Yellow */
+.tag.Windows {
+  background-color: #00A4EF;
+}
+
+/* Windows Blue */
+.tag.React {
+  background-color: #61DBFB;
+}
+
+/* React Cyan */
+.tag.TailwindCSS {
+  background-color: #06B6D4;
+}
+
+/* Tailwind Blue */
+.tag.Postman {
+  background-color: #EF5B25;
+}
+
+/* Postman Orange */
+.tag.Figma {
+  background-color: #A259FF;
+}
+
+/* Figma Purple */
+.tag.GitHub {
+  background-color: #24292E;
+}
+
+/* GitHub Dark Gray */
+.tag.Node {
+  background-color: #83CD29;
+}
+
+/* Node.js Green */
+.tag.VisualStudio {
+  background-color: #5C2D91;
+}
+
+/* Visual Studio Purple */
+.tag.VisualStudioCode {
+  background-color: #007ACC;
+}
+
+/* Visual Studio Code Blue */
+
+#frameworks div:hover,
+#tools div:hover {
+  opacity: 0.9;
+  /* Slight transparency */
+  transform: scale(1.05);
+  /* Slightly increase size */
 }
 
 
 .content-section {
-  display: none; /* Hide all sections by default */
+  display: none;
+  /* Hide all sections by default */
 }
 
 .content-section.active {
-  display: block; /* Show the active section */
+  display: block;
+  /* Show the active section */
 }
 
 
@@ -834,34 +1232,53 @@ body {
 /* Navigation styling */
 /* Navigation Styling */
 .about-nav {
-  display: flex; /* Arrange items in a horizontal line */
-  justify-content: center; /* Center the navigation items */
-  gap: 20px; /* Add space between the items */
-  background-color: #282323; /* Background color */
-  padding: 15px 20px; /* Add padding for spacing */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-  margin-bottom: 30px; /* Space below the navigation */
+  display: flex;
+  /* Arrange items in a horizontal line */
+  justify-content: center;
+  /* Center the navigation items */
+  gap: 20px;
+  /* Add space between the items */
+  background-color: #282323;
+  /* Background color */
+  padding: 15px 20px;
+  /* Add padding for spacing */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Add a subtle shadow */
+  margin-bottom: 30px;
+  /* Space below the navigation */
 }
 
 .about-nav a {
-  color: #ffffff; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 1.2rem; /* Slightly larger text size */
-  font-weight: bold; /* Make the text bold */
-  padding: 10px 15px; /* Add padding inside the links */
-  border-radius: 5px; /* Rounded corners for links */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-  background-color: #3d7b90; /* Default background color */
+  color: #ffffff;
+  /* Text color */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1.2rem;
+  /* Slightly larger text size */
+  font-weight: bold;
+  /* Make the text bold */
+  padding: 10px 15px;
+  /* Add padding inside the links */
+  border-radius: 5px;
+  /* Rounded corners for links */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transitions */
+  background-color: #3d7b90;
+  /* Default background color */
 }
 
 .about-nav a:hover {
-  background-color: #18636f; /* Darker color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker color on hover */
+  transform: scale(1.1);
+  /* Slight zoom effect */
 }
 
 .about-nav a:active {
-  background-color: #11474e; /* Even darker color for active state */
+  background-color: #11474e;
+  /* Even darker color for active state */
 }
 
 
@@ -911,28 +1328,38 @@ body {
 
 /* dyslexAI image styling */
 .secondSection .projects-grid .project-box img {
-  width: 100%; /* Makes the image responsive and fit within its container */
-  max-width: 500px; /* Sets a maximum width for the image */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Adds rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-  margin-bottom: 15px; /* Adds spacing below the image */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+  width: 100%;
+  /* Makes the image responsive and fit within its container */
+  max-width: 500px;
+  /* Sets a maximum width for the image */
+  height: auto;
+  /* Maintains aspect ratio */
+  border-radius: 10px;
+  /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Adds a subtle shadow for depth */
+  margin-bottom: 15px;
+  /* Adds spacing below the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth animations */
   display: block;
-  margin: 0 auto; 
-  
+  margin: 0 auto;
+
 }
 
 .secondSection .projects-grid .project-box img:hover {
-  transform: scale(1.05); /* Slightly enlarges the image on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhances the shadow on hover */
+  transform: scale(1.05);
+  /* Slightly enlarges the image on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  /* Enhances the shadow on hover */
 }
 
 
 /* styling for project*/
 /* Main popup container */
 .popup {
-  display: none; /*ensures popups are hidden by default*/
+  display: none;
+  /*ensures popups are hidden by default*/
   position: fixed;
   top: 0;
   left: 0;
@@ -994,33 +1421,42 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%; /* Adjust width for landscape orientation */
+  width: 90%;
+  /* Adjust width for landscape orientation */
   max-width: 1000px;
-  height: 80%; /* Restrict height */
-  max-height: 600px; /* Ensure it doesn't exceed the viewport */
+  height: 80%;
+  /* Restrict height */
+  max-height: 600px;
+  /* Ensure it doesn't exceed the viewport */
   background-color: #222;
   color: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   display: none;
-  flex-direction: row; /* Horizontal layout for landscape */
-  overflow: hidden; /* Prevent scrollbars outside of content */
+  flex-direction: row;
+  /* Horizontal layout for landscape */
+  overflow: hidden;
+  /* Prevent scrollbars outside of content */
   z-index: 1000;
 }
 
 /* Popup Content (Scrollable Section) */
 .popup-content {
-  flex: 3; /* Take up most of the space */
+  flex: 3;
+  /* Take up most of the space */
   padding: 20px;
-  overflow-y: auto; /* Allow vertical scrolling */
-  height: 100%; /* Use the full height of the pop-up */
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  height: 100%;
+  /* Use the full height of the pop-up */
   box-sizing: border-box;
 }
 
 /* Sidebar for Navigation */
 .popup-sidebar {
-  flex: 1; /* Smaller section for the sidebar */
+  flex: 1;
+  /* Smaller section for the sidebar */
   background-color: #333;
   border-left: 2px solid #444;
   padding: 20px;
@@ -1029,7 +1465,8 @@ body {
   gap: 10px;
   align-items: center;
   justify-content: flex-start;
-  overflow-y: auto; /* Allow scrolling if content overflows */
+  overflow-y: auto;
+  /* Allow scrolling if content overflows */
   height: 100%;
   box-sizing: border-box;
 }
@@ -1049,32 +1486,38 @@ body {
 /* For Responsive Design */
 @media (max-width: 768px) {
   .popup {
-      flex-direction: column; /* Stack content vertically on small screens */
-      height: 90%; /* Adjust height for small screens */
-      overflow: hidden; /* Prevent overflow */
+    flex-direction: column;
+    /* Stack content vertically on small screens */
+    height: 90%;
+    /* Adjust height for small screens */
+    overflow: hidden;
+    /* Prevent overflow */
   }
 
   .popup-sidebar {
-      border-left: none;
-      border-top: 2px solid #444;
-      flex-direction: row;
-      justify-content: space-evenly;
+    border-left: none;
+    border-top: 2px solid #444;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
 /* Timeline Section for dyslex*/
 .Dyslextimeline {
-  list-style: none; /* Remove bullet points */
+  list-style: none;
+  /* Remove bullet points */
   padding: 0;
   margin: 0;
-  border-left: 2px solid #555; /* Vertical line for timeline */
+  border-left: 2px solid #555;
+  /* Vertical line for timeline */
 }
 
 .Dyslextimeline li {
   position: relative;
   padding: 10px 20px;
   margin: 10px 0;
-  background: #333; /* Background color for each timeline event */
+  background: #333;
+  /* Background color for each timeline event */
   border-radius: 5px;
   color: #fff;
 }
@@ -1086,21 +1529,26 @@ body {
   top: 15px;
   width: 10px;
   height: 10px;
-  background: #fff; /* Timeline dot color */
+  background: #fff;
+  /* Timeline dot color */
   border-radius: 50%;
-  border: 2px solid #555; /* Match timeline line color */
+  border: 2px solid #555;
+  /* Match timeline line color */
 }
 
 
 /*Dyslex AI image styling*/
 
 .project-box {
-  position: relative; /* Position the box to allow the pseudo-element to overlay */
-  background-color: rgb(0, 0, 0); /* Fallback background color */
+  position: relative;
+  /* Position the box to allow the pseudo-element to overlay */
+  background-color: rgb(0, 0, 0);
+  /* Fallback background color */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  color: white; /* Text color */
+  color: white;
+  /* Text color */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1112,12 +1560,14 @@ body {
   max-width: none;
   margin-right: 20px;
   height: auto;
-  overflow: hidden; /* Ensure the pseudo-element stays inside the box */
+  overflow: hidden;
+  /* Ensure the pseudo-element stays inside the box */
 }
 
 .project-box {
   position: relative;
-  background-color: rgb(0, 0, 0); /* Fallback background color */
+  background-color: rgb(0, 0, 0);
+  /* Fallback background color */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -1148,6 +1598,7 @@ body {
 .project-box.dyslexAI::before {
   background-image: url('Images/file.png');
 }
+
 .project-box.driveway::before {
   background-image: url('Images/home-driveway-sealing-companies-tn.png');
 }
@@ -1162,11 +1613,13 @@ body {
 
 /* Example: Styling specific text elements within .project-box */
 .project-box h2 {
-  color: #fbfaf7; /* Yellow color for headings */
+  color: #fbfaf7;
+  /* Yellow color for headings */
 }
 
 .project-box p {
-  color: #ffffff; /* White color for paragraphs */
+  color: #ffffff;
+  /* White color for paragraphs */
   margin-top: 20px;
 }
 
@@ -1182,45 +1635,67 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allows tags to wrap to the next line if necessary */
-  gap: 10px; /* Space between tags */
+  flex-wrap: wrap;
+  /* Allows tags to wrap to the next line if necessary */
+  gap: 10px;
+  /* Space between tags */
 }
 
 .project-tags span {
-  background-color: #3d7b90; /* Tag background color */
-  color: white; /* Tag text color */
-  padding: 5px 10px; /* Space inside tags */
-  border-radius: 15px; /* Rounded corners */
-  font-size: 14px; /* Text size */
-  font-weight: 500; /* Semi-bold text */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  background-color: #3d7b90;
+  /* Tag background color */
+  color: white;
+  /* Tag text color */
+  padding: 5px 10px;
+  /* Space inside tags */
+  border-radius: 15px;
+  /* Rounded corners */
+  font-size: 14px;
+  /* Text size */
+  font-weight: 500;
+  /* Semi-bold text */
+  cursor: pointer;
+  /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth hover effects */
 }
 
 .project-tags span:hover {
-  background-color: #18636f; /* Darker background on hover */
-  transform: scale(1.1); /* Slight zoom on hover */
+  background-color: #18636f;
+  /* Darker background on hover */
+  transform: scale(1.1);
+  /* Slight zoom on hover */
 }
 
 
 /*Deliverables style */
 /* Styling only for Deliverables section */
-#deliverables, #drivwaydeliverables {
-  background-color: #9fb8b7; /* Light background for contrast */
-  border: 1px solid #175961; /* Subtle border for structure */
+#deliverables,
+#drivwaydeliverables {
+  background-color: #9fb8b7;
+  /* Light background for contrast */
+  border: 1px solid #175961;
+  /* Subtle border for structure */
   border-radius: 8px;
   padding: 15px;
   margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  display: none; /* Initially hidden */
-  overflow-y: auto; /* Allow scrolling if content overflows */
-  max-height: 400px; /* Restrict max height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  display: none;
+  /* Initially hidden */
+  overflow-y: auto;
+  /* Allow scrolling if content overflows */
+  max-height: 400px;
+  /* Restrict max height */
 }
 
 /* Deliverables-specific Button Styling */
-button[onclick*="deliverables"], button[onclick*="drivewaydeliverables"] {
-  background-color: #3d7b90; /* Blue background */
-  color: #fff; /* White text */
+button[onclick*="deliverables"],
+button[onclick*="drivewaydeliverables"] {
+  background-color: #3d7b90;
+  /* Blue background */
+  color: #fff;
+  /* White text */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1230,80 +1705,116 @@ button[onclick*="deliverables"], button[onclick*="drivewaydeliverables"] {
   margin-bottom: 10px;
 }
 
-button[onclick*="deliverables"]:hover, button[onclick*="drivewaydeliverables"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+button[onclick*="deliverables"]:hover,
+button[onclick*="drivewaydeliverables"]:hover {
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /* Specific List Styling for Deliverables */
-#deliverables ul, #drivewaydeliverables ul{
-  list-style-type: none; /* Remove default bullets */
+#deliverables ul,
+#drivewaydeliverables ul {
+  list-style-type: none;
+  /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-#deliverables ul > li, #drvivewaydeliverables ul > li{
-  font-size: 18px; /* Slightly larger font for main items */
-  font-weight: bold; /* Bold font for emphasis */
-  margin-bottom: 15px; /* Space between top-level items */
-  color: #333; /* Darker text for visibility */
+#deliverables ul>li,
+#drvivewaydeliverables ul>li {
+  font-size: 18px;
+  /* Slightly larger font for main items */
+  font-weight: bold;
+  /* Bold font for emphasis */
+  margin-bottom: 15px;
+  /* Space between top-level items */
+  color: #333;
+  /* Darker text for visibility */
   position: relative;
-  padding-left: 20px; /* Space for icon */
+  padding-left: 20px;
+  /* Space for icon */
 }
 
-#deliverables ul > li::before, #drivewaydeliverables ul > li::before{
-  content: "📂"; /* Folder icon for main items */
+#deliverables ul>li::before,
+#drivewaydeliverables ul>li::before {
+  content: "📂";
+  /* Folder icon for main items */
   position: absolute;
   left: 0;
   top: 0;
-  color: #007bff; /* Blue icon */
+  color: #007bff;
+  /* Blue icon */
   font-size: 20px;
 }
 
-#deliverables ul > li > ul > li, #drivewaydeliverables ul > li > ul > li{
-  font-size: 16px; /* Slightly smaller font for sub-items */
-  margin-bottom: 8px; /* Space between sub-items */
-  margin-left: 20px; /* Indent for hierarchy */
-  color: #555; /* Lighter text for differentiation */
+#deliverables ul>li>ul>li,
+#drivewaydeliverables ul>li>ul>li {
+  font-size: 16px;
+  /* Slightly smaller font for sub-items */
+  margin-bottom: 8px;
+  /* Space between sub-items */
+  margin-left: 20px;
+  /* Indent for hierarchy */
+  color: #555;
+  /* Lighter text for differentiation */
   position: relative;
-  padding-left: 20px; /* Space for icon */
+  padding-left: 20px;
+  /* Space for icon */
 }
 
-#deliverables ul > li > ul > li::before, #drivewaydeliverables ul > li > ul > li:before{
-  content: "📄"; /* Document icon for sub-items */
+#deliverables ul>li>ul>li::before,
+#drivewaydeliverables ul>li>ul>li:before {
+  content: "📄";
+  /* Document icon for sub-items */
   position: absolute;
   left: 0;
   top: 0;
-  color: #3498db; /* Light blue icon */
+  color: #3498db;
+  /* Light blue icon */
   font-size: 16px;
 }
 
 /* Hover Effect Specific to Deliverables */
-#deliverables ul > li:hover,
-#deliverables ul > li > ul > li:hover, #drivewaydeliverables ul > li > ul > li:hover, #drivewaydeliverables ul > li:hover{
-  color: #35748b; /* Red text on hover */
+#deliverables ul>li:hover,
+#deliverables ul>li>ul>li:hover,
+#drivewaydeliverables ul>li>ul>li:hover,
+#drivewaydeliverables ul>li:hover {
+  color: #35748b;
+  /* Red text on hover */
   cursor: pointer;
 }
 
 /*styling for descriptio DYSLEXAI*/
 
 /* Styling for Description section */
-#description, #drivewaydescription {
-  background-color: #9fb8b7; /* Light background for contrast */
-  border: 1px solid #ddd; /* Subtle border for structure */
+#description,
+#drivewaydescription {
+  background-color: #9fb8b7;
+  /* Light background for contrast */
+  border: 1px solid #ddd;
+  /* Subtle border for structure */
   border-radius: 8px;
   padding: 15px;
   margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  display: none; /* Initially hidden */
-  overflow-y: auto; /* Allow scrolling if content overflows */
-  max-height: 400px; /* Restrict max height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  display: none;
+  /* Initially hidden */
+  overflow-y: auto;
+  /* Allow scrolling if content overflows */
+  max-height: 400px;
+  /* Restrict max height */
 }
 
 /* Button Styling Specific to Description */
-button[onclick*="description"], button[onclick*="drivewaydescription"] {
-  background-color: #3d7b90; /* Green background for a different section */
-  color: #fff; /* White text */
+button[onclick*="description"],
+button[onclick*="drivewaydescription"] {
+  background-color: #3d7b90;
+  /* Green background for a different section */
+  color: #fff;
+  /* White text */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1313,83 +1824,115 @@ button[onclick*="description"], button[onclick*="drivewaydescription"] {
   margin-bottom: 10px;
 }
 
-button[onclick*="description"]:hover, button[onclick*="drivewaydescription"]:hover  {
-  background-color: #18636f; /* Darker green on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+button[onclick*="description"]:hover,
+button[onclick*="drivewaydescription"]:hover {
+  background-color: #18636f;
+  /* Darker green on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /* Top-Level List Styling */
 #description ul {
-  list-style-type: none; /* Remove default bullets */
+  list-style-type: none;
+  /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-#description ul > li, #drivewaydescription ul > li{
-  font-size: 18px; /* Slightly larger font for main items */
-  font-weight: bold; /* Bold font for emphasis */
-  margin-bottom: 15px; /* Space between top-level items */
-  color: #333; /* Darker text for visibility */
+#description ul>li,
+#drivewaydescription ul>li {
+  font-size: 18px;
+  /* Slightly larger font for main items */
+  font-weight: bold;
+  /* Bold font for emphasis */
+  margin-bottom: 15px;
+  /* Space between top-level items */
+  color: #333;
+  /* Darker text for visibility */
   position: relative;
-  padding-left: 20px; /* Space for icon */
+  padding-left: 20px;
+  /* Space for icon */
 }
 
 /* Sub-Level List Styling */
-#description ul > li > ul > li, #drivewaydescription ul > li > ul > li{
-  font-size: 16px; /* Slightly smaller font for sub-items */
-  margin-bottom: 8px; /* Space between sub-items */
-  margin-left: 20px; /* Indent for hierarchy */
-  color: #555; /* Lighter text for differentiation */
+#description ul>li>ul>li,
+#drivewaydescription ul>li>ul>li {
+  font-size: 16px;
+  /* Slightly smaller font for sub-items */
+  margin-bottom: 8px;
+  /* Space between sub-items */
+  margin-left: 20px;
+  /* Indent for hierarchy */
+  color: #555;
+  /* Lighter text for differentiation */
   position: relative;
-  padding-left: 20px; /* Space for icon */
+  padding-left: 20px;
+  /* Space for icon */
 }
 
 /* Custom Bullet Icon for Top-Level Items */
-#description ul > li::before, #drivewaydescription ul > li::before {
-  content: "📘"; /* Blue book icon for main items */
+#description ul>li::before,
+#drivewaydescription ul>li::before {
+  content: "📘";
+  /* Blue book icon for main items */
   position: absolute;
   left: 0;
   top: 0;
-  color: #28a745; /* Green icon */
+  color: #28a745;
+  /* Green icon */
   font-size: 20px;
 }
 
 /* Custom Bullet Icon for Sub-Level Items */
-#description ul > li > ul > li::before, #drivewaydescriptions ul > li > ul > li::before{
-  content: "📄"; /* Document icon for sub-items */
+#description ul>li>ul>li::before,
+#drivewaydescriptions ul>li>ul>li::before {
+  content: "📄";
+  /* Document icon for sub-items */
   position: absolute;
   left: 0;
   top: 0;
-  color: #6c757d; /* Gray icon for sub-items */
+  color: #6c757d;
+  /* Gray icon for sub-items */
   font-size: 16px;
 }
 
 /* Hover Effect Specific to Description */
-#description ul > li:hover,
-#description ul > li > ul > li:hover, #drivewaydescription ul > li:hover, #drivewaydescription ul > li > ul > li:hover{
-  color: #3d7b90; /* Red text on hover */
+#description ul>li:hover,
+#description ul>li>ul>li:hover,
+#drivewaydescription ul>li:hover,
+#drivewaydescription ul>li>ul>li:hover {
+  color: #3d7b90;
+  /* Red text on hover */
   cursor: pointer;
 }
 
 /* Scrollbar Styling for Description */
-#description::-webkit-scrollbar, #driveway::-webkit-scrollbar {
+#description::-webkit-scrollbar,
+#driveway::-webkit-scrollbar {
   width: 8px;
 }
 
-#description::-webkit-scrollbar-thumb, #driveway::-webkit-scrollbar-thumb {
-  background: #3d7b90; /* Green scrollbar thumb */
+#description::-webkit-scrollbar-thumb,
+#driveway::-webkit-scrollbar-thumb {
+  background: #3d7b90;
+  /* Green scrollbar thumb */
   border-radius: 5px;
 }
 
-#description::-webkit-scrollbar-thumb:hover, #driveway::-webkit-scrollbar-thumb:hover {
-  background: #218838; /* Darker green on hover */
+#description::-webkit-scrollbar-thumb:hover,
+#driveway::-webkit-scrollbar-thumb:hover {
+  background: #218838;
+  /* Darker green on hover */
 }
 
 /* Gallery Specific Styling */
 /* Gallery Specific Styling */
 #gallery {
-  background-color: #9fb8b7; /* Light pink background */
-  border: 1px solid #fbfbfb; /* Hot pink border */
+  background-color: #9fb8b7;
+  /* Light pink background */
+  border: 1px solid #fbfbfb;
+  /* Hot pink border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -1397,29 +1940,44 @@ button[onclick*="description"]:hover, button[onclick*="drivewaydescription"]:hov
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button[onclick*="gallery"], button[onclick*="drivewayGallery"] {
-  background-color: #3d7b90; /* Blue background */
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+button[onclick*="gallery"],
+button[onclick*="drivewayGallery"] {
+  background-color: #3d7b90;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
-button[onclick*="gallery"]:hover, button[onclick*="drivewayGallery"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+button[onclick*="gallery"]:hover,
+button[onclick*="drivewayGallery"]:hover {
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 
 
 /* Code Specific Styling */
 #code {
-  background-color: #9fb8b7; /* Light gray background */
-  border: 1px solid #fdfbfb; /* Gray border */
+  background-color: #9fb8b7;
+  /* Light gray background */
+  border: 1px solid #fdfbfb;
+  /* Gray border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -1428,28 +1986,41 @@ button[onclick*="gallery"]:hover, button[onclick*="drivewayGallery"]:hover {
 }
 
 button[onclick*="code"] {
-  background-color: #3d7b90; /* Blue background */
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  background-color: #3d7b90;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="code"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 
 
 /* Links Specific Styling */
 #links {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -1458,128 +2029,193 @@ button[onclick*="code"]:hover {
 }
 
 button[onclick*="links"] {
-  background-color: #3d7b90; /* Blue background */
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  background-color: #3d7b90;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="links"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 
 /* Timeline dyslex */
-#DyslexAITimeline, #drivewayTimeline {
-  background-color: #9fb8b7; /* Light blue background */
-  border: 1px solid #fdfbfb; /* Subtle light border */
+#DyslexAITimeline,
+#drivewayTimeline {
+  background-color: #9fb8b7;
+  /* Light blue background */
+  border: 1px solid #fdfbfb;
+  /* Subtle light border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
-  overflow-y: auto; /* Scrollable if content overflows */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  margin-top: 10px; /* Spacing from the button */
+  overflow-y: auto;
+  /* Scrollable if content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  margin-top: 10px;
+  /* Spacing from the button */
 }
 
-button[onclick*="DyslexAITimeline"], button[onclick*="drivewayTimeline"] {
-  background-color: #3d7b90; /* Blue background */
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+button[onclick*="DyslexAITimeline"],
+button[onclick*="drivewayTimeline"] {
+  background-color: #3d7b90;
+  /* Blue background */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 /* Hover Effect for Button */
-button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+button[onclick*="DyslexAITimeline"]:hover,
+button[onclick*="drivewayTimeline"]:hover {
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /* Timeline List Styling */
-.Dyslextimeline, .drivewaytimeline {
-  list-style-type: none; /* Remove default bullets */
+.Dyslextimeline,
+.drivewaytimeline {
+  list-style-type: none;
+  /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-.Dyslextimeline li, .drivewaytimeline li {
-  margin-bottom: 10px; /* Spacing between items */
-  font-size: 14px; /* Text size */
-  color: #f7f1f1; /* Text color */
+.Dyslextimeline li,
+.drivewaytimeline li {
+  margin-bottom: 10px;
+  /* Spacing between items */
+  font-size: 14px;
+  /* Text size */
+  color: #f7f1f1;
+  /* Text color */
 }
 
 /* Bold the Date for Emphasis */
-.Dyslextimeline li strong, .drivewaytimeline li strong {
-  color: #3d7b90; /* Match button color for consistency */
+.Dyslextimeline li strong,
+.drivewaytimeline li strong {
+  color: #3d7b90;
+  /* Match button color for consistency */
 }
 
 /*Links style general*/
 /* General Link Styling */
 .section-content a {
-  color: #000; /* Black text */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make it bold if desired */
+  color: #000;
+  /* Black text */
+  text-decoration: none;
+  /* Remove underline */
+  font-weight: bold;
+  /* Make it bold if desired */
 }
 
 /* Hover Effect */
 .section-content a:hover {
-  color: #333; /* Slightly lighter black on hover */
-  text-decoration: underline; /* Optional: Add underline on hover */
+  color: #333;
+  /* Slightly lighter black on hover */
+  text-decoration: underline;
+  /* Optional: Add underline on hover */
 }
 
 /* galary image styling */
 /* General styling for the gallery */
 /* General styling for the gallery */
-#gallery, #drivewayGallery {
-  background-color: #9fb8b7; /* Dark background for the gallery */
-  color: white; /* Light text for better visibility */
-  border: 1px solid #333; /* Subtle border */
-  padding: 20px; /* Add some padding inside the gallery */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 90%; /* Limit the gallery width */
-  margin: 20px auto; /* Center the gallery horizontally */
-  text-align: center; /* Center-align content */
+#gallery,
+#drivewayGallery {
+  background-color: #9fb8b7;
+  /* Dark background for the gallery */
+  color: white;
+  /* Light text for better visibility */
+  border: 1px solid #333;
+  /* Subtle border */
+  padding: 20px;
+  /* Add some padding inside the gallery */
+  border-radius: 8px;
+  /* Rounded corners */
+  max-width: 90%;
+  /* Limit the gallery width */
+  margin: 20px auto;
+  /* Center the gallery horizontally */
+  text-align: center;
+  /* Center-align content */
 }
 
 
 /* Styling for gallery images */
 #gallery img {
-  width: 80%; /* Make images responsive */
-  max-width: 600px; /* Set a max width for larger screens */
-  height: auto; /* Maintain aspect ratio */
-  margin-bottom: 15px; /* Add space between images */
-  border: 2px solid #555; /* Add a border around images */
-  border-radius: 5px; /* Rounded corners for images */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Subtle shadow */
-  cursor: pointer; /* Show pointer cursor to indicate clickable */
+  width: 80%;
+  /* Make images responsive */
+  max-width: 600px;
+  /* Set a max width for larger screens */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-bottom: 15px;
+  /* Add space between images */
+  border: 2px solid #555;
+  /* Add a border around images */
+  border-radius: 5px;
+  /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  /* Subtle shadow */
+  cursor: pointer;
+  /* Show pointer cursor to indicate clickable */
 }
 
 /* Add some hover effect to the images */
 #gallery img:hover {
-  transform: scale(1.05); /* Slightly enlarge the image */
-  transition: transform 0.3s ease; /* Smooth transition */
+  transform: scale(1.05);
+  /* Slightly enlarge the image */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
 }
 
 /* Modal styling for the enlarged image */
 .modal {
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark background with transparency */
-  z-index: 9999; /* Ensure it appears above other elements */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Dark background with transparency */
+  z-index: 9999;
+  /* Ensure it appears above other elements */
   align-items: center;
   justify-content: center;
 }
@@ -1589,7 +2225,8 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
   max-height: 90%;
   border: 2px solid white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Shadow around the enlarged image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  /* Shadow around the enlarged image */
 }
 
 /* Close button styling */
@@ -1607,7 +2244,8 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 #gallery h3 {
   font-size: 1.2em;
   color: white;
-  margin-bottom: 10px; /* Spacing below the heading */
+  margin-bottom: 10px;
+  /* Spacing below the heading */
   text-align: center;
 }
 
@@ -1628,23 +2266,30 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
   height: 150px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f0f0f0; /* Optional: Placeholder background */
+  background-color: #f0f0f0;
+  /* Optional: Placeholder background */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* General Styling for Popup */
 .popup-content {
-  background-color: #222; /* Dark background for the pop-up */
-  color: #fff; /* White text */
+  background-color: #222;
+  /* Dark background for the pop-up */
+  color: #fff;
+  /* White text */
   border-radius: 8px;
   padding: 20px;
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  max-height: 80vh; /* Restrict height */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
-  position: relative; /* Required for close button positioning */
+  overflow-y: auto;
+  /* Enable scrolling if content overflows */
+  max-height: 80vh;
+  /* Restrict height */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* Subtle shadow */
+  position: relative;
+  /* Required for close button positioning */
 }
 
 /* Close Button */
@@ -1664,16 +2309,19 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 
 /* List Styling */
 .popup-sections ul {
-  list-style-type: none; /* Remove default bullets */
+  list-style-type: none;
+  /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-.popup-sections ul > li {
+.popup-sections ul>li {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #000000; /* Light gray text */
-  padding-left: 20px; /* Space for custom icons */
+  color: #000000;
+  /* Light gray text */
+  padding-left: 20px;
+  /* Space for custom icons */
   position: relative;
 }
 
@@ -1682,24 +2330,29 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 /* Nested List Styling */
 .popup-sections ul ul {
   margin-top: 10px;
-  padding-left: 20px; /* Indentation for nested lists */
+  padding-left: 20px;
+  /* Indentation for nested lists */
 }
 
-.popup-sections ul ul > li {
+.popup-sections ul ul>li {
   font-size: 16px;
-  color: #050000; /* Slightly lighter text for nested items */
+  color: #050000;
+  /* Slightly lighter text for nested items */
   margin-bottom: 8px;
 }
 
 
 /* Section Content */
 .section-content {
-  display: none; /* Hidden by default */
-  background-color: #9fb8b7; /* Slightly lighter background */
+  display: none;
+  /* Hidden by default */
+  background-color: #9fb8b7;
+  /* Slightly lighter background */
   padding: 15px;
   margin-top: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  /* Light shadow for depth */
 }
 
 /* Video Gallery Styling */
@@ -1718,19 +2371,23 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 }
 
 .video-thumbnail iframe:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  border-color: #18636f; /* Change border color on hover */
+  transform: scale(1.05);
+  /* Slight zoom on hover */
+  border-color: #18636f;
+  /* Change border color on hover */
 }
 
 /* Links Styling */
 .popup-content a {
-  color: #18636f; /* Link color */
+  color: #18636f;
+  /* Link color */
   text-decoration: none;
   font-weight: bold;
 }
 
 .popup-content a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
+  /* Underline on hover */
 }
 
 /* Tags Styling */
@@ -1742,8 +2399,10 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 }
 
 .project-tags span {
-  background-color: #18636f; /* Tag background */
-  color: #fff; /* Tag text */
+  background-color: #18636f;
+  /* Tag background */
+  color: #fff;
+  /* Tag text */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
@@ -1753,8 +2412,10 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 }
 
 .project-tags span:hover {
-  background-color: #18636f; /* Highlight on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Highlight on hover */
+  transform: scale(1.1);
+  /* Slight zoom effect */
 }
 
 /* Scrollbar Styling */
@@ -1777,32 +2438,44 @@ button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:h
 
 /*** This is the styling for the content to be in the middle of the page ***/
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  box-sizing: border-box; /* Include padding and border in dimensions */
-  background-color: #121212; /* Background color */
+  box-sizing: border-box;
+  /* Include padding and border in dimensions */
+  background-color: #121212;
+  /* Background color */
 }
 
 /* Center the main content while keeping the navbar fixed */
 body {
-  display: flex; /* Use Flexbox for alignment */
-  flex-direction: column; /* Keep the navbar at the top */
-  align-items: center; /* Center content horizontally */
+  display: flex;
+  /* Use Flexbox for alignment */
+  flex-direction: column;
+  /* Keep the navbar at the top */
+  align-items: center;
+  /* Center content horizontally */
 }
 
 /* Navbar */
 header {
-  width: 100%; /* Full width for the navbar */
-  background-color: #1e1e1e; /* Dark background */
-  padding: 10px 20px; /* Add padding for better spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to navbar */
-  position: fixed; /* Make the navbar fixed at the top */
+  width: 100%;
+  /* Full width for the navbar */
+  background-color: #1e1e1e;
+  /* Dark background */
+  padding: 10px 20px;
+  /* Add padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Add shadow to navbar */
+  position: fixed;
+  /* Make the navbar fixed at the top */
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
+  /* Ensure it stays on top */
 }
 
 header nav {
@@ -1815,7 +2488,8 @@ header nav {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Space between links */
+  gap: 20px;
+  /* Space between links */
 }
 
 header nav ul li {
@@ -1830,22 +2504,32 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #00bcd4; /* Light blue on hover */
+  color: #00bcd4;
+  /* Light blue on hover */
 }
 
 /* Center content */
 main {
-  margin-top: 80px; /* Avoid overlap with fixed navbar */
+  margin-top: 80px;
+  /* Avoid overlap with fixed navbar */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  width: 90%; /* Constrain content width */
-  max-width: 1200px; /* Limit max width */
-  background-color: #1e1e1e; /* Slightly lighter background for content */
-  padding: 20px; /* Add padding inside the content area */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow to main content */
+  align-items: center;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  width: 90%;
+  /* Constrain content width */
+  max-width: 1200px;
+  /* Limit max width */
+  background-color: #1e1e1e;
+  /* Slightly lighter background for content */
+  padding: 20px;
+  /* Add padding inside the content area */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* Add shadow to main content */
 }
 
 /* Footer styling */
@@ -1860,33 +2544,48 @@ main {
 /* Specific styles for the education popup */
 /* Education Popup Styling */
 .education-popup {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed position to stay on screen */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to the element's center */
-  width: 100%; /* Full viewport width */
-  height: 100%; /* Full viewport height */
-  background-color: #1e1e1e; /* Solid dark background */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed position to stay on screen */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Adjust to the element's center */
+  width: 100%;
+  /* Full viewport width */
+  height: 100%;
+  /* Full viewport height */
+  background-color: #1e1e1e;
+  /* Solid dark background */
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it’s above other elements */
+  z-index: 1000;
+  /* Ensure it’s above other elements */
 }
 
 .education-popup .popup-content {
-  background-color: #1e1e1e; /* Light background for popup content */
-  color: #f7f1f1; /* Dark text */
+  background-color: #1e1e1e;
+  /* Light background for popup content */
+  color: #f7f1f1;
+  /* Dark text */
   padding: 20px;
   border-radius: 8px;
-  max-width: 600px; /* Limit the width */
-  width: 90%; /* Responsive width */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  max-width: 600px;
+  /* Limit the width */
+  width: 90%;
+  /* Responsive width */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  /* Shadow effect */
   text-align: center;
 }
 
 .education-popup .popup-content h1,
 .education-popup .popup-content h3 {
-  color: #f6f6f6; /* Blue headings */
+  color: #f6f6f6;
+  /* Blue headings */
   margin-bottom: 15px;
 }
 
@@ -1895,31 +2594,36 @@ main {
 }
 
 .education-popup .popup-content a {
-  color: #f1f5f6; /* Link color */
+  color: #f1f5f6;
+  /* Link color */
   text-decoration: none;
 }
 
 .education-popup .popup-content a:hover {
-  text-decoration: underline; /* Hover effect for links */
+  text-decoration: underline;
+  /* Hover effect for links */
 }
 
 .education-popup .close-btn {
   position: absolute;
   top: 0px;
   right: 15px;
-  color: #fff; /* White text */
+  color: #fff;
+  /* White text */
   border: none;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   font-size: 18px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Smooth hover effect */
 }
 
 /* Hover Effect */
 .education-popup .close-btn:hover {
-  transform: scale(1.2); /* Increases size by 20% */
+  transform: scale(1.2);
+  /* Increases size by 20% */
 }
 
 
@@ -1927,40 +2631,61 @@ main {
 
 /************************** Styling for education **************************************/
 .education {
-  position: relative; /* Allows layering of the overlay */
-  background-image: url('Images/52280842708-fd854c1066-k-4-631f43e11dfbe.jpg'); /* Replace with your image path */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: #ffffff; /* Makes the text white for contrast */
-  padding: 20px; /* Adds spacing inside the section */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  margin: 20px auto; /* Centers the section horizontally */
-  max-width: 800px; /* Limits the width of the section */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Adds shadow for a polished look */
+  position: relative;
+  /* Allows layering of the overlay */
+  background-image: url('Images/52280842708-fd854c1066-k-4-631f43e11dfbe.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  /* Ensures the image covers the entire background */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  color: #ffffff;
+  /* Makes the text white for contrast */
+  padding: 20px;
+  /* Adds spacing inside the section */
+  border-radius: 8px;
+  /* Optional: Adds rounded corners */
+  margin: 20px auto;
+  /* Centers the section horizontally */
+  max-width: 800px;
+  /* Limits the width of the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Optional: Adds shadow for a polished look */
   /*margin-bottom: 20px; adds spacing to the botton*/
 }
 
 .education img {
-  max-width: 80%; /* Adjust width to control size */
-  height: auto; /* Maintain the aspect ratio */
-  margin: 40px auto; /* Add extra spacing to position it more centrally */
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow */
-  display: block; /* Ensure it behaves as a block-level element */
+  max-width: 80%;
+  /* Adjust width to control size */
+  height: auto;
+  /* Maintain the aspect ratio */
+  margin: 40px auto;
+  /* Add extra spacing to position it more centrally */
+  border-radius: 10px;
+  /* Optional: Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Optional: Add a shadow */
+  display: block;
+  /* Ensure it behaves as a block-level element */
 }
 
 /* Add a semi-transparent overlay */
 .education::before {
-  content: ''; /* Creates a pseudo-element */
+  content: '';
+  /* Creates a pseudo-element */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 50% transparency */
-  border-radius: 8px; /* Matches the parent element’s rounded corners */
-  z-index: 1; /* Ensures it stays behind the text but above the image */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black overlay with 50% transparency */
+  border-radius: 8px;
+  /* Matches the parent element’s rounded corners */
+  z-index: 1;
+  /* Ensures it stays behind the text but above the image */
 }
 
 /* Ensure the content stays above the overlay */
@@ -1971,8 +2696,10 @@ main {
 
 /* education popup tabs design */
 #educationCoursework {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -1981,30 +2708,43 @@ main {
 }
 
 button[onclick*="educationCoursework"] {
-  background-color: #3d7b90; /* Blue background */
+  background-color: #3d7b90;
+  /* Blue background */
   width: 100%;
   height: 100%;
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="educationCoursework"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 
 /***** Education timeline ******/
 /* Timeline Container */
 #educationTimeline {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -2013,22 +2753,33 @@ button[onclick*="educationCoursework"]:hover {
 }
 
 button[onclick*="educationTimeline"] {
-  background-color: #3d7b90; /* Blue background */
+  background-color: #3d7b90;
+  /* Blue background */
   width: 100%;
   height: 100%;
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="educationTimeline"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 .educationTimeline {
@@ -2036,9 +2787,12 @@ button[onclick*="educationTimeline"]:hover {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-left: 30px; /* Space for the timeline */
-  background-color: #9fb8b7; /* Dark background */
-  border-radius: 8px; /* Rounded corners */
+  padding-left: 30px;
+  /* Space for the timeline */
+  background-color: #9fb8b7;
+  /* Dark background */
+  border-radius: 8px;
+  /* Rounded corners */
   padding: 15px;
 }
 
@@ -2050,14 +2804,16 @@ button[onclick*="educationTimeline"]:hover {
   top: 0;
   width: 2px;
   height: 100%;
-  background-color: #8a8a8a; /* Line color */
+  background-color: #8a8a8a;
+  /* Line color */
 }
 
 /* Timeline Item */
 .educationTimeline li {
   position: relative;
   margin-bottom: 10px;
-  padding-left: 25px; /* Align text to the right of the marker */
+  padding-left: 25px;
+  /* Align text to the right of the marker */
 }
 
 /* Timeline Marker */
@@ -2067,26 +2823,34 @@ button[onclick*="educationTimeline"]:hover {
   top: 8px;
   width: 12px;
   height: 12px;
-  background-color: #fdfbfb; /* Marker color */
-  border: 2px solid #8a8a8a; /* Border to match line color */
-  border-radius: 50%; /* Circular marker */
+  background-color: #fdfbfb;
+  /* Marker color */
+  border: 2px solid #8a8a8a;
+  /* Border to match line color */
+  border-radius: 50%;
+  /* Circular marker */
   z-index: 1;
 }
 
 /* Timeline Content */
 .timeline-content {
   font-size: 14px;
-  color: #f7f1f1; /* Light text color */
-  background-color: #1e1e1e; /* Dark blue background for items */
+  color: #f7f1f1;
+  /* Light text color */
+  background-color: #1e1e1e;
+  /* Dark blue background for items */
   padding: 8px 12px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Slight shadow */
 }
 
 /****************************** education awards **********************************/
 #educationAwards {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -2095,28 +2859,41 @@ button[onclick*="educationTimeline"]:hover {
 }
 
 button[onclick*="educationAwards"] {
-  background-color: #3d7b90; /* Blue background */
+  background-color: #3d7b90;
+  /* Blue background */
   width: 100%;
   height: 100%;
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="educationAwards"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /******************************* education gpa *********************************/
 #educationGpa {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -2125,28 +2902,41 @@ button[onclick*="educationAwards"]:hover {
 }
 
 button[onclick*="educationGpa"] {
-  background-color: #3d7b90; /* Blue background */
+  background-color: #3d7b90;
+  /* Blue background */
   width: 100%;
   height: 100%;
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="educationGpa"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /**************************** education extracurricular ************************************/
 #educationExtracurricular {
-  background-color: #9fb8b7; /* Mint cream background */
-  border: 1px solid #fdfbfb; /* Lime green border */
+  background-color: #9fb8b7;
+  /* Mint cream background */
+  border: 1px solid #fdfbfb;
+  /* Lime green border */
   padding: 15px;
   border-radius: 8px;
   max-height: 300px;
@@ -2155,22 +2945,33 @@ button[onclick*="educationGpa"]:hover {
 }
 
 button[onclick*="educationExtracurricular"] {
-  background-color: #3d7b90; /* Blue background */
+  background-color: #3d7b90;
+  /* Blue background */
   width: 100%;
   height: 100%;
-  color: #fff; /* White text */
-  border: none; /* No border */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
-  margin-bottom: 10px; /* Add spacing */
+  color: #fff;
+  /* White text */
+  border: none;
+  /* No border */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth transition */
+  margin-bottom: 10px;
+  /* Add spacing */
 }
 
 button[onclick*="educationExtracurricular"]:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /********************************* Education tags design *************************************************/
@@ -2178,102 +2979,154 @@ button[onclick*="educationExtracurricular"]:hover {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allows tags to wrap to the next line if necessary */
-  gap: 10px; /* Space between tags */
+  flex-wrap: wrap;
+  /* Allows tags to wrap to the next line if necessary */
+  gap: 10px;
+  /* Space between tags */
 }
 
 .education-tags span {
-  background-color: #3d7b90; /* Tag background color */
-  color: white; /* Tag text color */
-  padding: 5px 10px; /* Space inside tags */
-  border-radius: 15px; /* Rounded corners */
-  font-size: 14px; /* Text size */
-  font-weight: 500; /* Semi-bold text */
-  cursor: pointer; /* Pointer cursor for interactivity */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  background-color: #3d7b90;
+  /* Tag background color */
+  color: white;
+  /* Tag text color */
+  padding: 5px 10px;
+  /* Space inside tags */
+  border-radius: 15px;
+  /* Rounded corners */
+  font-size: 14px;
+  /* Text size */
+  font-weight: 500;
+  /* Semi-bold text */
+  cursor: pointer;
+  /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth hover effects */
 }
 
 .education-tags span:hover {
-  background-color: #18636f; /* Darker background on hover */
-  transform: scale(1.1); /* Slight zoom on hover */
+  background-color: #18636f;
+  /* Darker background on hover */
+  transform: scale(1.1);
+  /* Slight zoom on hover */
 }
 
 /**************************** This is specific for education view details button *************************************/
 
 button {
-  background-color: #334e56; /* Button background color */
-  color: white; /* Text color */
-  border: none; /* Remove default border */
-  padding: 10px 20px; /* Padding for size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Bold text */
-  cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-top: 20px; /* Space above button */
+  background-color: #334e56;
+  /* Button background color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* Remove default border */
+  padding: 10px 20px;
+  /* Padding for size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Text size */
+  font-weight: bold;
+  /* Bold text */
+  cursor: pointer;
+  /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth hover and click effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  margin-top: 20px;
+  /* Space above button */
 }
 
 /* Hover Effect */
 button:hover {
-  background-color: #768284; /* Darker background on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #768284;
+  /* Darker background on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 /* Active/Clicked Effect */
 button:active {
-  transform: scale(0.95); /* Slight shrink effect */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow change */
+  transform: scale(0.95);
+  /* Slight shrink effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow change */
 }
 
 
 /**************************** Footer styling ************************************/
 .footer-tabs {
   font-family: Arial, sans-serif;
-  padding: 40px; /* Increase padding for more vertical space */
-  background-color: #000000; /* Dark background for the footer */
-  border: 1px solid #ccc; /* Subtle border around the footer */
-  border-radius: 10px; /* Rounded corners for the footer */
-  text-align: center; /* Center the content */
-  margin: 20px auto; /* Center the footer box */
-  width: 100%; /* Full width */
-  max-width: none; /* Allow for a larger footer size */
-  height: auto; /* Ensure the footer grows dynamically with content */
+  padding: 40px;
+  /* Increase padding for more vertical space */
+  background-color: #000000;
+  /* Dark background for the footer */
+  border: 1px solid #ccc;
+  /* Subtle border around the footer */
+  border-radius: 10px;
+  /* Rounded corners for the footer */
+  text-align: center;
+  /* Center the content */
+  margin: 20px auto;
+  /* Center the footer box */
+  width: 100%;
+  /* Full width */
+  max-width: none;
+  /* Allow for a larger footer size */
+  height: auto;
+  /* Ensure the footer grows dynamically with content */
 }
 
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Space between buttons */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px;
+  /* Space between buttons */
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
 }
 
 .tab-button {
-  display: inline-flex; /* Align logo and text horizontally */
-  align-items: center; /* Vertically align content */
-  background-color: #3d7b90; /* Button background */
-  color: rgb(242, 246, 249); /* Button text */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 20px; /* Button size */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Bold text */
+  display: inline-flex;
+  /* Align logo and text horizontally */
+  align-items: center;
+  /* Vertically align content */
+  background-color: #3d7b90;
+  /* Button background */
+  color: rgb(242, 246, 249);
+  /* Button text */
+  text-decoration: none;
+  /* Remove underline */
+  padding: 10px 20px;
+  /* Button size */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  font-weight: bold;
+  /* Bold text */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
-  gap: 10px; /* Space between logo and text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Smooth effects */
+  gap: 10px;
+  /* Space between logo and text */
 }
 
 .tab-button:hover {
-  background-color: #18636f; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #18636f;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight zoom effect */
 }
 
 .tab-logo {
-  width: 20px; /* Logo width */
-  height: 20px; /* Logo height */
-  margin-right: 10px; /* Space between logo and text */
-  border-radius: 5px; /* Optional: rounded logos for consistency */
+  width: 20px;
+  /* Logo width */
+  height: 20px;
+  /* Logo height */
+  margin-right: 10px;
+  /* Space between logo and text */
+  border-radius: 5px;
+  /* Optional: rounded logos for consistency */
 }
-
-/**************************** projects styling ************************************/
-

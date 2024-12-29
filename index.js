@@ -1,5 +1,5 @@
 // Data for the programming languages
-const skillLabels = ["Python", "C++","C","Java", "JavaScript", "HTML/CSS", "XMl", "PHP"];
+const skillLabels = ["Python", "C++", "C", "Java", "JavaScript", "HTML/CSS", "XMl", "PHP"];
 const skillValues = [25, 20, 18, 15, 12, 10]; // Example percentages for skill proficiency
 const skillColors = [
     "#b91d47", // Python
@@ -109,7 +109,7 @@ const images = [
         heading: "Image 6: AI Recommendation"
     }
 
-    
+
 ];
 
 // Select the gallery container
@@ -203,8 +203,8 @@ function toggleEducationSection(sectionId) {
 // Toggle the hamburger menu
 document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('active');
-  });
-  
+});
+
 
 
 
