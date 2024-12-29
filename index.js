@@ -64,20 +64,18 @@ window.onload = function () {
     document.getElementById('popup').style.display = 'none';
 };
 
-// Toggle sections
+// // Toggle sections
+// function toggleSection(sectionId) {
+//     const section = document.getElementById(sectionId);
+//     if (section.style.display === 'none') {
+//         section.style.display = 'block';
+//     } else {
+//         section.style.display = 'none';
+//     }
+// }
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
-    if (section.style.display === 'none') {
-        section.style.display = 'block';
-    } else {
-        section.style.display = 'none';
-    }
-}
-
-//dyslex timeline 
-function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section.style.display === 'none') {
+    if (section.style.display === 'none' || section.style.display === '') {
         section.style.display = 'block';
     } else {
         section.style.display = 'none';

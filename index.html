@@ -181,7 +181,7 @@
         <section>
             <h1>Portfolio</h1>
             <h2>What projects I have worked on so far...</h2>
-            <div class="project-box" onclick="openPopup()">
+            <div class="project-box dyslexAI" onclick="openPopup()">
                 <iframe src="https://dyslexaicsc.vercel.app" width="100%" height="250px" style="border: none; border-radius: 10px;"></iframe>
                 <p>
                     A web application designed with innovative features to enhance accessibility 
@@ -205,6 +205,15 @@
                 </div>
                 <button onclick="openPopup('dyslexAIPopup')">View Details</button>
             </div>
+            <div style="text-align: left; margin-top: 5px; margin-bottom: 5px;">
+                <a href="https://github.com/SabaBegum2/DyslexAI-CSC.git" target="_blank" 
+                   >
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                         alt="GitHub Logo" 
+                         style="width: 30px; height: 30px; margin-left: 1050px; position: relative; top: -70px;">
+                </a>
+            </div>
+            
             
             <div class="popup" id="dyslexAIPopup">
                 <div class="popup-content">
@@ -387,29 +396,42 @@
             </div>
 
             <!----------------------------------- Second Project -------------------------------------->
-            <div class="project-box" onclick="openPopup()">
-                <iframe src="https://dyslexaicsc.vercel.app" width="100%" height="250px" style="border: none; border-radius: 10px;"></iframe>
+            <div class="project-box driveway" onclick="openPopup()">
+                <iframe 
+                    src="https://www.youtube.com/embed/YUbBDoHQfSo?autoplay=0&rel=0" 
+                    width="100%" 
+                    height="250px" 
+                    style="border: none; border-radius: 10px;" 
+                    allowfullscreen 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+                <h1>Driveway Sealing Management System</h1>
                 <p>
-                    A web application designed with innovative features to enhance accessibility 
-                        and provide a highly personalized user experience. This application incorporate 
-                         advanced functionalities such as custom settings for text size, font type, and 
-                         background color, ensuring a comfortable and user-centric reading environment. 
-                         Its unique accessibility modes cater to diverse user needs, including audio 
-                         support for visually impaired users and image-based content augmentation for 
-                         those with hearing impairments. These features, combined with seamless integration 
-                         of AI-driven recommendations and secure authentication, make it a comprehensive 
-                         solution for modern e-book enthusiasts.
+                    This project involves designing a database and system for managing driveway-sealing services for contractor David Smith. 
+                    Clients register with their personal details and receive a unique ID. They can submit requests for quotes with details 
+                    such as property address, driveway size, proposed price, and images. David can respond with a counteroffer or rejection. 
+                    Both parties can negotiate until an agreement is reached or the process is terminated. Accepted quotes create work orders, 
+                    forming a contract. Once the work is completed, David generates a bill, which the client can pay or dispute. Bill negotiations 
+                    can continue until resolved.
                 </p>
                 <div class="project-tags">
                     <span># JavaScript</span>
-                    <span># React</span>
-                    <span># TailwindCSS</span>
+                    <span># CSS</span>
                     <span># HTML</span>
-                    <span># Software documentation</span>
-                    <span># Jest</span>
-                    <span># Software Testing</span>
+                    <span># Curl Testing</span>
+                    <span># Postman</span>
+                    <span># Software Verification</span>
                 </div>
                 <button onclick="openPopup('drivewayPopup')">View Details</button>
+                <div style="text-align: left; margin-top: 10px;">
+                    <a href="https://github.com/SabaBegum2/Driveway-Sealing-Management-System.git" target="_blank" style="display: flex; align-items: center;">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                             alt="GitHub Logo" 
+                             style="width: 30px; height: 30px; margin-left: 1050px;">
+                    </a>
+                </div>
+                
+
             </div>
             
             <div class="popup" id="drivewayPopup">
@@ -417,164 +439,261 @@
                     <button class="close-btn" onclick="closePopup('drivewayPopup')">X</button>
                     <h1>Driveway Sealing Mangament System</h1>
                     <p>
-                        A web application designed with innovative features to enhance accessibility 
-                        and provide a highly personalized user experience. This application incorporates
-                         advanced functionalities such as custom settings for text size, font type, and 
-                         background color, ensuring a comfortable and user-centric reading environment. 
-                         Its unique accessibility modes cater to diverse user needs, including audio 
-                         support for visually impaired users and image-based content augmentation for 
-                         those with hearing impairments. These features, combined with seamless integration 
-                         of AI-driven recommendations and secure authentication, make it a comprehensive 
-                         solution for modern e-book enthusiasts.
+                        This project involves designing a database and system for managing driveway-sealing services for contractor David Smith. 
+                        Clients register with their personal details and receive a unique ID. They can submit requests for quotes with details 
+                        such as property address, driveway size, proposed price, and images. David can respond with a counteroffer or rejection. 
+                        Both parties can negotiate until an agreement is reached or the process is terminated. Accepted quotes create work orders, 
+                        forming a contract. Once the work is completed, David generates a bill, which the client can pay or dispute. Bill negotiations 
+                        can continue until resolved.
                     </p>
                     <ul class="popup-sections">
                         <li>
-                            <button onclick="toggleSection('deliverables')">🗂️ Deliverables ▼</button>
-                            <div id="deliverables" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewaydeliverables')">🗂️ Deliverables ▼</button>
+                            <div id="drivewaydeliverables" class="section-content" style="display: none;">
                                 <ul>
                                     <li>
-                                        <a href="Documents/Development Plan Project 5.pdf" target="_black"> Development Plan</a> 
+                                        <strong>E-R Diagram:</strong>
+                                        I designed an E-R diagram for the system, clearly outlining the entities (`Clients`, `Quotes`, `Orders`, and `Bills`), relationships, and constraints using arrows and thick lines for better representation.
+                                    </li>
+                                    <li>
+                                        <strong>Relational Model:</strong>
+                                        I translated the E-R diagram into a relational model using `CREATE TABLE` statements, specifying primary keys, foreign keys, and constraints wherever applicable.
+                                    </li>
+                                    <li>
+                                        <strong>David Smith’s Dashboard:</strong>
+                                        I implemented a dashboard for David Smith to:
                                         <ul>
-                                            <li>1.1 Project overview</li>
-                                            <li>1.2 Project purpose, scope, objectives</li>
-                                            <li>1.3 Team organization (roles and responsibilities)</li>
-                                            <li>1.4 Problem resolution policies</li>
-                                            <li>1.5 Project plan (iterations, project schedule)</li>
-                                            <li>1.6 Configuration management plan</li>
-                                            <li>1.7 Technologies</li>
+                                            <li>View and manage quotes, orders, and bills.</li>
+                                            <li>Respond to the most recent quotes and bills.</li>
+                                            <li>Generate revenue reports for a specific period.</li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="Documents/DyslexiaAI-SRS.pdf" target="_blank"> Requirements Specification (SRS)</a>
+                                        <strong>Client Dashboard:</strong>
+                                        I implemented a client dashboard that allows clients to:
                                         <ul>
-                                            <li>2.1 Problem description</li>
-                                            <li>2.2 Users/perspectives</li>
-                                            <li>2.3 Functional requirements (required/desired)</li>
-                                            <li>2.4 Non-functional requirements</li>
-                                            <li>2.5 Business constraints</li>
-                                            <li>2.6 Technical constraints</li>
-                                            <li>2.7 Requirements traceability matrix</li>
+                                            <li>View their quotes, orders, and bills.</li>
+                                            <li>Respond to the most recent response from David Smith.</li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="Documents/Software Design Specification.pdf" target="_blank"> Software Design Specification (SDS)</a>
+                                        <strong>Query Implementations:</strong>
+                                        I implemented the following queries:
                                         <ul>
-                                            <li>3.1 Domain analysis (domain model, dictionary)</li>
-                                            <li>3.2 System context</li>
-                                            <li>3.3 Architecture design (components/modules)</li>
-                                            <li>3.4 System design (DB design, GUI design, diagrams, etc.)</li>
-                                            <li>3.5 Other issues (standards, technologies, etc.)</li>
+                                            <li>
+                                                <strong>Big Clients:</strong> Listed clients with the highest number of completed orders, showing results and explanations for changes in data.
+                                            </li>
+                                            <li>
+                                                <strong>Difficult Clients:</strong> Listed clients who submitted three requests but never followed up.
+                                            </li>
+                                            <li>
+                                                <strong>This Month Quotes:</strong> Listed all agreed quotes for December 2024.
+                                            </li>
+                                            <li>
+                                                <strong>Prospective Clients:</strong> Listed clients who registered but never submitted a request.
+                                            </li>
+                                            <li>
+                                                <strong>Largest Driveway:</strong> Listed locations of the largest driveways worked on.
+                                            </li>
+                                            <li>
+                                                <strong>Overdue Bills:</strong> Listed bills unpaid after one week of generation.
+                                            </li>
+                                            <li>
+                                                <strong>Bad Clients:</strong> Listed clients who never paid overdue bills.
+                                            </li>
+                                            <li>
+                                                <strong>Good Clients:</strong> Listed clients who paid bills within 24 hours of generation.
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="Documents/DyslexAI-Test-Plan.pdf" target="_blank">Software Test Plan</a>
-                                        <ul>
-                                            <li>4.1 Approach for each type of testing (including pass/fail criteria)</li>
-                                            <li>4.2 Functional testing (features to be tested, features not to be tested)</li>
-                                            <li>4.3 Non-functional testing</li>
-                                            <li>4.4 Integration testing</li>
-                                            <li>4.5 System testing</li>
-                                            <li>4.6 User acceptance testing</li>
-                                            <li>4.7 Schedule</li>
-                                        </ul>
+                                        <strong>Testing and Verification:</strong>
+                                        I tested each query, verified the results, and modified the database to demonstrate changes in the results, explaining the before-and-after scenarios.
                                     </li>
-                                    <li>Software Source Code</li>
-                                    <li>
-                                        <a href="https://github.com/DyslexAI/DyslexAI" target="_blank" aria-label="View the project on GitHub">
-                                        </a>
-                                    </li>
-
                                 </ul>
                             </div>
                         </li>
                 
                         <li>
-                            <button onclick="toggleSection('DyslexAITimeline')">🕒 Timeline ▼</button>
-                            <div id="DyslexAITimeline" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewayTimeline')">🕒 Timeline ▼</button>
+                            <div id="drivewayTimeline" class="section-content" style="display: none;">
                                 <ul class="Dyslextimeline">
                                     <li>
-                                        <strong>May 2024:</strong> Project Proposal.
+                                        <strong>October 2024:</strong> Began Version 1.
+                                        <ul>
+                                            <li>Implemented user registration, sign-in, and search functionality.</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <strong>May 2024:</strong> Development Plan.
+                                        <strong>October 2024:</strong> Completed Version 1.
+                                        <ul>
+                                            <li>Finalized and tested the user management system.</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <strong>May 2024:</strong> Software Requirement Specification (SRS).
+                                        <strong>November 2024:</strong> Started Version 2.
+                                        <ul>
+                                            <li>Designed database schema and implemented driveway sealing workflows.</li>
+                                            <li>Integrated dashboards for clients and David Smith.</li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <strong>June 2024:</strong> First Demo.
-                                    </li>
-                                    <li>
-                                        <strong>June 2024:</strong> Software Design Specification.
-                                    </li>
-    
-                                    <li>
-                                        <strong>July 2024:</strong> Test Plan.
-                                    </li>
-                                    <li>
-                                        <strong>July 2024:</strong> Final Demo.
+                                        <strong>December 2024:</strong> Final Demo.
+                                        <ul>
+                                            <li>Presented the complete system and provided documentation.</li>
+                                        </ul>
                                     </li>
                                 </ul>
+                                
                             </div>
                         </li>
                         
                         <li>
-                            <button onclick="toggleSection('description')">📄 Description ▼</button>
-                            <div id="description" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewaydescription')">📄 Description ▼</button>
+                            <div id="drivewaydescription" class="section-content" style="display: none;">
                                 <ul>
-                                    <li><strong>Developed an AI-powered e-book web application</strong>, celebrated for its innovative design and emphasis on accessibility, usability, and user engagement:</li>
-                                    <ul>
-                                        <li><strong>Accessibility Modes:</strong>
-                                            <ul>
-                                                <li><strong>Deaf Mode:</strong> Provides a unique feature that converts text into descriptive images using the DALL·E AI model. The application processes text sentence by sentence to generate visually rich and meaningful imagery. To optimize user experience, it leverages a caching mechanism that saves progress, allowing users to seamlessly continue from where they left off when revisiting a book.</li>
-                                                <li><strong>Blind Mode:</strong> Features a responsive API to deliver text-to-speech functionality for visually impaired users. Upon launching the application, the mode automatically begins reading the content aloud, with an option to toggle the voice functionality on or off. If enabled, the system also reads out hovered words dynamically, enhancing navigation. Users can further customize this mode through the settings page, allowing for complete control over their reading experience.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Customizable User Experience:</strong>
-                                            <ul>
-                                                <li>Incorporates a comprehensive settings page where users can tailor the application to their preferences. Options include changing the background color for optimal readability, adjusting text size for visual comfort, and selecting font types that best suit their reading style. This level of personalization ensures a unique experience for every user.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Secure Authentication:</strong>
-                                            <ul>
-                                                <li>Implements secure user authentication through Google Firebase. Users can sign up or log in with their email credentials, and their data is securely stored in the Firebase backend. This functionality also supports personalized e-book libraries, enabling users to manage their collections effortlessly.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Seamless Book Management:</strong>
-                                            <ul>
-                                                <li>Allows users to import and manage their e-books directly within the application. PDF files can be imported from Google or other sources, making it easy for users to consolidate their reading materials in one place. The intuitive interface ensures a smooth and hassle-free book management experience.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>AI-Powered Recommendations:</strong>
-                                            <ul>
-                                                <li>Incorporates an AI-driven recommendation system that analyzes users’ reading histories to suggest books tailored to their interests and preferences. This feature helps users discover new and relevant content, enhancing their overall engagement with the application.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Recognized Achievement:</strong>
-                                            <ul>
-                                                <li>Designed and developed an intuitive and visually appealing interface that was highlighted as a top innovation in a software engineering course. The application’s focus on accessibility and enhanced workflows has set it apart as an exemplary project for integrating technology with user-centric design principles.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <li><strong>Project Overview:</strong> 
+                                        Design a web-based system to manage driveway-sealing services for contractor David Smith. Clients register, request quotes, negotiate, and pay bills, while David manages quotes, orders, and billing via a dashboard.
+                                    </li>
+                                    <li><strong>Required Functionalities:</strong>
+                                        <ul>
+                                            <li>Dashboard for David Smith:
+                                                <ul>
+                                                    <li>Check all incoming quote requests, their content, responses, and status.</li>
+                                                    <li>View all orders of work, their content, and status.</li>
+                                                    <li>Manage bills, including content and status.</li>
+                                                    <li>Respond to the most recent quotes and bills.</li>
+                                                    <li>Generate revenue reports for specified periods.</li>
+                                                </ul>
+                                            </li>
+                                            <li>Dashboard for Clients:
+                                                <ul>
+                                                    <li>View their quotes, orders, and bills.</li>
+                                                    <li>Respond to the most recent response from David Smith.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Implementation Requirements:</strong>
+                                        <ul>
+                                            <li>Design an E-R diagram using arrows or thick lines to represent constraints, with clear assumptions and justifications.</li>
+                                            <li>Translate the E-R diagram into a relational model using `CREATE TABLE` statements, specifying primary keys, foreign keys, and constraints.</li>
+                                            <li>Develop a web-based interface for all functionalities described above. SQL execution via tools like MySQL Workbench is for debugging only.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Query Functionality:</strong>
+                                        <ul>
+                                            <li><strong>Big Clients:</strong> List the clients with the highest number of completed orders. In case of a tie, list all top clients.</li>
+                                            <li><strong>Difficult Clients:</strong> List clients who submitted three requests but never followed up.</li>
+                                            <li><strong>This Month Quotes:</strong> List all agreed quotes for the current month (e.g., December 2024).</li>
+                                            <li><strong>Prospective Clients:</strong> List clients who registered but never submitted a quote request.</li>
+                                            <li><strong>Largest Driveway:</strong> List locations of the largest driveways David Smith worked on. If tied, list all locations.</li>
+                                            <li><strong>Overdue Bills:</strong> List bills unpaid after one week of generation.</li>
+                                            <li><strong>Bad Clients:</strong> List clients who never paid overdue bills. Exclude clients with no bills.</li>
+                                            <li><strong>Good Clients:</strong> List clients who paid bills within 24 hours of generation.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Additional Requirements:</strong>
+                                        <ul>
+                                            <li>Include simple GUI interfaces for all functionalities.</li>
+                                            <li>All interactions must occur via the web-based interface, not through direct SQL execution.</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                                 
                             </div>
                         </li>
                         <li>
-                            <button onclick="toggleSection('gallery')"> 🖼️ Gallery ▼</button>
-                            <div id="gallery" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewayGallery')"> 🖼️ Gallery ▼</button>
+                            <div id="drivewayGallery" class="section-content" style="display: none;">
+                                <div class="video-gallery">
+                                    <!-- Video 1 -->
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/qRX5KC5OP1M" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <!-- Video 2 -->
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/ZlCvqW1yYzs" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <!-- Video 3 -->
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/Exc0e156ySI" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <!-- Add additional videos similarly -->
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/NmbggmJBwd4" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/JweJVJDLm98" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/JnA6PWQPFfo" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                    <div class="video-thumbnail">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/PHfi5VMRFUY" 
+                                            width="200" 
+                                            height="150" 
+                                            style="border: none; border-radius: 10px;" 
+                                            allowfullscreen 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                        </iframe>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         
                         <li>
-                            <button onclick="toggleSection('code')">💻 Code ▼</button>
-                            <div id="code" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewaycode')">💻 Code ▼</button>
+                            <div id="drivewaycode" class="section-content" style="display: none;">
                                 <a href="https://github.com/SabaBegum2/DyslexAI-CSC.git">GitHub Repository</a>
                             </div>
                         </li>
                         <li>
-                            <button onclick="toggleSection('links')">🔗 Links ▼</button>
-                            <div id="links" class="section-content" style="display: none;">
+                            <button onclick="toggleSection('drivewaylinks')">🔗 Links ▼</button>
+                            <div id="drivewaylinks" class="section-content" style="display: none;">
                                 <a href="https://dyslexaicsc.vercel.app">Live Demo</a>
                             </div>
                         </li>
@@ -591,6 +710,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Third project -->
         </section>
 
 

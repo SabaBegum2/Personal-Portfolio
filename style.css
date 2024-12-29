@@ -807,21 +807,43 @@ body {
   overflow: hidden; /* Ensure the pseudo-element stays inside the box */
 }
 
+.project-box {
+  position: relative;
+  background-color: rgb(0, 0, 0); /* Fallback background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
 .project-box::before {
-  content: ''; /* Required for pseudo-element */
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('images/file.png'); /* Background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px; /* Match the border radius of the parent */
-  filter: brightness(0.2); /* Apply filter to the background image */
-  z-index: 0; /* Place it behind the content */
+  border-radius: 10px;
+  filter: brightness(0.2);
+  z-index: 0;
 }
+
+/* Specific background images for each project */
+.project-box.dyslexAI::before {
+  background-image: url('Images/file.png');
+}
+.project-box.driveway::before {
+  background-image: url('Images/home-driveway-sealing-companies-tn.png');
+}
+
 
 /* Ensure the content is above the background */
 .project-box * {
@@ -875,7 +897,7 @@ body {
 
 /*Deliverables style */
 /* Styling only for Deliverables section */
-#deliverables {
+#deliverables, #drivwaydeliverables {
   background-color: #9fb8b7; /* Light background for contrast */
   border: 1px solid #175961; /* Subtle border for structure */
   border-radius: 8px;
@@ -888,7 +910,7 @@ body {
 }
 
 /* Deliverables-specific Button Styling */
-button[onclick*="deliverables"] {
+button[onclick*="deliverables"], button[onclick*="drivewaydeliverables"] {
   background-color: #3d7b90; /* Blue background */
   color: #fff; /* White text */
   border: none;
@@ -900,19 +922,19 @@ button[onclick*="deliverables"] {
   margin-bottom: 10px;
 }
 
-button[onclick*="deliverables"]:hover {
+button[onclick*="deliverables"]:hover, button[onclick*="drivewaydeliverables"]:hover {
   background-color: #18636f; /* Darker blue on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Specific List Styling for Deliverables */
-#deliverables ul {
+#deliverables ul, #drivewaydeliverables ul{
   list-style-type: none; /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-#deliverables ul > li {
+#deliverables ul > li, #drvivewaydeliverables ul > li{
   font-size: 18px; /* Slightly larger font for main items */
   font-weight: bold; /* Bold font for emphasis */
   margin-bottom: 15px; /* Space between top-level items */
@@ -921,7 +943,7 @@ button[onclick*="deliverables"]:hover {
   padding-left: 20px; /* Space for icon */
 }
 
-#deliverables ul > li::before {
+#deliverables ul > li::before, #drivewaydeliverables ul > li::before{
   content: "📂"; /* Folder icon for main items */
   position: absolute;
   left: 0;
@@ -930,7 +952,7 @@ button[onclick*="deliverables"]:hover {
   font-size: 20px;
 }
 
-#deliverables ul > li > ul > li {
+#deliverables ul > li > ul > li, #drivewaydeliverables ul > li > ul > li{
   font-size: 16px; /* Slightly smaller font for sub-items */
   margin-bottom: 8px; /* Space between sub-items */
   margin-left: 20px; /* Indent for hierarchy */
@@ -939,7 +961,7 @@ button[onclick*="deliverables"]:hover {
   padding-left: 20px; /* Space for icon */
 }
 
-#deliverables ul > li > ul > li::before {
+#deliverables ul > li > ul > li::before, #drivewaydeliverables ul > li > ul > li:before{
   content: "📄"; /* Document icon for sub-items */
   position: absolute;
   left: 0;
@@ -950,7 +972,7 @@ button[onclick*="deliverables"]:hover {
 
 /* Hover Effect Specific to Deliverables */
 #deliverables ul > li:hover,
-#deliverables ul > li > ul > li:hover {
+#deliverables ul > li > ul > li:hover, #drivewaydeliverables ul > li > ul > li:hover, #drivewaydeliverables ul > li:hover{
   color: #35748b; /* Red text on hover */
   cursor: pointer;
 }
@@ -958,7 +980,7 @@ button[onclick*="deliverables"]:hover {
 /*styling for descriptio DYSLEXAI*/
 
 /* Styling for Description section */
-#description {
+#description, #drivewaydescription {
   background-color: #9fb8b7; /* Light background for contrast */
   border: 1px solid #ddd; /* Subtle border for structure */
   border-radius: 8px;
@@ -971,7 +993,7 @@ button[onclick*="deliverables"]:hover {
 }
 
 /* Button Styling Specific to Description */
-button[onclick*="description"] {
+button[onclick*="description"], button[onclick*="drivewaydescription"] {
   background-color: #3d7b90; /* Green background for a different section */
   color: #fff; /* White text */
   border: none;
@@ -983,7 +1005,7 @@ button[onclick*="description"] {
   margin-bottom: 10px;
 }
 
-button[onclick*="description"]:hover {
+button[onclick*="description"]:hover, button[onclick*="drivewaydescription"]:hover  {
   background-color: #18636f; /* Darker green on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
@@ -995,7 +1017,7 @@ button[onclick*="description"]:hover {
   margin: 0;
 }
 
-#description ul > li {
+#description ul > li, #drivewaydescription ul > li{
   font-size: 18px; /* Slightly larger font for main items */
   font-weight: bold; /* Bold font for emphasis */
   margin-bottom: 15px; /* Space between top-level items */
@@ -1005,7 +1027,7 @@ button[onclick*="description"]:hover {
 }
 
 /* Sub-Level List Styling */
-#description ul > li > ul > li {
+#description ul > li > ul > li, #drivewaydescription ul > li > ul > li{
   font-size: 16px; /* Slightly smaller font for sub-items */
   margin-bottom: 8px; /* Space between sub-items */
   margin-left: 20px; /* Indent for hierarchy */
@@ -1015,7 +1037,7 @@ button[onclick*="description"]:hover {
 }
 
 /* Custom Bullet Icon for Top-Level Items */
-#description ul > li::before {
+#description ul > li::before, #drivewaydescription ul > li::before {
   content: "📘"; /* Blue book icon for main items */
   position: absolute;
   left: 0;
@@ -1025,7 +1047,7 @@ button[onclick*="description"]:hover {
 }
 
 /* Custom Bullet Icon for Sub-Level Items */
-#description ul > li > ul > li::before {
+#description ul > li > ul > li::before, #drivewaydescriptions ul > li > ul > li::before{
   content: "📄"; /* Document icon for sub-items */
   position: absolute;
   left: 0;
@@ -1036,22 +1058,22 @@ button[onclick*="description"]:hover {
 
 /* Hover Effect Specific to Description */
 #description ul > li:hover,
-#description ul > li > ul > li:hover {
+#description ul > li > ul > li:hover, #drivewaydescription ul > li:hover, #drivewaydescription ul > li > ul > li:hover{
   color: #3d7b90; /* Red text on hover */
   cursor: pointer;
 }
 
 /* Scrollbar Styling for Description */
-#description::-webkit-scrollbar {
+#description::-webkit-scrollbar, #driveway::-webkit-scrollbar {
   width: 8px;
 }
 
-#description::-webkit-scrollbar-thumb {
+#description::-webkit-scrollbar-thumb, #driveway::-webkit-scrollbar-thumb {
   background: #3d7b90; /* Green scrollbar thumb */
   border-radius: 5px;
 }
 
-#description::-webkit-scrollbar-thumb:hover {
+#description::-webkit-scrollbar-thumb:hover, #driveway::-webkit-scrollbar-thumb:hover {
   background: #218838; /* Darker green on hover */
 }
 
@@ -1067,7 +1089,7 @@ button[onclick*="description"]:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-button[onclick*="gallery"] {
+button[onclick*="gallery"], button[onclick*="drivewayGallery"] {
   background-color: #3d7b90; /* Blue background */
   color: #fff; /* White text */
   border: none; /* No border */
@@ -1079,7 +1101,7 @@ button[onclick*="gallery"] {
   margin-bottom: 10px; /* Add spacing */
 }
 
-button[onclick*="gallery"]:hover {
+button[onclick*="gallery"]:hover, button[onclick*="drivewayGallery"]:hover {
   background-color: #18636f; /* Darker blue on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
@@ -1146,7 +1168,7 @@ button[onclick*="links"]:hover {
 
 
 /* Timeline dyslex */
-#DyslexAITimeline {
+#DyslexAITimeline, #drivewayTimeline {
   background-color: #9fb8b7; /* Light blue background */
   border: 1px solid #fdfbfb; /* Subtle light border */
   padding: 15px;
@@ -1157,7 +1179,7 @@ button[onclick*="links"]:hover {
   margin-top: 10px; /* Spacing from the button */
 }
 
-button[onclick*="DyslexAITimeline"] {
+button[onclick*="DyslexAITimeline"], button[onclick*="drivewayTimeline"] {
   background-color: #3d7b90; /* Blue background */
   color: #fff; /* White text */
   border: none; /* No border */
@@ -1170,26 +1192,26 @@ button[onclick*="DyslexAITimeline"] {
 }
 
 /* Hover Effect for Button */
-button[onclick*="DyslexAITimeline"]:hover {
+button[onclick*="DyslexAITimeline"]:hover, button[onclick*="drivewayTimeline"]:hover {
   background-color: #18636f; /* Darker blue on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Timeline List Styling */
-.Dyslextimeline {
+.Dyslextimeline, .drivewaytimeline {
   list-style-type: none; /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
-.Dyslextimeline li {
+.Dyslextimeline li, .drivewaytimeline li {
   margin-bottom: 10px; /* Spacing between items */
   font-size: 14px; /* Text size */
   color: #f7f1f1; /* Text color */
 }
 
 /* Bold the Date for Emphasis */
-.Dyslextimeline li strong {
+.Dyslextimeline li strong, .drivewaytimeline li strong {
   color: #3d7b90; /* Match button color for consistency */
 }
 
@@ -1210,7 +1232,7 @@ button[onclick*="DyslexAITimeline"]:hover {
 /* galary image styling */
 /* General styling for the gallery */
 /* General styling for the gallery */
-#gallery {
+#gallery, #drivewayGallery {
   background-color: #9fb8b7; /* Dark background for the gallery */
   color: white; /* Light text for better visibility */
   border: 1px solid #333; /* Subtle border */
@@ -1220,6 +1242,7 @@ button[onclick*="DyslexAITimeline"]:hover {
   margin: 20px auto; /* Center the gallery horizontally */
   text-align: center; /* Center-align content */
 }
+
 
 /* Styling for gallery images */
 #gallery img {
@@ -1281,8 +1304,164 @@ button[onclick*="DyslexAITimeline"]:hover {
 }
 
 
+/******************************************* Second project *****************************************************/
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.video-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Optional: Placeholder background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styling for Popup */
+.popup-content {
+  background-color: #222; /* Dark background for the pop-up */
+  color: #fff; /* White text */
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  max-height: 80vh; /* Restrict height */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  position: relative; /* Required for close button positioning */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 
+
+/* List Styling */
+.popup-sections ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.popup-sections ul > li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000000; /* Light gray text */
+  padding-left: 20px; /* Space for custom icons */
+  position: relative;
+}
+
+
+
+/* Nested List Styling */
+.popup-sections ul ul {
+  margin-top: 10px;
+  padding-left: 20px; /* Indentation for nested lists */
+}
+
+.popup-sections ul ul > li {
+  font-size: 16px;
+  color: #050000; /* Slightly lighter text for nested items */
+  margin-bottom: 8px;
+}
+
+
+/* Section Content */
+.section-content {
+  display: none; /* Hidden by default */
+  background-color: #9fb8b7; /* Slightly lighter background */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for depth */
+}
+
+/* Video Gallery Styling */
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.video-thumbnail iframe {
+  border-radius: 8px;
+  border: 2px solid #444;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.video-thumbnail iframe:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  border-color: #18636f; /* Change border color on hover */
+}
+
+/* Links Styling */
+.popup-content a {
+  color: #18636f; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.popup-content a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Tags Styling */
+.project-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tags span {
+  background-color: #18636f; /* Tag background */
+  color: #fff; /* Tag text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-tags span:hover {
+  background-color: #18636f; /* Highlight on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Scrollbar Styling */
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.popup-content::-webkit-scrollbar-thumb:hover {
+  background-color: #00aaff;
+}
 
 
 
@@ -1787,3 +1966,6 @@ button:active {
   margin-right: 10px; /* Space between logo and text */
   border-radius: 5px; /* Optional: rounded logos for consistency */
 }
+
+/**************************** projects styling ************************************/
+
