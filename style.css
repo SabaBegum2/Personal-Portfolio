@@ -52,107 +52,77 @@ main hr {
   font-size: 2rem;
 }
 
-/*this is the styling for the landing page */
-/* General reset */
-
-body,
-html {
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
-  min-height: 100%;
-  /* Ensure it fills the screen */
-  overflow-y: auto;
-  /* Allow vertical scrolling */
 }
 
-/* Section styling */
-.firstSection {
+/*************************** This is the styling for the name in the first page *******************************************/
+body {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White default text color */
+  font-family: 'Times New Roman', serif; /* Elegant font */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  /* Full screen height */
-  background: linear-gradient(135deg, #1f2937, #3d7b90);
-  /* Gradient background */
-  color: #fff;
-  /* White text */
-  text-align: center;
-  padding: 20px;
-  /* Add padding for better layout */
-  box-sizing: border-box;
-  /* Include padding in height calculation */
+  justify-content: flex-end; /* Align content to the right */
+  padding: 0 100px; /* Padding around the content */
 }
 
-/* Landing content */
-.landing .content {
-  max-width: 1400px;
-  /* Increase max width for large screens */
-  padding: 20px;
-  /* Add padding around the content */
-  text-align: center;
-}
-
-/* Name styling */
-.gradient-text {
-  font-size: 10rem;
-  /* Bigger font size */
+/* Background Text */
+.background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 35vw; /* Scaled to viewport width */
   font-weight: bold;
-  background: linear-gradient(90deg, #3d7b90, #64b5f6, #e3f2fd);
-  /* Gradient for text */
-  -webkit-background-clip: text;
-  /* Clips the gradient to the text */
-  -webkit-text-fill-color: transparent;
-  /* Makes the rest of the text transparent */
-  margin: 0;
-  /* Remove default margin */
-  text-transform: uppercase;
-  /* Make the text uppercase */
-  letter-spacing: 8px;
-  /* Increase letter spacing for dramatic effect */
+  color: #3d555b; /* Brownish tone for background letters */
+  line-height: 0.9; /* Adjust overlap between letters */
+  z-index: 1; /* Behind the main content */
 }
 
-/* Subtitle styling */
-.landing .content p {
-  font-size: 3rem;
-  /* Larger font size for subtitle */
-  margin-top: 30px;
-  /* Add more space below the name */
-  font-weight: 400;
-  /* Slightly bolder subtitle */
-  color: #d6e2eb;
-  /* Softer, more prominent gray color */
+.background-text span {
+  display: block;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .gradient-text {
-    font-size: 6rem;
-    /* Scale down for smaller screens */
-    letter-spacing: 5px;
-    /* Adjust spacing */
-  }
-
-  .landing .content p {
-    font-size: 2rem;
-    /* Adjust subtitle size */
-  }
+/* Main Content */
+.content {
+  z-index: 2; /* Above the background text */
+  text-align: right; /* Align text to the right */
 }
 
-@media (max-width: 480px) {
-  .gradient-text {
-    font-size: 4rem;
-    /* Further scale down for mobile */
-    letter-spacing: 3px;
-    /* Adjust spacing */
-  }
-
-  .landing .content p {
-    font-size: 1.5rem;
-    /* Adjust subtitle size */
-  }
+.name {
+  font-size: 4rem; /* Large title */
+  font-weight: bold;
+  color: #ffffff; /* Gold color for the name */
+  letter-spacing: 0.2rem; /* Space out letters */
 }
+
+.divider {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #ffffff; /* Gold divider */
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem; /* Smaller subtitle */
+  color: #ffffff; /* Gold color */
+  letter-spacing: 0.1rem;
+}
+
+
+
+
+
 
 
 /* about me section */
@@ -168,7 +138,7 @@ html {
 .about {
   padding: 50px 20px;
   /* Add padding for spacing */
-  background-color: #282323;
+  background-color: transparent !important;
   /* Light gray background */
   color: #fff5f5;
   /* Dark text color */
@@ -215,6 +185,8 @@ html {
   /* Add a subtle shadow */
   border: 3px solid #3d7b90;
   /* Optional: Add a border matching the theme */
+  border-radius: 5px; /* Optional: For rounded corners */
+  box-shadow: 0 0 10px #3d7b90, 0 0 20px #3d7b90, 0 0 30px #3d7b90; /* Glowing effect */
 }
 
 /* Responsive Design adjustments for .about img */
@@ -304,9 +276,7 @@ html {
   /* To maintain the aspect ratio */
 }
 
-.purple {
-  color: rgb(143, 121, 163);
-}
+
 
 .text-gray {
   color: gray;
@@ -393,136 +363,91 @@ body {
 
 /*************************** an example header design *************************************/
 /* General Reset */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 /* Navbar */
 header {
   width: 100%;
-  /* Full width for the navbar */
-  background-color: #1e1e1e;
-  /* Dark background */
+  background-color: #000000; /* Set background color to black */
   padding: 10px 20px;
-  /* Add padding for better spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* Add shadow to navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to navbar */
   position: fixed;
-  /* Make the navbar fixed at the top */
   top: 0;
   left: 0;
   z-index: 1000;
-  /* Ensure it stays on top */
 }
 
 header nav {
   display: flex;
-  /* Use flexbox for layout */
   justify-content: space-between;
-  /* Space between logo and links */
   align-items: center;
-  /* Center items vertically */
 }
 
 header .logo {
   font-size: 1.8rem;
-  /* Larger font size for the logo */
   font-weight: bold;
-  /* Bold text */
-  color: #00bcd4;
-  /* Highlighted color */
+  color: #ffffff; /* Set logo color to white */
   cursor: pointer;
-  /* Pointer cursor for interactivity */
   text-transform: uppercase;
-  /* Make the logo uppercase */
 }
 
 header .hamburger {
   display: none;
-  /* Hide by default */
   font-size: 2rem;
-  /* Large size for the hamburger */
-  color: #ffffff;
+  color: #ffffff; /* Set hamburger menu color to white */
   cursor: pointer;
 }
 
 /* Navbar Links */
 header .nav-links {
   list-style: none;
-  /* Remove default bullet points */
   display: flex;
-  /* Arrange links horizontally */
   gap: 20px;
-  /* Space between links */
   margin: 0;
   padding: 0;
 }
 
-header .nav-links li {
-  display: inline;
-  /* Inline items */
-}
-
 header .nav-links li a {
   text-decoration: none;
-  /* Remove underline */
-  color: #ffffff;
-  /* White text color */
+  color: #ffffff; /* Set text color to white */
   font-weight: bold;
-  /* Bold text */
   padding: 10px 15px;
-  /* Add padding around links */
   border-radius: 5px;
-  /* Rounded corners */
   transition: background-color 0.3s ease, transform 0.2s ease;
-  /* Smooth hover effects */
 }
 
 header .nav-links li a:hover {
-  background-color: #00bcd4;
-  /* Highlight background on hover */
-  transform: scale(1.1);
-  /* Slight zoom effect */
+  background-color: #444444; /* Darker gray background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   header .hamburger {
     display: block;
-    /* Show hamburger on small screens */
   }
 
   header .nav-links {
     flex-direction: column;
-    /* Stack links vertically */
-    background-color: #1e1e1e;
-    /* Match header background */
+    background-color: #000000; /* Black background for dropdown menu */
     padding: 20px;
     position: absolute;
     top: 60px;
-    /* Position below the header */
     right: 20px;
-    /* Align to the right */
     display: none;
-    /* Hide by default */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Add shadow */
   }
 
   header .nav-links.active {
     display: flex;
-    /* Show when active */
   }
 }
 
+
 .logo img {
-  height: 200px; /* Reduced logo size */
+  height: 200px;
+  filter: invert(100%) brightness(200%); /* Example for making it white */
 }
+
 
 
 
@@ -530,7 +455,7 @@ header .nav-links li a:hover {
 .skills-intro {
   text-align: center;
   /* Center-align content */
-  background-color: #282323;
+  background-color: #000000;
   /* Background color */
   color: #ffffff;
   /* Text color */
@@ -692,12 +617,14 @@ header .nav-links li a:hover {
 
 
 
-/* Container around content */
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color: #000000; /* Set black background */
+  color: white; /* Ensure text is visible */
   width: 50%;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
 }
 
 /* The circles on the timeline */
@@ -707,12 +634,13 @@ header .nav-links li a:hover {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
+  background-color: white; /* Keep circle white for contrast */
   border: 4px solid #3d7b90;
   top: 15px;
-  border-radius: 50%;
+  border-radius: 50%; /* Makes the circle round */
   z-index: 1;
 }
+
 
 /* Place the container to the left */
 .left {
@@ -1238,7 +1166,7 @@ body {
   /* Center the navigation items */
   gap: 20px;
   /* Add space between the items */
-  background-color: #282323;
+  background-color: #000000;
   /* Background color */
   padding: 15px 20px;
   /* Add padding for spacing */
@@ -2464,7 +2392,7 @@ body {
 header {
   width: 100%;
   /* Full width for the navbar */
-  background-color: #1e1e1e;
+  background-color: #000000;
   /* Dark background */
   padding: 10px 20px;
   /* Add padding for better spacing */
@@ -2530,6 +2458,21 @@ main {
   /* Rounded corners */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   /* Add shadow to main content */
+}
+
+header {
+  background-color: black; /* Set black background for header */
+}
+
+nav {
+  background-color: transparent; /* Remove background color from nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-color: black; /* Ensure the body background is consistent */
 }
 
 /* Footer styling */
@@ -3129,4 +3072,15 @@ button:active {
   /* Space between logo and text */
   border-radius: 5px;
   /* Optional: rounded logos for consistency */
+}
+
+.footer-tabs p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.8;
+  border-top: 1px solid #ccc; /* Optional: Add a subtle line above the text */
+  padding-top: 10px; /* Space between the line and text */
 }
