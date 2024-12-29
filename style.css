@@ -51,17 +51,178 @@ main hr {
 .left {
     font-size: 2rem;
 }
+/*this is the styling for the landing page */
+/* General reset */
 
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%; /* Ensure it fills the screen */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Section styling */
 .firstSection {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 110px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  background: linear-gradient(135deg, #1f2937, #3d7b90); /* Gradient background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px; /* Add padding for better layout */
+  box-sizing: border-box; /* Include padding in height calculation */
 }
 
-.firstSection > div {
-    width: 30%;
+/* Landing content */
+.landing .content {
+  max-width: 1400px; /* Increase max width for large screens */
+  padding: 20px; /* Add padding around the content */
+  text-align: center;
 }
+
+/* Name styling */
+.gradient-text {
+  font-size: 10rem; /* Bigger font size */
+  font-weight: bold;
+  background: linear-gradient(90deg, #3d7b90, #64b5f6, #e3f2fd); /* Gradient for text */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the rest of the text transparent */
+  margin: 0; /* Remove default margin */
+  text-transform: uppercase; /* Make the text uppercase */
+  letter-spacing: 8px; /* Increase letter spacing for dramatic effect */
+}
+
+/* Subtitle styling */
+.landing .content p {
+  font-size: 3rem; /* Larger font size for subtitle */
+  margin-top: 30px; /* Add more space below the name */
+  font-weight: 400; /* Slightly bolder subtitle */
+  color: #d6e2eb; /* Softer, more prominent gray color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 6rem; /* Scale down for smaller screens */
+    letter-spacing: 5px; /* Adjust spacing */
+  }
+  .landing .content p {
+    font-size: 2rem; /* Adjust subtitle size */
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-text {
+    font-size: 4rem; /* Further scale down for mobile */
+    letter-spacing: 3px; /* Adjust spacing */
+  }
+  .landing .content p {
+    font-size: 1.5rem; /* Adjust subtitle size */
+  }
+}
+
+
+/* about me section */
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About Section Styling */
+.about {
+  padding: 50px 20px; /* Add padding for spacing */
+  background-color: #282323; /* Light gray background */
+  color: #fff5f5; /* Dark text color */
+  text-align: center; /* Center text by default */
+}
+
+.about h1 {
+  font-size: 3rem; /* Large heading */
+  font-weight: bold;
+  color: #3d7b90; /* Custom color for heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on small screens */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content vertically */
+  max-width: 900px; /* Limit width */
+  margin: 0 auto; /* Center section horizontally */
+}
+
+.about-image {
+  width: 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image scales nicely */
+  margin-bottom: 20px; /* Space below the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border: 3px solid #3d7b90; /* Optional: Add a border matching the theme */
+}
+
+/* Responsive Design adjustments for .about img */
+@media (max-width: 768px) {
+  .about-image {
+    width: 150px; /* Reduce size for smaller screens */
+    height: 150px; /* Reduce size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img {
+    width: 100px; /* Further reduce size for very small screens */
+    height: 100px; /* Further reduce size for very small screens */
+  }
+}
+
+.about-text {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Add padding around the text */
+}
+
+.about p {
+  font-size: 1.2rem; /* Slightly larger font size */
+  line-height: 1.8; /* Add spacing between lines */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.about strong {
+  color: #3d7b90; /* Highlighted text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .about img {
+    width: 120px; /* Reduce image size */
+    height: 120px; /* Reduce image size */
+  }
+
+  .about p {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about h1 {
+    font-size: 2rem; /* Adjust heading size for small screens */
+  }
+
+  .about p {
+    font-size: 0.9rem; /* Further adjust text size for small screens */
+  }
+}
+
 
 .leftSection {
     font-size: 2rem;
@@ -161,31 +322,158 @@ h2 {
     font-family: Helvetica, sans-serif;
   }
   
+/*************************** an example header design *************************************/
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+  width: 100%; /* Full width for the navbar */
+  background-color: #1e1e1e; /* Dark background */
+  padding: 10px 20px; /* Add padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow to navbar */
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+header nav {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Center items vertically */
+}
+
+header .logo {
+  font-size: 1.8rem; /* Larger font size for the logo */
+  font-weight: bold; /* Bold text */
+  color: #00bcd4; /* Highlighted color */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  text-transform: uppercase; /* Make the logo uppercase */
+}
+
+header .hamburger {
+  display: none; /* Hide by default */
+  font-size: 2rem; /* Large size for the hamburger */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Navbar Links */
+header .nav-links {
+  list-style: none; /* Remove default bullet points */
+  display: flex; /* Arrange links horizontally */
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-links li {
+  display: inline; /* Inline items */
+}
+
+header .nav-links li a {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* White text color */
+  font-weight: bold; /* Bold text */
+  padding: 10px 15px; /* Add padding around links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+header .nav-links li a:hover {
+  background-color: #00bcd4; /* Highlight background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .hamburger {
+    display: block; /* Show hamburger on small screens */
+  }
+
+  header .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    background-color: #1e1e1e; /* Match header background */
+    padding: 20px;
+    position: absolute;
+    top: 60px; /* Position below the header */
+    right: 20px; /* Align to the right */
+    display: none; /* Hide by default */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow */
+  }
+
+  header .nav-links.active {
+    display: flex; /* Show when active */
+  }
+}
+
+
+
+
+
+/***************************** Skills Style ***********************************/
+.skills-intro {
+  text-align: center; /* Center-align content */
+  background-color: #282323; /* Background color */
+  color: #ffffff; /* Text color */
+  padding: 20px 10px; /* Add padding */
+  margin-bottom: 30px; /* Space below the section */
+  border-bottom: 3px solid #3d7b90; /* Optional border for visual separation */
+  border-radius: 10px; /* Rounded corners for style */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.skills-intro h1 {
+  font-size: 3rem; /* Large text size */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-bottom: 10px; /* Space between title and description */
+  color: #3d7b90; /* Accent color */
+  text-transform: uppercase; /* Uppercase for title */
+}
+
+.skills-intro p {
+  font-size: 1.2rem; /* Slightly larger text */
+  color: #f0f0f0; /* Lighter text for readability */
+  line-height: 1.5; /* Improved readability */
+  max-width: 800px; /* Limit width */
+  margin: 0 auto; /* Center paragraph within the container */
+}
+
+
+
   /* The actual timeline (the vertical ruler) */
   .timeline {
+    margin-top:100px;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   /* The actual timeline (the vertical ruler) */
+    /* The actual timeline (the vertical ruler) */
+  /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
     background-color: white;
-    top: 0;
+    top: 90px;/* this moves the experience up*/
     bottom: 0;
     left: 50%;
     margin-left: -3px;
   }
 
-  /* Timeline Section */
-/* Timeline Section */
 /* Move the Timeline Section Down */
 
-
 .timeline {
+  margin-top:50px;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   color: #000000; /* Set all text to black */
@@ -194,21 +482,21 @@ h2 {
 /* Main Heading */
 /* Styling for the Experiences Heading */
 .timeline h2 {
+  margin-bottom: 50px;
   font-size: 2.5rem; /* Adjust the font size */
   font-weight: bold; /* Make the text bold */
   color: hsl(0, 10%, 88%); /* Set the text color to black */
   text-align: center; /* Center the heading */
-  margin-bottom: 20px; /* Add space below the heading */
-  margin-top: 10px; /* Add space above the heading */
+  margin-bottom: 50px; /* Add space below the heading */
   letter-spacing: 2px; /* Optional: Add spacing between letters */
   text-transform: uppercase; /* Optional: Make the text all uppercase */
+  z-index: 1; /* ensures it appears above the timeline ruler*/
 }
-
 
 /* Subheadings for Each Experience */
 .timeline h3 {
   font-size: 1.5rem; /* Adjust subheading size */
-  color: #000000; /* Black text */
+  color: #fffafa; /* Black text */
   margin-bottom: 10px;
 }
 
@@ -217,14 +505,14 @@ h2 {
   font-size: 1.2rem; /* Adjust date size */
   font-weight: 500;
   margin-bottom: 10px;
-  color: #000000; /* Black text */
+  color: #fbfafa; /* Black text */
 }
 
 /* Paragraph Text */
 .timeline p {
   font-size: 1rem; /* Adjust paragraph text size */
   margin-bottom: 10px;
-  color: #000000; /* Black text */
+  color: #faf6f6; /* Black text */
 }
 
 /* List Items */
@@ -237,7 +525,7 @@ h2 {
   font-size: 1rem; /* Adjust list item text size */
   line-height: 1.5; /* Add spacing between lines */
   margin-bottom: 5px;
-  color: #000000; /* Black text */
+  color: #fff9f9; /* Black text */
 }
 
 /* Nested List Items */
@@ -249,7 +537,7 @@ h2 {
 .timeline ul ul li {
   font-size: 0.9rem; /* Slightly smaller for nested items */
   margin-bottom: 3px;
-  color: #000000; /* Black text */
+  color: #fff6f6; /* Black text */
 }
 
 
@@ -270,7 +558,7 @@ h2 {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #FF9F55;
+    border: 4px solid #3d7b90;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -322,7 +610,7 @@ h2 {
   /* The actual content */
   .content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: relative;
     border-radius: 6px;
   }
@@ -360,6 +648,18 @@ h2 {
     }
   }
 
+  /* Styling for the images in the experience container */
+  .image-container {
+    width: 100%; /* Adjust the container width as needed */
+    max-width: 600px; /* Optional: set a maximum width */
+    border: 1px solid #000000; /* Optional: add a border for visualization */
+}
+
+.image-container img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove default inline spacing */
+}
 
 
 /*bar graph for 
@@ -374,7 +674,7 @@ h2 {
 body {
     font-family: Arial, sans-serif;
     background-color: #0d1117;
-    color: #c9d1d9;
+    color: hsl(0, 0%, 100%);
     padding: 20px;
 }
 
@@ -534,28 +834,36 @@ body {
 /* Navigation styling */
 /* Navigation Styling */
 .about-nav {
-  display: flex; /* Use Flexbox for alignment */
-  justify-content: center; /* Center the links horizontally */
-  gap: 20px; /* Add spacing between the links */
-  margin: 20px 0; /* Add spacing above and below the nav */
+  display: flex; /* Arrange items in a horizontal line */
+  justify-content: center; /* Center the navigation items */
+  gap: 20px; /* Add space between the items */
+  background-color: #282323; /* Background color */
+  padding: 15px 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  margin-bottom: 30px; /* Space below the navigation */
 }
 
 .about-nav a {
-  text-decoration: none; /* Remove underlines */
-  font-size: 1rem; /* Set font size */
-  font-weight: bold; /* Make text bold */
   color: #ffffff; /* Text color */
-  padding: 10px 20px; /* Add padding inside the links */
-  background-color: #333333; /* Dark gray background */
-  border-radius: 5px; /* Rounded corners for buttons */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Slightly larger text size */
+  font-weight: bold; /* Make the text bold */
+  padding: 10px 15px; /* Add padding inside the links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  background-color: #3d7b90; /* Default background color */
 }
 
 .about-nav a:hover {
-  background-color: #6246ea; /* Lighter purple on hover */
-  color: #ffffff; /* Ensure text stays white */
-  transform: scale(1.05); /* Slightly increase size on hover */
+  background-color: #18636f; /* Darker color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
+
+.about-nav a:active {
+  background-color: #11474e; /* Even darker color for active state */
+}
+
 
 
 .tab {
