@@ -206,5 +206,35 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 });
 
 
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const firstSection = document.querySelector(".firstSection");
+    firstSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
+  });
+  
 
+  //adding hidden class dynamically 
+  document.addEventListener("DOMContentLoaded", () => {
+    // Select all sections that need the hidden class
+    const sections = document.querySelectorAll("#home, #about, #timeline, #project, #contact");
+  
+    // Add the 'hidden' class to each section
+    sections.forEach(section => section.classList.add("hidden"));
+  });
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const hiddenElements = document.querySelectorAll(".hidden");
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    hiddenElements.forEach(el => observer.observe(el));
+  });
+  
+  
