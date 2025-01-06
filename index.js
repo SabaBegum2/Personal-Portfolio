@@ -1,6 +1,6 @@
 // Data for the programming languages
 const skillLabels = ["Python", "C++", "C", "Java", "JavaScript", "HTML/CSS", "XML", "PHP"];
-const skillValues = [60, 70, 60, 60, 70, 80, 80, 80]; // Example percentages for skill proficiency
+const skillValues = [70, 70, 65, 70, 70, 80, 80, 80];
 const skillColors = [
     "#b91d47", // Python
     "#00aba9", // C++
@@ -9,12 +9,12 @@ const skillColors = [
     "#e8c3b9", // JavaScript
     "#1e7145", // HTML/CSS
     "#4e73df", // XML
-    "#808080"  // PHP 
+    "#808080"  // PHP
 ];
 
 // Render the chart in the "skillsChart" canvas
 new Chart("skillsChart", {
-    type: "bar", // Change the chart type to "bar"
+    type: "bar",
     data: {
         labels: skillLabels,
         datasets: [{
@@ -23,9 +23,12 @@ new Chart("skillsChart", {
         }]
     },
     options: {
-        title: {
-            display: true,
-            text: "My Programming Skills"
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: "My Programming Skills"
+            }
         },
         scales: {
             x: {
@@ -39,15 +42,12 @@ new Chart("skillsChart", {
                     display: true,
                     text: "Skill Proficiency (%)"
                 },
-                beginAtZero: true, // Ensures the y-axis starts at 0
-                max: 100 // Ensures the y-axis has a maximum of 100
+                beginAtZero: true,
+                max: 100
             }
         }
     }
 });
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab");
@@ -83,15 +83,6 @@ window.onload = function () {
     document.getElementById('popup').style.display = 'none';
 };
 
-// // Toggle sections
-// function toggleSection(sectionId) {
-//     const section = document.getElementById(sectionId);
-//     if (section.style.display === 'none') {
-//         section.style.display = 'block';
-//     } else {
-//         section.style.display = 'none';
-//     }
-// }
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section.style.display === 'none' || section.style.display === '') {
@@ -127,8 +118,6 @@ const images = [
         src: "Images/DyslexAI Screenshots/Screenshot 2024-12-26 at 2.22.35 AM.png",
         heading: "Image 6: AI Recommendation"
     }
-
-
 ];
 
 // Select the gallery container
@@ -190,13 +179,22 @@ modal.addEventListener("click", (e) => {
     }
 });
 
-
 ///////////////////////////////////////  Education //////////////////////////////////////////////
 // Function to open the Education popup
-// Function to open the Education popup// Function to open the Education popup
 function openEducationPopup() {
     const popup = document.getElementById('educationPopup');
-    if (popup) {
+    const educationSection = document.getElementById('education'); // Specific section
+
+    if (popup && educationSection) {
+        // Get the position of the Education section
+        const sectionRect = educationSection.getBoundingClientRect();
+        const sectionTop = sectionRect.top + window.scrollY; // Absolute top position
+        const sectionLeft = sectionRect.left + window.scrollX; // Absolute left position
+
+        // Position the popup near the Education section
+        popup.style.position = 'absolute';
+        popup.style.top = `${sectionTop}px`; // Align with the top of the Education section
+        popup.style.left = `${sectionLeft}px`; // Align with the left of the Education section
         popup.style.display = 'flex'; // Show the popup
     }
 }
@@ -224,13 +222,10 @@ document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('active');
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const firstSection = document.querySelector(".firstSection");
     firstSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
 });
-
 
 //adding hidden class dynamically 
 document.addEventListener("DOMContentLoaded", () => {
@@ -252,16 +247,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, { threshold: 0.1 });
-
     hiddenElements.forEach(el => observer.observe(el));
 });
-
-
 
 // navigation tabs being active when the user is in the page 
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-links a");
-
     const divs = {
         home: document.getElementById("home"),
         about: document.getElementById("about"),
@@ -274,7 +265,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         const scrollY = window.scrollY;
         const windowHeight = window.innerHeight;
-
         // Check which div is in view based on scroll position
         let current = "";
 

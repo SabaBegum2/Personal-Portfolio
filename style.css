@@ -1381,7 +1381,7 @@ body {
 }
 
 .tab.active {
-  background: #007BFF;
+  background: #3d7b90;
   font-weight: bold;
 }
 
@@ -1409,7 +1409,7 @@ body {
 }
 
 .tag:hover {
-  background: #007BFF;
+  background: #3d7b90;
 }
 
 
@@ -1591,6 +1591,7 @@ body {
 
 /* Timeline Section for dyslex*/
 .Dyslextimeline {
+  color: #fff;
   list-style: none;
   /* Remove bullet points */
   padding: 0;
@@ -1603,13 +1604,18 @@ body {
   position: relative;
   padding: 10px 20px;
   margin: 10px 0;
-  background: #333;
+  background: #000000;
   /* Background color for each timeline event */
   border-radius: 5px;
-  color: #fff;
+  color: #fff !important;
+}
+
+.Dyslextimeline li strong {
+  color: #3d7b90 !important;
 }
 
 .Dyslextimeline li::before {
+  color: #fff;
   content: "";
   position: absolute;
   left: -7px;
@@ -1619,7 +1625,7 @@ body {
   background: #fff;
   /* Timeline dot color */
   border-radius: 50%;
-  border: 2px solid #555;
+  border: 2px solid #ffefef;
   /* Match timeline line color */
 }
 
@@ -2009,7 +2015,39 @@ button[onclick*="drivewaydescription"]:hover {
 
 #description::-webkit-scrollbar-thumb:hover,
 #driveway::-webkit-scrollbar-thumb:hover {
-  background: #218838;
+  background: #309fb0;
+
+  /* Style the scrollbar inside the popup */
+  .popup::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width of the scrollbar */
+    height: 12px;
+    /* Adjust the height of the scrollbar (for horizontal) */
+  }
+
+  /* Style the scrollbar track (the background part) */
+  .popup::-webkit-scrollbar-track {
+    background: #444;
+    /* Track color */
+    border-radius: 10px;
+    /* Rounded corners for the track */
+  }
+
+  /* Style the scrollbar thumb (the draggable part) */
+  .popup::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Thumb color */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+  }
+
+  /* Style the scrollbar thumb on hover */
+  .popup::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Thumb color when hovered */
+  }
+
+  ;
   /* Darker green on hover */
 }
 
@@ -2516,7 +2554,7 @@ button[onclick*="drivewayTimeline"]:hover {
 }
 
 .popup-content::-webkit-scrollbar-thumb:hover {
-  background-color: #00aaff;
+  background-color: #3d7b90;
 }
 
 
@@ -2651,7 +2689,7 @@ body {
 .education-popup {
   display: none;
   /* Hidden by default */
-  position: fixed;
+  position: absolute;
   /* Fixed position to stay on screen */
   top: 50%;
   /* Center vertically */
@@ -2668,6 +2706,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  transition: opacity 0.3s ease;
   /* Ensure it’s above other elements */
 }
 
@@ -2714,16 +2753,22 @@ body {
   top: 0px;
   right: 15px;
   color: #fff;
-  /* White text */
   border: none;
-  border-radius: 50%;
   width: 30px;
   height: 30px;
   font-size: 18px;
   cursor: pointer;
+  display: flex;
+  /* Enable flexbox */
+  align-items: center;
+  /* Vertically center the content */
+  justify-content: center;
+  /* Horizontally center the content */
   transition: transform 0.3s ease, background-color 0.3s ease;
-  /* Smooth hover effect */
 }
+
+
+
 
 /* Hover Effect */
 .education-popup .close-btn:hover {
@@ -2845,17 +2890,7 @@ button[onclick*="educationCoursework"]:hover {
 
 /***** Education timeline ******/
 /* Timeline Container */
-#educationTimeline {
-  background-color: #9fb8b7;
-  /* Mint cream background */
-  border: 1px solid #fdfbfb;
-  /* Lime green border */
-  padding: 15px;
-  border-radius: 8px;
-  max-height: 300px;
-  overflow-y: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 button[onclick*="educationTimeline"] {
   background-color: #3d7b90;
@@ -2919,6 +2954,10 @@ button[onclick*="educationTimeline"]:hover {
   margin-bottom: 10px;
   padding-left: 25px;
   /* Align text to the right of the marker */
+}
+
+.educationTimeline li strong {
+  color: #3d7b90;
 }
 
 /* Timeline Marker */
