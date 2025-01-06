@@ -54,18 +54,25 @@ main hr {
 
 
 .nav-links a {
-  display: flex; /* Flexbox to align text and image */
-  align-items: center; /* Vertically align items */
-  text-decoration: none; /* Remove underline */
-  color: #ffffff; /* Text color */
+  display: flex;
+  /* Flexbox to align text and image */
+  align-items: center;
+  /* Vertically align items */
+  text-decoration: none;
+  /* Remove underline */
+  color: #ffffff;
+  /* Text color */
   padding: 10px 15px;
-  gap: 10px; /* Space between image and text */
+  gap: 10px;
+  /* Space between image and text */
 }
 
 .nav-links a img {
-  width: 20px; /* Set image size */
+  width: 20px;
+  /* Set image size */
   height: 20px;
-  border-radius: 50%; /* Optional: Make images circular */
+  border-radius: 50%;
+  /* Optional: Make images circular */
 }
 
 
@@ -78,20 +85,26 @@ main hr {
 
 /*************************** This is the styling for the name in the first page *******************************************/
 body {
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White default text color */
-  font-family: 'Times New Roman', serif; /* Elegant font */
+  background-color: #000000;
+  /* Black background */
+  color: #ffffff;
+  /* White default text color */
+  font-family: 'Times New Roman', serif;
+  /* Elegant font */
 
 }
 
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  /* Full viewport height */
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align content to the right */
-  padding: 0 100px; /* Padding around the content */
+  justify-content: flex-end;
+  /* Align content to the right */
+  padding: 0 100px;
+  /* Padding around the content */
 }
 
 /* Background Text */
@@ -99,19 +112,25 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 30vw; /* Scaled to viewport width */
+  font-size: 30vw;
+  /* Scaled to viewport width */
   font-weight: bold;
-  color: #3d555b; /* Brownish tone for background letters */
-  line-height: 0.9; /* Adjust overlap between letters */
-  z-index: 1; /* Behind the main content */
+  color: #3d555b;
+  /* Brownish tone for background letters */
+  line-height: 0.9;
+  /* Adjust overlap between letters */
+  z-index: 1;
+  /* Behind the main content */
 }
 
 .b-text {
-  left: 100%; /* Adjust horizontal position */
+  left: 100%;
+  /* Adjust horizontal position */
 }
 
 .s-text {
-  right: 30%; /* Adjust horizontal position */
+  right: 30%;
+  /* Adjust horizontal position */
 }
 
 .background-text span {
@@ -125,30 +144,38 @@ body {
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: none; /* No glow by default */
-  transition: box-shadow 0.3s ease; /* Smooth transition effect */
+  box-shadow: none;
+  /* No glow by default */
+  transition: box-shadow 0.3s ease;
+  /* Smooth transition effect */
   /*box-shadow: 0 0 15px #3d7b90, 0 0 30px #3d7b90, 0 0 45px #3d7b90; /* Glow on hover */
 }
 
 
 .name {
-  font-size: 4rem; /* Large title */
+  font-size: 4rem;
+  /* Large title */
   font-weight: bold;
-  color: #ffffff; /* Gold color for the name */
-  letter-spacing: 0.2rem; /* Space out letters */
+  color: #ffffff;
+  /* Gold color for the name */
+  letter-spacing: 0.2rem;
+  /* Space out letters */
 }
 
 .divider {
   margin: 20px 0;
   border: none;
   height: 1px;
-  background-color: #ffffff; /* Gold divider */
+  background-color: #ffffff;
+  /* Gold divider */
   width: 100%;
 }
 
 .title {
-  font-size: 1.5rem; /* Smaller subtitle */
-  color: #ffffff; /* Gold color */
+  font-size: 1.5rem;
+  /* Smaller subtitle */
+  color: #ffffff;
+  /* Gold color */
   letter-spacing: 0.1rem;
 }
 
@@ -158,7 +185,8 @@ body {
 
 
 html {
-  font-size: 16px; /* Ensure a proper root font size */
+  font-size: 16px;
+  /* Ensure a proper root font size */
 }
 
 
@@ -221,8 +249,10 @@ html {
   /* Add a subtle shadow */
   border: 3px solid #3d7b90;
   /* Optional: Add a border matching the theme */
-  border-radius: 5px; /* Optional: For rounded corners */
-  box-shadow: 0 0 10px #3d7b90, 0 0 20px #3d7b90, 0 0 30px #3d7b90; /* Glowing effect */
+  border-radius: 5px;
+  /* Optional: For rounded corners */
+  box-shadow: 0 0 10px #3d7b90, 0 0 20px #3d7b90, 0 0 30px #3d7b90;
+  /* Glowing effect */
 }
 
 /* Responsive Design adjustments for .about img */
@@ -403,15 +433,19 @@ body {
 /* Navbar */
 header {
   width: 100%;
-  background-color: #0000; /* Black background */
+  background-color: #0000;
+  /* Black background */
   padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  border: 2px solid #3d7b90; /* Glow border */
-  box-shadow: 0 0 15px #3d7b90, 0 0 30px #3d7b90, 0 0 45px #3d7b90; /* Glow effect */
-  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #3d7b90;
+  /* Glow border */
+  box-shadow: 0 0 15px #3d7b90, 0 0 30px #3d7b90, 0 0 45px #3d7b90;
+  /* Glow effect */
+  border-radius: 10px;
+  /* Rounded corners */
 }
 
 /* Header Navigation */
@@ -424,13 +458,15 @@ header nav {
 header .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff; /* White logo */
+  color: #ffffff;
+  /* White logo */
   cursor: pointer;
   text-transform: uppercase;
 }
 
 header .hamburger {
-  display: none; /* Default hidden */
+  display: none;
+  /* Default hidden */
   font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
@@ -438,51 +474,71 @@ header .hamburger {
 
 /* Navbar Links */
 .nav-links {
-  list-style: none; /* Remove bullets */
-  display: flex; /* Horizontal layout */
-  gap: 15px; /* Space between links */
+  list-style: none;
+  /* Remove bullets */
+  display: flex;
+  /* Horizontal layout */
+  gap: 15px;
+  /* Space between links */
 }
 
 .nav-links li {
-  display: inline-block; /* Ensure links are aligned horizontally */
+  display: inline-block;
+  /* Ensure links are aligned horizontally */
 }
 
 .nav-links a {
-  text-decoration: none; /* Remove underline */
-  color: #ffffff; /* White text */
-  padding: 10px 15px; /* Padding for box effect */
-  border: 2px solid #3d7b90; /* Border color */
-  border-radius: 5px; /* Rounded corners */
-  background-color: transparent; /* Transparent background */
-  transition: all 0.3s ease; /* Smooth hover effect */
+  text-decoration: none;
+  /* Remove underline */
+  color: #ffffff;
+  /* White text */
+  padding: 10px 15px;
+  /* Padding for box effect */
+  border: 2px solid #3d7b90;
+  /* Border color */
+  border-radius: 5px;
+  /* Rounded corners */
+  background-color: transparent;
+  /* Transparent background */
+  transition: all 0.3s ease;
+  /* Smooth hover effect */
 }
 
 .nav-links a:hover {
-  background-color: #3d7b90; /* Change background color on hover */
-  color: #000000; /* Change text color on hover */
-  box-shadow: 0 0 10px #3d7b90; /* Add glow effect */
+  background-color: #3d7b90;
+  /* Change background color on hover */
+  color: #000000;
+  /* Change text color on hover */
+  box-shadow: 0 0 10px #3d7b90;
+  /* Add glow effect */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   header .hamburger {
-    display: block; /* Show hamburger menu */
+    display: block;
+    /* Show hamburger menu */
   }
 
   .nav-links {
-    flex-direction: column; /* Stack links vertically */
-    background-color: #000000; /* Black dropdown background */
+    flex-direction: column;
+    /* Stack links vertically */
+    background-color: #000000;
+    /* Black dropdown background */
     padding: 20px;
     position: absolute;
     top: 60px;
     right: 20px;
-    display: none; /* Hide by default */
+    display: none;
+    /* Hide by default */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dropdown shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Dropdown shadow */
   }
 
   .nav-links.active {
-    display: flex; /* Show dropdown menu */
+    display: flex;
+    /* Show dropdown menu */
   }
 }
 
@@ -495,9 +551,11 @@ header .hamburger {
 }
 
 .nav-links a.active {
-  background-color: #3d7b90; /* Highlight active link */
+  background-color: #3d7b90;
+  /* Highlight active link */
   color: black;
-  box-shadow: 0 0 10px #3d7b90; /* Add glow */
+  box-shadow: 0 0 10px #3d7b90;
+  /* Add glow */
 }
 
 
@@ -507,7 +565,8 @@ header .hamburger {
 
 .logo img {
   height: 200px;
-  filter: invert(100%) brightness(200%); /* Example for making it white */
+  filter: invert(100%) brightness(200%);
+  /* Example for making it white */
 }
 
 
@@ -531,7 +590,8 @@ header .hamburger {
   /* Rounded corners for style */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   /* Subtle shadow for depth */
-  border: 2px solid #3d7b90; /* Border on all sides */
+  border: 2px solid #3d7b90;
+  /* Border on all sides */
 }
 
 .skills-intro h1 {
@@ -640,9 +700,12 @@ header .hamburger {
 .timeline h3,
 .timeline p,
 .timeline ul {
-  text-align: left; /* Ensure all text is left-aligned */
-  margin: 0; /* Remove default margins */
-  padding-left: 0; /* Reset any left padding */
+  text-align: left;
+  /* Ensure all text is left-aligned */
+  margin: 0;
+  /* Remove default margins */
+  padding-left: 0;
+  /* Reset any left padding */
 }
 
 
@@ -687,6 +750,7 @@ header .hamburger {
   color: #fff6f6;
   /* Black text */
 }
+
 /* Timeline Container */
 
 
@@ -694,14 +758,21 @@ header .hamburger {
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: #000000; /* Set black background */
-  color: white; /* Ensure text is visible */
+  background-color: #000000;
+  /* Set black background */
+  color: white;
+  /* Ensure text is visible */
   width: 50%;
-  border-radius: 10px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), /* Existing shadow */
-  0 0 15px #3d7b90, /* Soft glow */
-  0 0 30px #3d7b90; /* Brighter outer glow */
+  border-radius: 10px;
+  /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Optional: Add shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5),
+    /* Existing shadow */
+    0 0 15px #3d7b90,
+    /* Soft glow */
+    0 0 30px #3d7b90;
+  /* Brighter outer glow */
 }
 
 /* The circles on the timeline */
@@ -711,13 +782,17 @@ header .hamburger {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white; /* Keep circle white for contrast */
+  background-color: white;
+  /* Keep circle white for contrast */
   border: 4px solid #3d7b90;
   top: 15px;
-  border-radius: 50%; /* Makes the circle round */
+  border-radius: 50%;
+  /* Makes the circle round */
   z-index: 1;
-  box-shadow: 0 0 10px #3d7b90, /* Soft glow */
-              0 0 20px #3d7b90; /* Brighter outer glow */
+  box-shadow: 0 0 10px #3d7b90,
+    /* Soft glow */
+    0 0 20px #3d7b90;
+  /* Brighter outer glow */
 }
 
 
@@ -1258,7 +1333,8 @@ body {
   /* Add a subtle shadow */
   margin-bottom: 30px;
   /* Space below the navigation */
-  border: 2px solid #3d7b90; /* Border on all sides */
+  border: 2px solid #3d7b90;
+  /* Border on all sides */
 }
 
 .about-nav a {
@@ -2544,18 +2620,21 @@ main {
 }
 
 header {
-  background-color: black; /* Set black background for header */
+  background-color: black;
+  /* Set black background for header */
 }
 
 nav {
-  background-color: transparent; /* Remove background color from nav */
+  background-color: transparent;
+  /* Remove background color from nav */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 body {
-  background-color: black; /* Ensure the body background is consistent */
+  background-color: black;
+  /* Ensure the body background is consistent */
 }
 
 /* Footer styling */
@@ -3102,7 +3181,8 @@ button:active {
   /* Allow for a larger footer size */
   height: auto;
   /* Ensure the footer grows dynamically with content */
-  box-shadow: 0 0 15px #3d7b90, 0 0 30px #3d7b90, 0 0 45px #3d7b90; /* Glow on hover */
+  box-shadow: 0 0 15px #3d7b90, 0 0 30px #3d7b90, 0 0 45px #3d7b90;
+  /* Glow on hover */
 }
 
 .tabs {
@@ -3165,25 +3245,27 @@ button:active {
   text-align: center;
   font-weight: 400;
   opacity: 0.8;
-  border-top: 1px solid #ccc; /* Optional: Add a subtle line above the text */
-  padding-top: 10px; /* Space between the line and text */
+  border-top: 1px solid #ccc;
+  /* Optional: Add a subtle line above the text */
+  padding-top: 10px;
+  /* Space between the line and text */
 }
 
 
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
+  /* Enables smooth scrolling */
 }
+
 .hidden {
   opacity: 0;
-  transform: translateY(20px); /* Initial hidden state */
+  transform: translateY(20px);
+  /* Initial hidden state */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .hidden.show {
   opacity: 1;
-  transform: translateY(0); /* Slide into place */
+  transform: translateY(0);
+  /* Slide into place */
 }
-
-
-
-

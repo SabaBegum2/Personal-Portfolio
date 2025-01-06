@@ -1,5 +1,5 @@
 // Data for the programming languages
-const skillLabels = ["Python", "C++", "C", "Java", "JavaScript", "HTML/CSS", "XMl", "PHP"];
+const skillLabels = ["Python", "C++", "C", "Java", "JavaScript", "HTML/CSS", "XML", "PHP"];
 const skillValues = [60, 70, 60, 60, 70, 80, 80, 80]; // Example percentages for skill proficiency
 const skillColors = [
     "#b91d47", // Python
@@ -8,13 +8,13 @@ const skillColors = [
     "#2b5797", // Java
     "#e8c3b9", // JavaScript
     "#1e7145", // HTML/CSS
-    "#4e73df", // XMl
+    "#4e73df", // XML
     "#808080"  // PHP 
 ];
 
 // Render the chart in the "skillsChart" canvas
 new Chart("skillsChart", {
-    type: "pie",
+    type: "bar", // Change the chart type to "bar"
     data: {
         labels: skillLabels,
         datasets: [{
@@ -26,6 +26,22 @@ new Chart("skillsChart", {
         title: {
             display: true,
             text: "My Programming Skills"
+        },
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: "Programming Languages"
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: "Skill Proficiency (%)"
+                },
+                beginAtZero: true, // Ensures the y-axis starts at 0
+                max: 100 // Ensures the y-axis has a maximum of 100
+            }
         }
     }
 });
@@ -209,84 +225,83 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 });
 
 
-  
-  document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", () => {
     const firstSection = document.querySelector(".firstSection");
     firstSection.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the section
-  });
-  
+});
 
-  //adding hidden class dynamically 
-  document.addEventListener("DOMContentLoaded", () => {
+
+//adding hidden class dynamically 
+document.addEventListener("DOMContentLoaded", () => {
     // Select all sections that need the hidden class
     const sections = document.querySelectorAll("#home, #about, #skills, #timeline, #project, #education, #contact");
-  
+
     // Add the 'hidden' class to each section
     sections.forEach(section => section.classList.add("hidden"));
-  });
+});
 
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const hiddenElements = document.querySelectorAll(".hidden");
-  
+
     const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
-      });
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
     }, { threshold: 0.1 });
-  
+
     hiddenElements.forEach(el => observer.observe(el));
-  });
-  
+});
 
 
-  // navigation tabs being active when the user is in the page 
-  document.addEventListener("DOMContentLoaded", () => {
+
+// navigation tabs being active when the user is in the page 
+document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-links a");
-    
+
     const divs = {
-      home: document.getElementById("home"),
-      about: document.getElementById("about"),
-      timeline: document.getElementById("timeline"),
-      project: document.getElementById("project"),
-      education: document.getElementById("education"),
-      contact: document.getElementById("contact")
+        home: document.getElementById("home"),
+        about: document.getElementById("about"),
+        timeline: document.getElementById("timeline"),
+        project: document.getElementById("project"),
+        education: document.getElementById("education"),
+        contact: document.getElementById("contact")
     };
-  
+
     window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-  
-      // Check which div is in view based on scroll position
-      let current = "";
-  
-      if (scrollY >= divs.home.offsetTop && scrollY < divs.about.offsetTop) {
-        current = "home";
-      } else if (scrollY >= divs.about.offsetTop && scrollY < divs.timeline.offsetTop) {
-        current = "about";
-      } else if (scrollY >= divs.timeline.offsetTop && scrollY < divs.project.offsetTop) {
-        current = "timeline";
-      } else if (scrollY >= divs.project.offsetTop && scrollY < divs.education.offsetTop) {
-        current = "project";
-      } else if (scrollY >= divs.education.offsetTop && scrollY < divs.contact.offsetTop) {
-        current = "education";
-      } else if (scrollY >= divs.contact.offsetTop) {
-        current = "contact";
-      }
-  
-      // Update the active link
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        // Check which div is in view based on scroll position
+        let current = "";
+
+        if (scrollY >= divs.home.offsetTop && scrollY < divs.about.offsetTop) {
+            current = "home";
+        } else if (scrollY >= divs.about.offsetTop && scrollY < divs.timeline.offsetTop) {
+            current = "about";
+        } else if (scrollY >= divs.timeline.offsetTop && scrollY < divs.project.offsetTop) {
+            current = "timeline";
+        } else if (scrollY >= divs.project.offsetTop && scrollY < divs.education.offsetTop) {
+            current = "project";
+        } else if (scrollY >= divs.education.offsetTop && scrollY < divs.contact.offsetTop) {
+            current = "education";
+        } else if (scrollY >= divs.contact.offsetTop) {
+            current = "contact";
         }
-      });
+
+        // Update the active link
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current)) {
+                link.classList.add("active");
+            }
+        });
     });
-  });
-  
-  
-  
-  
-  
+});
+
+
+
+
