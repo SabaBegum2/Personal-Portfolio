@@ -1502,6 +1502,9 @@ body {
   border-radius: 5px;
 }
 
+
+
+
 /* Main Popup Container */
 .popup {
   position: fixed;
@@ -1557,6 +1560,7 @@ body {
   height: 100%;
   box-sizing: border-box;
 }
+
 
 /* Close Button */
 .close-btn {
@@ -2686,11 +2690,12 @@ body {
 /******************************************** education styling *************************************************************/
 /* Specific styles for the education popup */
 /* Education Popup Styling */
+/* Popup Styling */
 .education-popup {
   display: none;
   /* Hidden by default */
   position: absolute;
-  /* Fixed position to stay on screen */
+  /* Absolute positioning inside the .education section */
   top: 50%;
   /* Center vertically */
   left: 50%;
@@ -2698,17 +2703,18 @@ body {
   transform: translate(-50%, -50%);
   /* Adjust to the element's center */
   width: 100%;
-  /* Full viewport width */
+  /* Full width of the education section */
   height: 100%;
-  /* Full viewport height */
+  /* Full height of the education section */
   background-color: #1e1e1e;
   /* Solid dark background */
   justify-content: center;
   align-items: center;
   z-index: 1000;
   transition: opacity 0.3s ease;
-  /* Ensure it’s above other elements */
+  /* Smooth transition effect */
 }
+
 
 .education-popup .popup-content {
   background-color: #1e1e1e;
@@ -2779,7 +2785,7 @@ body {
 
 
 
-/************************** Styling for education **************************************/
+/************************** education **************************************/
 .education {
   position: relative;
   /* Allows layering of the overlay */
@@ -3307,4 +3313,33 @@ html {
   opacity: 1;
   transform: translateY(0);
   /* Slide into place */
+}
+
+.hidden {
+  opacity: 1; /* Make visible */
+  transform: translateY(0); /* No vertical offset */
+}
+
+
+/************************ This will make sure all the content size gets adjusted based on the screen size ****************************/
+/* Base styles (for large screens) */
+body {
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* For smaller screens, such as tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* For very small screens, such as mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+    padding: 5px;
+  }
 }

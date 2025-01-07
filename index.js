@@ -293,5 +293,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// Wait for the DOM to fully load
+// this function makes sure that the main content shows in any screen size
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all elements with the "hidden" class
+    const hiddenElements = document.querySelectorAll(".hidden");
+  
+    // Add the "show" class to each hidden element
+    hiddenElements.forEach((el) => {
+      el.classList.add("show");
+    });
+  });
+  
 
